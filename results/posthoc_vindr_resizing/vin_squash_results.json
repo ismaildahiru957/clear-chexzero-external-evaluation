@@ -1,0 +1,809 @@
+{
+ "run_info": {
+  "started_utc": "2026-10-11 11:40:05",
+  "seed": 2026,
+  "clear_git_commit": "57d2eae57ddabf8e56c8013ec675336d71b3d8e7",
+  "python": "3.13.15",
+  "torch": "2.11.0+cu128",
+  "pydicom": "3.0.2",
+  "gpus": [
+   "Tesla T4",
+   "Tesla T4"
+  ],
+  "n_images": 15000,
+  "clear_preprocess": "Compose(\n    Lambda()\n    Resize(size=(448, 448), interpolation=bicubic, max_size=None, antialias=True)\n    ToTensor()\n    Normalize(mean=(0.3979906274509804, 0.3979906274509804, 0.3979906274509804), std=(0.3272134901960784, 0.3272134901960784, 0.3272134901960784))\n)",
+  "repro_max_abs_diff": {
+   "clear_concept": 0.0,
+   "clear_direct": 0.0
+  },
+  "unreadable_images": 0
+ },
+ "results": {
+  "all": {
+   "n": 15000,
+   "eligible": [
+    "Aortic enlargement",
+    "Atelectasis",
+    "Calcification",
+    "Cardiomegaly",
+    "Consolidation",
+    "ILD",
+    "Infiltration",
+    "Lung Opacity",
+    "Nodule/Mass",
+    "Pleural effusion",
+    "Pleural thickening",
+    "Pneumothorax",
+    "Pulmonary fibrosis"
+   ],
+   "chexzero": 0.8165,
+   "concept_pad": {
+    "macro": 0.8733,
+    "minus_chexzero": [
+     0.0568,
+     0.0497,
+     0.064
+    ],
+    "wins_losses": [
+     9,
+     4
+    ]
+   },
+   "concept_squash": {
+    "macro": 0.8792,
+    "minus_chexzero": [
+     0.0627,
+     0.0557,
+     0.07
+    ],
+    "wins_losses": [
+     9,
+     4
+    ]
+   },
+   "direct_pad": {
+    "macro": 0.8781,
+    "minus_chexzero": [
+     0.0616,
+     0.055,
+     0.0683
+    ],
+    "wins_losses": [
+     12,
+     1
+    ]
+   },
+   "direct_squash": {
+    "macro": 0.8806,
+    "minus_chexzero": [
+     0.0641,
+     0.0576,
+     0.0709
+    ],
+    "wins_losses": [
+     12,
+     1
+    ]
+   },
+   "concept_squash_minus_pad": [
+    0.0059,
+    0.0041,
+    0.0076
+   ],
+   "direct_squash_minus_pad": [
+    0.0026,
+    0.0009,
+    0.0042
+   ],
+   "per_finding": {
+    "Aortic enlargement": {
+     "chexzero": 0.806,
+     "concept_pad": 0.822,
+     "concept_squash": 0.833,
+     "direct_pad": 0.852,
+     "direct_squash": 0.844
+    },
+    "Atelectasis": {
+     "chexzero": 0.497,
+     "concept_pad": 0.81,
+     "concept_squash": 0.809,
+     "direct_pad": 0.818,
+     "direct_squash": 0.804
+    },
+    "Calcification": {
+     "chexzero": 0.732,
+     "concept_pad": 0.784,
+     "concept_squash": 0.799,
+     "direct_pad": 0.788,
+     "direct_squash": 0.794
+    },
+    "Cardiomegaly": {
+     "chexzero": 0.91,
+     "concept_pad": 0.869,
+     "concept_squash": 0.874,
+     "direct_pad": 0.917,
+     "direct_squash": 0.908
+    },
+    "Consolidation": {
+     "chexzero": 0.957,
+     "concept_pad": 0.952,
+     "concept_squash": 0.954,
+     "direct_pad": 0.965,
+     "direct_squash": 0.965
+    },
+    "ILD": {
+     "chexzero": 0.872,
+     "concept_pad": 0.922,
+     "concept_squash": 0.931,
+     "direct_pad": 0.908,
+     "direct_squash": 0.913
+    },
+    "Infiltration": {
+     "chexzero": 0.918,
+     "concept_pad": 0.9,
+     "concept_squash": 0.902,
+     "direct_pad": 0.915,
+     "direct_squash": 0.919
+    },
+    "Lung Opacity": {
+     "chexzero": 0.895,
+     "concept_pad": 0.894,
+     "concept_squash": 0.892,
+     "direct_pad": 0.916,
+     "direct_squash": 0.916
+    },
+    "Nodule/Mass": {
+     "chexzero": 0.739,
+     "concept_pad": 0.842,
+     "concept_squash": 0.851,
+     "direct_pad": 0.812,
+     "direct_squash": 0.837
+    },
+    "Pleural effusion": {
+     "chexzero": 0.935,
+     "concept_pad": 0.947,
+     "concept_squash": 0.951,
+     "direct_pad": 0.971,
+     "direct_squash": 0.976
+    },
+    "Pleural thickening": {
+     "chexzero": 0.814,
+     "concept_pad": 0.815,
+     "concept_squash": 0.827,
+     "direct_pad": 0.848,
+     "direct_squash": 0.851
+    },
+    "Pneumothorax": {
+     "chexzero": 0.883,
+     "concept_pad": 0.948,
+     "concept_squash": 0.951,
+     "direct_pad": 0.985,
+     "direct_squash": 0.987
+    },
+    "Pulmonary fibrosis": {
+     "chexzero": 0.659,
+     "concept_pad": 0.848,
+     "concept_squash": 0.855,
+     "direct_pad": 0.721,
+     "direct_squash": 0.735
+    }
+   }
+  },
+  "sex_known": {
+   "n": 7354,
+   "eligible": [
+    "Aortic enlargement",
+    "Atelectasis",
+    "Calcification",
+    "Cardiomegaly",
+    "Consolidation",
+    "ILD",
+    "Infiltration",
+    "Lung Opacity",
+    "Nodule/Mass",
+    "Pleural effusion",
+    "Pleural thickening",
+    "Pneumothorax",
+    "Pulmonary fibrosis"
+   ],
+   "chexzero": 0.782,
+   "concept_pad": {
+    "macro": 0.8053,
+    "minus_chexzero": [
+     0.0233,
+     0.016,
+     0.0308
+    ],
+    "wins_losses": [
+     6,
+     7
+    ]
+   },
+   "concept_squash": {
+    "macro": 0.8134,
+    "minus_chexzero": [
+     0.0314,
+     0.0237,
+     0.0391
+    ],
+    "wins_losses": [
+     7,
+     6
+    ]
+   },
+   "direct_pad": {
+    "macro": 0.8347,
+    "minus_chexzero": [
+     0.0527,
+     0.0458,
+     0.0598
+    ],
+    "wins_losses": [
+     12,
+     1
+    ]
+   },
+   "direct_squash": {
+    "macro": 0.8393,
+    "minus_chexzero": [
+     0.0573,
+     0.0502,
+     0.0643
+    ],
+    "wins_losses": [
+     12,
+     1
+    ]
+   },
+   "concept_squash_minus_pad": [
+    0.0081,
+    0.006,
+    0.0101
+   ],
+   "direct_squash_minus_pad": [
+    0.0046,
+    0.0028,
+    0.0064
+   ],
+   "per_finding": {
+    "Aortic enlargement": {
+     "chexzero": 0.749,
+     "concept_pad": 0.723,
+     "concept_squash": 0.737,
+     "direct_pad": 0.778,
+     "direct_squash": 0.779
+    },
+    "Atelectasis": {
+     "chexzero": 0.419,
+     "concept_pad": 0.703,
+     "concept_squash": 0.71,
+     "direct_pad": 0.745,
+     "direct_squash": 0.744
+    },
+    "Calcification": {
+     "chexzero": 0.658,
+     "concept_pad": 0.672,
+     "concept_squash": 0.687,
+     "direct_pad": 0.671,
+     "direct_squash": 0.683
+    },
+    "Cardiomegaly": {
+     "chexzero": 0.882,
+     "concept_pad": 0.784,
+     "concept_squash": 0.791,
+     "direct_pad": 0.889,
+     "direct_squash": 0.885
+    },
+    "Consolidation": {
+     "chexzero": 0.935,
+     "concept_pad": 0.913,
+     "concept_squash": 0.916,
+     "direct_pad": 0.937,
+     "direct_squash": 0.94
+    },
+    "ILD": {
+     "chexzero": 0.833,
+     "concept_pad": 0.873,
+     "concept_squash": 0.885,
+     "direct_pad": 0.887,
+     "direct_squash": 0.892
+    },
+    "Infiltration": {
+     "chexzero": 0.905,
+     "concept_pad": 0.854,
+     "concept_squash": 0.86,
+     "direct_pad": 0.871,
+     "direct_squash": 0.878
+    },
+    "Lung Opacity": {
+     "chexzero": 0.871,
+     "concept_pad": 0.834,
+     "concept_squash": 0.834,
+     "direct_pad": 0.894,
+     "direct_squash": 0.894
+    },
+    "Nodule/Mass": {
+     "chexzero": 0.695,
+     "concept_pad": 0.767,
+     "concept_squash": 0.771,
+     "direct_pad": 0.8,
+     "direct_squash": 0.806
+    },
+    "Pleural effusion": {
+     "chexzero": 0.938,
+     "concept_pad": 0.932,
+     "concept_squash": 0.938,
+     "direct_pad": 0.971,
+     "direct_squash": 0.973
+    },
+    "Pleural thickening": {
+     "chexzero": 0.771,
+     "concept_pad": 0.738,
+     "concept_squash": 0.755,
+     "direct_pad": 0.799,
+     "direct_squash": 0.808
+    },
+    "Pneumothorax": {
+     "chexzero": 0.888,
+     "concept_pad": 0.91,
+     "concept_squash": 0.915,
+     "direct_pad": 0.975,
+     "direct_squash": 0.978
+    },
+    "Pulmonary fibrosis": {
+     "chexzero": 0.622,
+     "concept_pad": 0.766,
+     "concept_squash": 0.775,
+     "direct_pad": 0.632,
+     "direct_squash": 0.651
+    }
+   }
+  },
+  "sex_missing": {
+   "n": 7646,
+   "eligible": [
+    "Aortic enlargement",
+    "Cardiomegaly",
+    "Lung Opacity",
+    "Nodule/Mass",
+    "Pleural effusion",
+    "Pleural thickening",
+    "Pulmonary fibrosis"
+   ],
+   "chexzero": 0.8143,
+   "concept_pad": {
+    "macro": 0.9126,
+    "minus_chexzero": [
+     0.0983,
+     0.0796,
+     0.1171
+    ],
+    "wins_losses": [
+     6,
+     1
+    ]
+   },
+   "concept_squash": {
+    "macro": 0.9128,
+    "minus_chexzero": [
+     0.0984,
+     0.0791,
+     0.1172
+    ],
+    "wins_losses": [
+     6,
+     1
+    ]
+   },
+   "direct_pad": {
+    "macro": 0.8768,
+    "minus_chexzero": [
+     0.0624,
+     0.043,
+     0.0811
+    ],
+    "wins_losses": [
+     6,
+     1
+    ]
+   },
+   "direct_squash": {
+    "macro": 0.8974,
+    "minus_chexzero": [
+     0.0831,
+     0.064,
+     0.1028
+    ],
+    "wins_losses": [
+     6,
+     1
+    ]
+   },
+   "concept_squash_minus_pad": [
+    0.0001,
+    -0.0061,
+    0.006
+   ],
+   "direct_squash_minus_pad": [
+    0.0206,
+    0.0134,
+    0.0283
+   ],
+   "per_finding": {
+    "Aortic enlargement": {
+     "chexzero": 0.855,
+     "concept_pad": 0.89,
+     "concept_squash": 0.893,
+     "direct_pad": 0.866,
+     "direct_squash": 0.899
+    },
+    "Cardiomegaly": {
+     "chexzero": 0.948,
+     "concept_pad": 0.927,
+     "concept_squash": 0.933,
+     "direct_pad": 0.919,
+     "direct_squash": 0.928
+    },
+    "Lung Opacity": {
+     "chexzero": 0.892,
+     "concept_pad": 0.946,
+     "concept_squash": 0.942,
+     "direct_pad": 0.975,
+     "direct_squash": 0.959
+    },
+    "Nodule/Mass": {
+     "chexzero": 0.774,
+     "concept_pad": 0.912,
+     "concept_squash": 0.938,
+     "direct_pad": 0.809,
+     "direct_squash": 0.872
+    },
+    "Pleural effusion": {
+     "chexzero": 0.833,
+     "concept_pad": 0.93,
+     "concept_squash": 0.917,
+     "direct_pad": 0.911,
+     "direct_squash": 0.945
+    },
+    "Pleural thickening": {
+     "chexzero": 0.772,
+     "concept_pad": 0.863,
+     "concept_squash": 0.846,
+     "direct_pad": 0.858,
+     "direct_squash": 0.855
+    },
+    "Pulmonary fibrosis": {
+     "chexzero": 0.627,
+     "concept_pad": 0.92,
+     "concept_squash": 0.92,
+     "direct_pad": 0.799,
+     "direct_squash": 0.823
+    }
+   }
+  },
+  "age_known": {
+   "n": 3760,
+   "eligible": [
+    "Aortic enlargement",
+    "Atelectasis",
+    "Calcification",
+    "Cardiomegaly",
+    "Consolidation",
+    "ILD",
+    "Infiltration",
+    "Lung Opacity",
+    "Nodule/Mass",
+    "Pleural effusion",
+    "Pleural thickening",
+    "Pneumothorax",
+    "Pulmonary fibrosis"
+   ],
+   "chexzero": 0.7597,
+   "concept_pad": {
+    "macro": 0.7684,
+    "minus_chexzero": [
+     0.0087,
+     -0.0003,
+     0.0186
+    ],
+    "wins_losses": [
+     5,
+     8
+    ]
+   },
+   "concept_squash": {
+    "macro": 0.7747,
+    "minus_chexzero": [
+     0.015,
+     0.0057,
+     0.0251
+    ],
+    "wins_losses": [
+     5,
+     8
+    ]
+   },
+   "direct_pad": {
+    "macro": 0.8122,
+    "minus_chexzero": [
+     0.0525,
+     0.0431,
+     0.0623
+    ],
+    "wins_losses": [
+     10,
+     3
+    ]
+   },
+   "direct_squash": {
+    "macro": 0.8172,
+    "minus_chexzero": [
+     0.0575,
+     0.0485,
+     0.067
+    ],
+    "wins_losses": [
+     10,
+     3
+    ]
+   },
+   "concept_squash_minus_pad": [
+    0.0063,
+    0.0037,
+    0.009
+   ],
+   "direct_squash_minus_pad": [
+    0.005,
+    0.0027,
+    0.0075
+   ],
+   "per_finding": {
+    "Aortic enlargement": {
+     "chexzero": 0.743,
+     "concept_pad": 0.658,
+     "concept_squash": 0.667,
+     "direct_pad": 0.757,
+     "direct_squash": 0.759
+    },
+    "Atelectasis": {
+     "chexzero": 0.383,
+     "concept_pad": 0.618,
+     "concept_squash": 0.622,
+     "direct_pad": 0.669,
+     "direct_squash": 0.674
+    },
+    "Calcification": {
+     "chexzero": 0.625,
+     "concept_pad": 0.664,
+     "concept_squash": 0.668,
+     "direct_pad": 0.635,
+     "direct_squash": 0.645
+    },
+    "Cardiomegaly": {
+     "chexzero": 0.887,
+     "concept_pad": 0.725,
+     "concept_squash": 0.728,
+     "direct_pad": 0.883,
+     "direct_squash": 0.881
+    },
+    "Consolidation": {
+     "chexzero": 0.927,
+     "concept_pad": 0.887,
+     "concept_squash": 0.891,
+     "direct_pad": 0.917,
+     "direct_squash": 0.919
+    },
+    "ILD": {
+     "chexzero": 0.819,
+     "concept_pad": 0.874,
+     "concept_squash": 0.888,
+     "direct_pad": 0.889,
+     "direct_squash": 0.9
+    },
+    "Infiltration": {
+     "chexzero": 0.893,
+     "concept_pad": 0.861,
+     "concept_squash": 0.862,
+     "direct_pad": 0.868,
+     "direct_squash": 0.867
+    },
+    "Lung Opacity": {
+     "chexzero": 0.841,
+     "concept_pad": 0.802,
+     "concept_squash": 0.797,
+     "direct_pad": 0.869,
+     "direct_squash": 0.869
+    },
+    "Nodule/Mass": {
+     "chexzero": 0.627,
+     "concept_pad": 0.707,
+     "concept_squash": 0.72,
+     "direct_pad": 0.752,
+     "direct_squash": 0.763
+    },
+    "Pleural effusion": {
+     "chexzero": 0.916,
+     "concept_pad": 0.906,
+     "concept_squash": 0.912,
+     "direct_pad": 0.961,
+     "direct_squash": 0.964
+    },
+    "Pleural thickening": {
+     "chexzero": 0.728,
+     "concept_pad": 0.689,
+     "concept_squash": 0.706,
+     "direct_pad": 0.761,
+     "direct_squash": 0.773
+    },
+    "Pneumothorax": {
+     "chexzero": 0.909,
+     "concept_pad": 0.874,
+     "concept_squash": 0.878,
+     "direct_pad": 0.968,
+     "direct_squash": 0.971
+    },
+    "Pulmonary fibrosis": {
+     "chexzero": 0.579,
+     "concept_pad": 0.724,
+     "concept_squash": 0.732,
+     "direct_pad": 0.628,
+     "direct_squash": 0.638
+    }
+   }
+  },
+  "age_missing": {
+   "n": 11240,
+   "eligible": [
+    "Aortic enlargement",
+    "Calcification",
+    "Cardiomegaly",
+    "Consolidation",
+    "ILD",
+    "Infiltration",
+    "Lung Opacity",
+    "Nodule/Mass",
+    "Pleural effusion",
+    "Pleural thickening",
+    "Pulmonary fibrosis"
+   ],
+   "chexzero": 0.8611,
+   "concept_pad": {
+    "macro": 0.8947,
+    "minus_chexzero": [
+     0.0336,
+     0.0247,
+     0.0427
+    ],
+    "wins_losses": [
+     9,
+     2
+    ]
+   },
+   "concept_squash": {
+    "macro": 0.9055,
+    "minus_chexzero": [
+     0.0444,
+     0.0364,
+     0.0535
+    ],
+    "wins_losses": [
+     9,
+     2
+    ]
+   },
+   "direct_pad": {
+    "macro": 0.893,
+    "minus_chexzero": [
+     0.0319,
+     0.0236,
+     0.0407
+    ],
+    "wins_losses": [
+     10,
+     1
+    ]
+   },
+   "direct_squash": {
+    "macro": 0.9024,
+    "minus_chexzero": [
+     0.0412,
+     0.0331,
+     0.0499
+    ],
+    "wins_losses": [
+     11,
+     0
+    ]
+   },
+   "concept_squash_minus_pad": [
+    0.0109,
+    0.0077,
+    0.014
+   ],
+   "direct_squash_minus_pad": [
+    0.0094,
+    0.0067,
+    0.0121
+   ],
+   "per_finding": {
+    "Aortic enlargement": {
+     "chexzero": 0.838,
+     "concept_pad": 0.857,
+     "concept_squash": 0.879,
+     "direct_pad": 0.895,
+     "direct_squash": 0.897
+    },
+    "Calcification": {
+     "chexzero": 0.765,
+     "concept_pad": 0.8,
+     "concept_squash": 0.831,
+     "direct_pad": 0.856,
+     "direct_squash": 0.865
+    },
+    "Cardiomegaly": {
+     "chexzero": 0.923,
+     "concept_pad": 0.901,
+     "concept_squash": 0.915,
+     "direct_pad": 0.94,
+     "direct_squash": 0.938
+    },
+    "Consolidation": {
+     "chexzero": 0.96,
+     "concept_pad": 0.975,
+     "concept_squash": 0.976,
+     "direct_pad": 0.985,
+     "direct_squash": 0.985
+    },
+    "ILD": {
+     "chexzero": 0.881,
+     "concept_pad": 0.929,
+     "concept_squash": 0.94,
+     "direct_pad": 0.899,
+     "direct_squash": 0.903
+    },
+    "Infiltration": {
+     "chexzero": 0.903,
+     "concept_pad": 0.886,
+     "concept_squash": 0.897,
+     "direct_pad": 0.904,
+     "direct_squash": 0.915
+    },
+    "Lung Opacity": {
+     "chexzero": 0.916,
+     "concept_pad": 0.924,
+     "concept_squash": 0.927,
+     "direct_pad": 0.939,
+     "direct_squash": 0.938
+    },
+    "Nodule/Mass": {
+     "chexzero": 0.841,
+     "concept_pad": 0.886,
+     "concept_squash": 0.892,
+     "direct_pad": 0.837,
+     "direct_squash": 0.872
+    },
+    "Pleural effusion": {
+     "chexzero": 0.937,
+     "concept_pad": 0.96,
+     "concept_squash": 0.961,
+     "direct_pad": 0.969,
+     "direct_squash": 0.978
+    },
+    "Pleural thickening": {
+     "chexzero": 0.823,
+     "concept_pad": 0.847,
+     "concept_squash": 0.856,
+     "direct_pad": 0.886,
+     "direct_squash": 0.884
+    },
+    "Pulmonary fibrosis": {
+     "chexzero": 0.684,
+     "concept_pad": 0.877,
+     "concept_squash": 0.888,
+     "direct_pad": 0.712,
+     "direct_squash": 0.751
+    }
+   }
+  }
+ }
+}

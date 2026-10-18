@@ -1,0 +1,47 @@
+215.6s	13	===== FOLLOWUP SUMMARY =====
+215.6s	14	NIH reproduction check: {'chexzero__T1': 0.695, 'clear_concept__T1': 0.635, 'clear_direct__T1': 0.7}
+215.6s	15	-- NIH paired contrasts, macro over 14 findings, 95% patient bootstrap
+215.6s	16	  clear_concept_minus_chexzero_T1    -0.060 (-0.069 to -0.051)
+215.6s	17	  clear_direct_minus_chexzero_T1     +0.006 (-0.002 to +0.013)
+215.6s	18	  concept_minus_direct_T1            -0.065 (-0.072 to -0.059)
+215.6s	19	  clear_concept_minus_chexzero_T2    -0.020 (-0.029 to -0.011)
+215.6s	20	  clear_direct_minus_chexzero_T2     -0.001 (-0.008 to +0.006)
+215.6s	21	  concept_minus_direct_T2            -0.019 (-0.026 to -0.012)
+215.6s	22	  clear_concept_minus_chexzero_T3    -0.051 (-0.059 to -0.042)
+215.6s	23	  clear_direct_minus_chexzero_T3     -0.038 (-0.046 to -0.031)
+215.6s	24	  concept_minus_direct_T3            -0.013 (-0.018 to -0.008)
+215.6s	25	  clear_concept_minus_chexzero_T4    -0.064 (-0.073 to -0.056)
+215.6s	26	  clear_direct_minus_chexzero_T4     +0.031 (+0.023 to +0.038)
+215.6s	27	  concept_minus_direct_T4            -0.095 (-0.103 to -0.087)
+215.6s	28	  chexzero_T2_minus_T1               -0.007 (-0.012 to -0.002)
+215.6s	29	  chexzero_T3_minus_T1               -0.020 (-0.025 to -0.016)
+215.6s	30	  chexzero_T4_minus_T1               -0.009 (-0.012 to -0.005)
+215.6s	31	  clear_concept_T2_minus_T1          +0.033 (+0.030 to +0.036)
+215.6s	32	  clear_concept_T3_minus_T1          -0.012 (-0.013 to -0.010)
+215.6s	33	  clear_concept_T4_minus_T1          -0.013 (-0.015 to -0.011)
+215.6s	34	  clear_direct_T2_minus_T1           -0.013 (-0.018 to -0.007)
+215.6s	35	  clear_direct_T3_minus_T1           -0.064 (-0.070 to -0.058)
+215.6s	36	  clear_direct_T4_minus_T1           +0.016 (+0.011 to +0.022)
+215.6s	37	-- VinDr concept minus direct: -0.005 (-0.009 to -0.001)
+215.6s	38	-- VinDr n: {'sex_known': 7354, 'sex_missing': 7646, 'age_known': 3760, 'age_missing': 11240, 'age_18-40': 780, 'age_40-60': 1337, 'age_60+': 1530, 'sex_F': 3514, 'sex_M': 3840}
+215.6s	39	-- VinDr sex_known minus sex_missing (7 findings): chexzero -0.025 (-0.049 to -0.001) | clear_concept -0.121 (-0.135 to -0.106) | clear_direct -0.053 (-0.071 to -0.035)
+215.6s	40	-- VinDr age_known minus age_missing (11 findings): chexzero -0.081 (-0.095 to -0.067) | clear_concept -0.122 (-0.135 to -0.110) | clear_direct -0.082 (-0.095 to -0.070)
+215.6s	41	-- VinDr prevalence % (known / missing sex; 18-40 / 40-60 / 60+):
+215.6s	42	  Aortic enlargement    28.3 / 3.5   |   0.9 /  26.5 / 68.6 
+215.6s	43	  Atelectasis            0.8 / 0.0   |   0.6 /   1.0 / 1.0  
+215.6s	44	  Calcification          2.2 / 0.2   |   0.9 /   2.5 / 3.3  
+215.6s	45	  Cardiomegaly          22.1 / 2.5   |   4.7 /  24.1 / 46.3 
+215.6s	46	  Consolidation          1.5 / 0.2   |   1.5 /   1.4 / 2.4  
+215.6s	47	  ILD                    1.9 / 0.1   |   0.9 /   2.4 / 2.9  
+215.6s	48	  Infiltration           3.0 / 0.3   |   4.7 /   5.2 / 3.1  
+215.6s	49	  Lung Opacity           6.9 / 0.5   |   5.4 /  10.3 / 9.7  
+215.6s	50	  Nodule/Mass            4.9 / 0.5   |   2.6 /   7.4 / 8.5  
+215.6s	51	  Pleural effusion       7.7 / 0.9   |   5.6 /  11.1 / 9.9  
+215.6s	52	  Pleural thickening    10.1 / 1.8   |   4.5 /  13.9 / 20.4 
+215.6s	53	  Pneumothorax           0.7 / 0.0   |   0.6 /   1.1 / 0.5  
+215.6s	54	  Pulmonary fibrosis    12.2 / 1.6   |   9.5 /  19.1 / 18.9 
+215.6s	55	-- VinDr per-finding F minus M: {'chexzero': {'Aortic enlargement': 0.055, 'Calcification': -0.017, 'Cardiomegaly': -0.003, 'ILD': 0.081, 'Infiltration': 0.041, 'Lung Opacity': 0.024, 'Nodule/Mass': -0.05, 'Pleural effusion': 0.022, 'Pleural thickening': 0.027, 'Pulmonary fibrosis': -0.008}, 'clear_concept': {'Aortic enlargement': 0.019, 'Calcification': 0.029, 'Cardiomegaly': -0.009, 'ILD': 0.08, 'Infiltration': 0.034, 'Lung Opacity': 0.015, 'Nodule/Mass': -0.029, 'Pleural effusion': 0.03, 'Pleural thickening': 0.001, 'Pulmonary fibrosis': -0.045}, 'clear_direct': {'Aortic enlargement': 0.038, 'Calcification': -0.039, 'Cardiomegaly': -0.006, 'ILD': 0.07, 'Infiltration': 0.027, 'Lung Opacity': 0.007, 'Nodule/Mass': 0.002, 'Pleural effusion': 0.019, 'Pleural thickening': -0.004, 'Pulmonary fibrosis': -0.0}}
+215.6s	56	-- VinDr per-finding 18-40 minus 40-60: {'chexzero': {'Cardiomegaly': 0.052, 'Infiltration': 0.061, 'Lung Opacity': 0.081, 'Pleural effusion': 0.041, 'Pleural thickening': 0.096, 'Pulmonary fibrosis': 0.064}, 'clear_concept': {'Cardiomegaly': 0.128, 'Infiltration': 0.096, 'Lung Opacity': 0.104, 'Pleural effusion': 0.033, 'Pleural thickening': 0.02, 'Pulmonary fibrosis': 0.035}, 'clear_direct': {'Cardiomegaly': 0.059, 'Infiltration': 0.081, 'Lung Opacity': 0.016, 'Pleural effusion': 0.015, 'Pleural thickening': 0.028, 'Pulmonary fibrosis': 0.028}}
+215.6s	57	-- VinDr 18-40 minus 40-60, leaving one finding out (98.33% CI): {'chexzero': {'Cardiomegaly': (0.069, [0.029, 0.108]), 'Infiltration': (0.067, [0.032, 0.104]), 'Lung Opacity': (0.063, [0.028, 0.099]), 'Pleural effusion': (0.071, [0.033, 0.109]), 'Pleural thickening': (0.06, [0.028, 0.09]), 'Pulmonary fibrosis': (0.066, [0.032, 0.098])}, 'clear_concept': {'Cardiomegaly': (0.058, [0.013, 0.1]), 'Infiltration': (0.064, [0.023, 0.106]), 'Lung Opacity': (0.063, [0.022, 0.102]), 'Pleural effusion': (0.077, [0.035, 0.118]), 'Pleural thickening': (0.079, [0.047, 0.11]), 'Pulmonary fibrosis': (0.076, [0.038, 0.117])}}
+215.6s	58	minutes: 3.4
+215.6s	59	===== END =====

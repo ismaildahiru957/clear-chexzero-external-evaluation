@@ -1,0 +1,298 @@
+Time
+#
+Log Message
+11.4s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+11.4s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+11.4s	3	0.00s - to python to disable frozen modules.
+11.4s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+12.2s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+12.2s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+12.2s	7	0.00s - to python to disable frozen modules.
+12.2s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+20.7s	9	  Preparing metadata (setup.py) ... [?25l[?25hdone
+21.2s	10	[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/44.8 kB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m44.8/44.8 kB[0m [31m1.3 MB/s[0m eta [36m0:00:00[0m
+22.6s	11	[?25h  Building wheel for clip (setup.py) ... [?25l[?25hdone
+31.3s	12	  Installing build dependencies ... [?25l[?25hdone
+31.6s	13	  Getting requirements to build wheel ... [?25l[?25hdone
+31.8s	14	  Preparing metadata (pyproject.toml) ... [?25l[?25hdone
+32.4s	15	  Building wheel for clear-med (pyproject.toml) ... [?25l[?25hdone
+69.7s	16	{
+69.7s	17	 "started_utc": "2026-10-03 10:42:50",
+69.7s	18	 "seed": 2026,
+69.7s	19	 "clear_git_commit": "57d2eae57ddabf8e56c8013ec675336d71b3d8e7",
+69.7s	20	 "clear_hf_sha": "142f169c8b006b0f28cf55c6a237c3003db5ed8f",
+69.7s	21	 "python": "3.13.15",
+69.7s	22	 "torch": "2.11.0+cu128",
+69.7s	23	 "transformers": "5.16.1",
+69.7s	24	 "gpus": [
+69.7s	25	  "Tesla T4",
+69.7s	26	  "Tesla T4"
+69.7s	27	 ]
+69.7s	28	}
+71.2s	29	[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.4 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [91m━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.4/3.4 MB[0m [31m13.4 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m3.4/3.4 MB[0m [31m52.9 MB/s[0m eta [36m0:00:01[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.4/3.4 MB[0m [31m39.5 MB/s[0m eta [36m0:00:00[0m
+71.3s	30	[?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.0 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m2.0/2.0 MB[0m [31m287.2 MB/s[0m eta [36m0:00:01[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.0/2.0 MB[0m [31m56.3 MB/s[0m eta [36m0:00:00[0m
+74.5s	31	[?25hpydicom 3.0.2
+75.2s	32	train.csv rows: 67914 | columns: ['image_id', 'class_name', 'class_id', 'rad_id', 'x_min', 'y_min', 'x_max', 'y_max']
+134.3s	33	{
+134.3s	34	 "n_images": 15000,
+134.3s	35	 "sex_counts": {
+134.3s	36	  "null": 7646,
+134.3s	37	  "M": 3840,
+134.3s	38	  "F": 3514
+134.3s	39	 },
+134.3s	40	 "age_missing": 11240,
+134.3s	41	 "age_band_counts": {
+134.3s	42	  "null": 11240,
+134.3s	43	  "60+": 1530,
+134.3s	44	  "40-60": 1337,
+134.3s	45	  "18-40": 780,
+134.3s	46	  "0-18": 113
+134.3s	47	 },
+134.3s	48	 "positives_majority": {
+134.3s	49	  "Aortic enlargement": 2346,
+134.3s	50	  "Atelectasis": 62,
+134.3s	51	  "Calcification": 177,
+134.3s	52	  "Cardiomegaly": 1817,
+134.3s	53	  "Consolidation": 121,
+134.3s	54	  "ILD": 152,
+134.3s	55	  "Infiltration": 245,
+134.3s	56	  "Lung Opacity": 547,
+134.3s	57	  "Nodule/Mass": 405,
+134.3s	58	  "Pleural effusion": 634,
+134.3s	59	  "Pleural thickening": 882,
+134.3s	60	  "Pneumothorax": 58,
+134.3s	61	  "Pulmonary fibrosis": 1017
+134.3s	62	 }
+134.3s	63	}
+143.2s	64	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+143.2s	65	
+143.2s	66	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+179.8s	67	/usr/local/lib/python3.13/dist-packages/clear/concepts.py:298: RuntimeWarning: Unpickling /tmp/hf/hub/models--peterhan91--CLEAR/snapshots/142f169c8b006b0f28cf55c6a237c3003db5ed8f/concepts_embeddings_sfr_mistral.pickle; only trusted pickle files should be loaded.
+179.8s	68	  _load_array(
+179.8s	69	
+179.8s	70	/usr/local/lib/python3.13/dist-packages/clear/concepts.py:298: RuntimeWarning: Unpickling /tmp/hf/hub/models--peterhan91--CLEAR/snapshots/142f169c8b006b0f28cf55c6a237c3003db5ed8f/concepts_embeddings_sfr_mistral.pickle; only trusted pickle files should be loaded.
+179.8s	71	  _load_array(
+350.4s	72	SFR embeddings done
+350.4s	73	
+350.4s	74	:  72%|███████▏  | 210/290 [00:35<00:12,  6.26it/s]
+350.4s	75	Loading weights:  73%|███████▎  | 211/290 [00:35<00:16,  4.70it/s]
+350.4s	76	Loading weights:  73%|███████▎  | 212/290 [00:35<00:20,  3.81it/s]
+350.4s	77	Loading weights:  74%|███████▍  | 215/290 [00:36<00:12,  5.97it/s]
+350.4s	78	Loading weights:  74%|███████▍  | 216/290 [00:36<00:11,  6.19it/s]
+350.4s	79	Loading weights:  76%|███████▌  | 219/290 [00:36<00:11,  6.11it/s]
+350.4s	80	Loading weights:  76%|███████▌  | 220/290 [00:37<00:15,  4.63it/s]
+350.4s	81	Loading weights:  76%|███████▌  | 221/290 [00:37<00:18,  3.75it/s]
+350.4s	82	Loading weights:  77%|███████▋  | 224/290 [00:37<00:11,  5.89it/s]
+350.4s	83	Loading weights:  78%|███████▊  | 225/290 [00:37<00:10,  6.11it/s]
+350.4s	84	Loading weights:  79%|███████▊  | 228/290 [00:38<00:10,  6.06it/s]
+350.4s	85	Loading weights:  79%|███████▉  | 229/290 [00:38<00:13,  4.59it/s]
+350.4s	86	Loading weights:  79%|███████▉  | 230/290 [00:39<00:16,  3.75it/s]
+350.4s	87	Loading weights:  80%|████████  | 233/290 [00:39<00:09,  5.89it/s]
+350.4s	88	Loading weights:  81%|████████  | 234/290 [00:39<00:09,  6.11it/s]
+350.4s	89	Loading weights:  82%|████████▏ | 237/290 [00:40<00:08,  6.07it/s]
+350.4s	90	Loading weights:  82%|████████▏ | 238/290 [00:40<00:11,  4.58it/s]
+350.4s	91	Loading weights:  82%|████████▏ | 239/290 [00:41<00:13,  3.74it/s]
+350.4s	92	Loading weights:  83%|████████▎ | 242/290 [00:41<00:08,  5.86it/s]
+350.4s	93	Loading weights:  84%|████████▍ | 243/290 [00:41<00:07,  6.07it/s]
+350.4s	94	Loading weights:  85%|████████▍ | 246/290 [00:41<00:07,  6.03it/s]
+350.4s	95	Loading weights:  85%|████████▌ | 247/290 [00:42<00:09,  4.58it/s]
+350.4s	96	Loading weights:  86%|████████▌ | 248/290 [00:42<00:11,  3.72it/s]
+350.4s	97	Loading weights:  87%|████████▋ | 251/290 [00:43<00:06,  5.86it/s]
+350.4s	98	Loading weights:  87%|████████▋ | 252/290 [00:43<00:06,  6.09it/s]
+350.4s	99	Loading weights:  88%|████████▊ | 255/290 [00:43<00:05,  6.05it/s]
+350.4s	100	Loading weights:  88%|████████▊ | 256/290 [00:44<00:07,  4.60it/s]
+350.4s	101	Loading weights:  89%|████████▊ | 257/290 [00:44<00:08,  3.74it/s]
+350.4s	102	Loading weights:  90%|████████▉ | 260/290 [00:44<00:05,  5.25it/s]
+350.4s	103	Loading weights:  91%|█████████ | 264/290 [00:45<00:04,  6.25it/s]
+350.4s	104	Loading weights:  91%|█████████▏| 265/290 [00:45<00:05,  4.90it/s]
+350.4s	105	Loading weights:  92%|█████████▏| 266/290 [00:46<00:05,  4.06it/s]
+350.4s	106	Loading weights:  93%|█████████▎| 269/290 [00:46<00:03,  6.08it/s]
+350.4s	107	Loading weights:  93%|█████████▎| 270/290 [00:46<00:03,  6.32it/s]
+350.4s	108	Loading weights:  94%|█████████▍| 273/290 [00:47<00:02,  6.17it/s]
+350.4s	109	Loading weights:  94%|█████████▍| 274/290 [00:47<00:03,  4.70it/s]
+350.4s	110	Loading weights:  95%|█████████▍| 275/290 [00:48<00:03,  3.81it/s]
+350.4s	111	Loading weights:  96%|█████████▌| 278/290 [00:48<00:02,  5.94it/s]
+350.4s	112	Loading weights:  96%|█████████▌| 279/290 [00:48<00:01,  6.17it/s]
+350.4s	113	Loading weights:  97%|█████████▋| 282/290 [00:48<00:01,  6.10it/s]
+350.4s	114	Loading weights:  98%|█████████▊| 283/290 [00:49<00:01,  4.64it/s]
+350.4s	115	Loading weights:  98%|█████████▊| 284/290 [00:49<00:01,  3.77it/s]
+350.4s	116	Loading weights:  99%|█████████▉| 287/290 [00:50<00:00,  5.92it/s]
+350.4s	117	Loading weights:  99%|█████████▉| 288/290 [00:50<00:00,  6.17it/s]
+350.4s	118	Loading weights: 100%|██████████| 290/290 [00:50<00:00,  5.78it/s]
+350.4s	119	
+350.4s	120	Reproduction of released concept embeddings, cosine mean/min: plain [0.899226188659668, 0.802057147026062] | with instruction [0.9999977350234985, 0.9999970197677612]
+350.4s	121	GPU memory in use after step 4 (GB): [0.0, 0.0]
+355.4s	122	Downloading: "https://github.com/facebookresearch/dinov2/zipball/main" to /root/.cache/torch/hub/main.zip
+356.3s	123	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+356.3s	124	  warnings.warn("xFormers is not available (SwiGLU)")
+356.3s	125	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+356.3s	126	  warnings.warn("xFormers is not available (Attention)")
+356.3s	127	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+356.3s	128	  warnings.warn("xFormers is not available (Block)")
+356.3s	129	
+356.3s	130	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+356.3s	131	  warnings.warn("xFormers is not available (SwiGLU)")
+356.3s	132	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+356.3s	133	  warnings.warn("xFormers is not available (Attention)")
+356.3s	134	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+356.3s	135	  warnings.warn("xFormers is not available (Block)")
+359.1s	136	Released concept CLIP embeddings vs text encoder, cosine mean/min: [1.0, 0.9999998807907104]
+370.0s	137	M: (768, 4096)
+456.1s	138	CheXzero checkpoints from: /kaggle/input/datasets/ismaildahiru/chexzero-weights/chexzero_weights
+456.1s	139	
+  0%|                                               | 0.00/338M [00:00<?, ?iB/s]
+456.2s	140	
+  0%|                                               | 0.00/338M [00:00<?, ?iB/s]
+  0%|                                       | 400k/338M [00:00<01:26, 4.08MiB/s]
+456.3s	141	
+  0%|                                       | 400k/338M [00:00<01:26, 4.08MiB/s]
+  2%|▊                                     | 6.77M/338M [00:00<00:08, 40.9MiB/s]
+456.4s	142	
+  2%|▊                                     | 6.77M/338M [00:00<00:08, 40.9MiB/s]
+  8%|███▎                                   | 28.6M/338M [00:00<00:02, 126MiB/s]
+456.5s	143	
+  8%|███▎                                   | 28.6M/338M [00:00<00:02, 126MiB/s]
+ 12%|████▋                                  | 40.6M/338M [00:00<00:02, 125MiB/s]
+456.6s	144	
+ 12%|████▋                                  | 40.6M/338M [00:00<00:02, 125MiB/s]
+ 16%|██████▎                                | 54.3M/338M [00:00<00:02, 132MiB/s]
+456.7s	145	
+ 16%|██████▎                                | 54.3M/338M [00:00<00:02, 132MiB/s]
+ 20%|███████▊                               | 67.2M/338M [00:00<00:02, 133MiB/s]
+456.8s	146	
+ 20%|███████▊                               | 67.2M/338M [00:00<00:02, 133MiB/s]
+ 24%|█████████▏                             | 79.9M/338M [00:00<00:02, 132MiB/s]
+456.9s	147	
+ 24%|█████████▏                             | 79.9M/338M [00:00<00:02, 132MiB/s]
+ 27%|██████████▋                            | 92.5M/338M [00:00<00:02, 126MiB/s]
+457.0s	148	
+ 27%|██████████▋                            | 92.5M/338M [00:00<00:02, 126MiB/s]
+ 31%|████████████▍                           | 105M/338M [00:00<00:01, 128MiB/s]
+457.1s	149	
+ 31%|████████████▍                           | 105M/338M [00:00<00:01, 128MiB/s]
+ 35%|█████████████▉                          | 118M/338M [00:01<00:01, 130MiB/s]
+457.2s	150	
+ 35%|█████████████▉                          | 118M/338M [00:01<00:01, 130MiB/s]
+ 39%|███████████████▌                        | 132M/338M [00:01<00:01, 133MiB/s]
+457.3s	151	
+ 39%|███████████████▌                        | 132M/338M [00:01<00:01, 133MiB/s]
+ 43%|█████████████████                       | 144M/338M [00:01<00:01, 128MiB/s]
+457.4s	152	
+ 43%|█████████████████                       | 144M/338M [00:01<00:01, 128MiB/s]
+ 47%|██████████████████▊                     | 159M/338M [00:01<00:01, 134MiB/s]
+457.6s	153	
+ 47%|██████████████████▊                     | 159M/338M [00:01<00:01, 134MiB/s]
+ 51%|████████████████████▎                   | 172M/338M [00:01<00:01, 133MiB/s]
+457.7s	154	
+ 51%|████████████████████▎                   | 172M/338M [00:01<00:01, 133MiB/s]
+ 55%|█████████████████████▊                  | 184M/338M [00:01<00:01, 127MiB/s]
+457.8s	155	
+ 55%|█████████████████████▊                  | 184M/338M [00:01<00:01, 127MiB/s]
+ 58%|███████████████████████▎                | 197M/338M [00:01<00:01, 130MiB/s]
+457.9s	156	
+ 58%|███████████████████████▎                | 197M/338M [00:01<00:01, 130MiB/s]
+ 62%|████████████████████████▊               | 210M/338M [00:01<00:01, 128MiB/s]
+458.0s	157	
+ 62%|████████████████████████▊               | 210M/338M [00:01<00:01, 128MiB/s]
+ 67%|██████████████████████████▋             | 225M/338M [00:01<00:00, 138MiB/s]
+458.1s	158	
+ 67%|██████████████████████████▋             | 225M/338M [00:01<00:00, 138MiB/s]
+ 71%|████████████████████████████▏           | 238M/338M [00:01<00:00, 132MiB/s]
+458.2s	159	
+ 71%|████████████████████████████▏           | 238M/338M [00:01<00:00, 132MiB/s]
+ 74%|█████████████████████████████▋          | 251M/338M [00:02<00:00, 123MiB/s]
+458.3s	160	
+ 74%|█████████████████████████████▋          | 251M/338M [00:02<00:00, 123MiB/s]
+ 78%|███████████████████████████████▏        | 263M/338M [00:02<00:00, 122MiB/s]
+458.5s	161	
+ 78%|███████████████████████████████▏        | 263M/338M [00:02<00:00, 122MiB/s]
+ 81%|████████████████████████████████▌       | 275M/338M [00:02<00:00, 106MiB/s]
+458.6s	162	
+ 81%|████████████████████████████████▌       | 275M/338M [00:02<00:00, 106MiB/s]
+ 84%|█████████████████████████████████▊      | 285M/338M [00:02<00:00, 105MiB/s]
+458.7s	163	
+ 84%|█████████████████████████████████▊      | 285M/338M [00:02<00:00, 105MiB/s]
+ 88%|███████████████████████████████████▏    | 297M/338M [00:02<00:00, 111MiB/s]
+458.8s	164	
+ 88%|███████████████████████████████████▏    | 297M/338M [00:02<00:00, 111MiB/s]
+ 92%|████████████████████████████████████▋   | 309M/338M [00:02<00:00, 116MiB/s]
+458.9s	165	
+ 92%|████████████████████████████████████▋   | 309M/338M [00:02<00:00, 116MiB/s]
+ 96%|██████████████████████████████████████▍ | 325M/338M [00:02<00:00, 128MiB/s]
+459.0s	166	
+ 96%|██████████████████████████████████████▍ | 325M/338M [00:02<00:00, 128MiB/s]
+100%|███████████████████████████████████████▉| 337M/338M [00:02<00:00, 126MiB/s]
+459.0s	167	
+100%|███████████████████████████████████████▉| 337M/338M [00:02<00:00, 126MiB/s]
+100%|████████████████████████████████████████| 338M/338M [00:02<00:00, 123MiB/s]
+459.1s	168	
+100%|████████████████████████████████████████| 338M/338M [00:02<00:00, 123MiB/s]
+459.1s	169	
+459.1s	170	
+582.1s	171	CheXzero checkpoints loaded: 10 | GPU GB in use: [0.67, 6.06]
+623.2s	172	32/15000 images, 0.7 min
+1053.1s	173	1632/15000 images, 7.8 min
+1568.0s	174	3232/15000 images, 16.4 min
+2020.8s	175	4832/15000 images, 24.0 min
+2477.4s	176	6432/15000 images, 31.6 min
+2900.7s	177	8032/15000 images, 38.6 min
+3373.2s	178	9632/15000 images, 46.5 min
+3815.3s	179	11232/15000 images, 53.9 min
+4332.5s	180	12832/15000 images, 62.5 min
+4831.6s	181	14432/15000 images, 70.8 min
+5022.3s	182	unreadable: 0
+5080.5s	183	===== VINBIGDATA SUMMARY =====
+5080.5s	184	images 15000 | unreadable 0 | sex {None: 7646, 'M': 3840, 'F': 3514} | age missing 11240
+5080.5s	185	age bands {None: 11240, '60+': 1530, '40-60': 1337, '18-40': 780, '0-18': 113}
+5080.5s	186	SFR check plain/instr: [0.899226188659668, 0.802057147026062] [0.9999977350234985, 0.9999970197677612]
+5080.5s	187	-- majority labels, eligible findings: 13
+5080.5s	188	  chexzero             macro 0.817 (0.809-0.824)
+5080.5s	189	  clear_concept        macro 0.873 (0.868-0.879) | minus CheXzero +0.057 (+0.050 to +0.064) | wins/losses [9, 4]
+5080.5s	190	  clear_concept_instr  macro 0.864 (0.858-0.870) | minus CheXzero +0.047 (+0.041 to +0.055) | wins/losses [8, 5]
+5080.5s	191	  clear_direct         macro 0.878 (0.872-0.884) | minus CheXzero +0.062 (+0.055 to +0.068) | wins/losses [12, 1]
+5080.5s	192	-- any labels, eligible findings: 13
+5080.5s	193	  chexzero             macro 0.796 (0.788-0.802)
+5080.5s	194	  clear_concept        macro 0.865 (0.859-0.869) | minus CheXzero +0.069 (+0.063 to +0.075) | wins/losses [11, 2]
+5080.5s	195	  clear_concept_instr  macro 0.857 (0.851-0.861) | minus CheXzero +0.061 (+0.056 to +0.067) | wins/losses [12, 1]
+5080.5s	196	  clear_direct         macro 0.859 (0.854-0.864) | minus CheXzero +0.064 (+0.058 to +0.069) | wins/losses [13, 0]
+5080.5s	197	-- per finding (majority): chexzero / clear_concept / clear_direct
+5080.5s	198	  Aortic enlargement   0.806 / 0.822 / 0.852
+5080.5s	199	  Atelectasis          0.497 / 0.810 / 0.818
+5080.5s	200	  Calcification        0.732 / 0.784 / 0.788
+5080.5s	201	  Cardiomegaly         0.910 / 0.869 / 0.917
+5080.5s	202	  Consolidation        0.957 / 0.952 / 0.965
+5080.5s	203	  ILD                  0.872 / 0.922 / 0.908
+5080.5s	204	  Infiltration         0.918 / 0.900 / 0.915
+5080.5s	205	  Lung Opacity         0.895 / 0.894 / 0.916
+5080.5s	206	  Nodule/Mass          0.739 / 0.842 / 0.812
+5080.5s	207	  Pleural effusion     0.935 / 0.947 / 0.971
+5080.5s	208	  Pleural thickening   0.814 / 0.815 / 0.848
+5080.5s	209	  Pneumothorax         0.883 / 0.948 / 0.985
+5080.5s	210	  Pulmonary fibrosis   0.659 / 0.848 / 0.721
+5080.5s	211	VERDICT: CONSISTENT with the CLEAR paper (CLEAR ahead of CheXzero)
+5080.5s	212	-- subgroups (majority labels): {'sex_eligible': ['Aortic enlargement', 'Calcification', 'Cardiomegaly', 'ILD', 'Infiltration', 'Lung Opacity', 'Nodule/Mass', 'Pleural effusion', 'Pleural thickening', 'Pulmonary fibrosis'], 'age_eligible': ['Cardiomegaly', 'Infiltration', 'Lung Opacity', 'Pleural effusion', 'Pleural thickening', 'Pulmonary fibrosis'], 'age_contrasts': ['18-40', '60+'], 'n_by_group': {'sex_F': 3514, 'sex_M': 3840, 'age_0-18': 113, 'age_18-40': 780, 'age_40-60': 1337, 'age_60+': 1530}}
+5080.5s	213	  chexzero       sex_F_minus_M          +0.017 (+0.002 to +0.032)
+5080.5s	214	  chexzero       age_18-40_minus_40-60  +0.066 (+0.034 to +0.100)
+5080.5s	215	  chexzero       age_60+_minus_40-60    -0.022 (-0.050 to +0.006)
+5080.5s	216	  clear_concept  sex_F_minus_M          +0.012 (-0.002 to +0.026)
+5080.5s	217	  clear_concept  age_18-40_minus_40-60  +0.069 (+0.034 to +0.107)
+5080.5s	218	  clear_concept  age_60+_minus_40-60    -0.012 (-0.040 to +0.017)
+5080.5s	219	  clear_direct   sex_F_minus_M          +0.011 (-0.004 to +0.025)
+5080.5s	220	  clear_direct   age_18-40_minus_40-60  +0.038 (+0.002 to +0.072)
+5080.5s	221	  clear_direct   age_60+_minus_40-60    -0.012 (-0.038 to +0.011)
+5080.5s	222	minutes: 84.4
+5080.5s	223	===== END =====
+5088.3s	224	/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+5088.3s	225	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+5088.7s	226	/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+5088.7s	227	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+5090.4s	228	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+5090.5s	229	[NbConvertApp] Writing 140161 bytes to __notebook__.ipynb
+5093.0s	230	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+5094.1s	231	[NbConvertApp] Writing 506171 bytes to __results__.html

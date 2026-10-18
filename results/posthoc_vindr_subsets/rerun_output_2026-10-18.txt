@@ -1,0 +1,16 @@
+Vin: /kaggle/input/vin_out
+===== VINDR SUBSET SUMMARY =====
+n: {'all': 15000, 'sex_known': 7354, 'sex_missing': 7646, 'age_known': 3760, 'age_missing': 11240, 'both_known': 3678, 'both_missing': 7564}
+normal-image share (no eligible finding): {'all': 0.713, 'sex_known': 0.483, 'sex_missing': 0.934, 'age_known': 0.329, 'age_missing': 0.842, 'both_known': 0.335, 'both_missing': 0.944}
+-- all (n=15000, 13 findings): CheXzero 0.817 | clear_concept 0.873, minus CheXzero +0.057 (+0.050 to +0.064), wins/losses 9/4 | clear_direct 0.878, minus CheXzero +0.062 (+0.055 to +0.068), wins/losses 12/1
+-- sex_known (n=7354, 13 findings): CheXzero 0.782 | clear_concept 0.805, minus CheXzero +0.023 (+0.016 to +0.031), wins/losses 6/7 | clear_direct 0.835, minus CheXzero +0.053 (+0.046 to +0.060), wins/losses 12/1
+-- sex_missing (n=7646, 7 findings): CheXzero 0.814 | clear_concept 0.913, minus CheXzero +0.098 (+0.080 to +0.117), wins/losses 6/1 | clear_direct 0.877, minus CheXzero +0.062 (+0.043 to +0.081), wins/losses 6/1
+-- age_known (n=3760, 13 findings): CheXzero 0.760 | clear_concept 0.768, minus CheXzero +0.009 (-0.000 to +0.019), wins/losses 5/8 | clear_direct 0.812, minus CheXzero +0.052 (+0.043 to +0.062), wins/losses 10/3
+-- age_missing (n=11240, 11 findings): CheXzero 0.861 | clear_concept 0.895, minus CheXzero +0.034 (+0.025 to +0.043), wins/losses 9/2 | clear_direct 0.893, minus CheXzero +0.032 (+0.024 to +0.041), wins/losses 10/1
+-- both_known (n=3678, 12 findings): CheXzero 0.748 | clear_concept 0.760, minus CheXzero +0.012 (+0.003 to +0.022), wins/losses 5/7 | clear_direct 0.799, minus CheXzero +0.051 (+0.042 to +0.061), wins/losses 9/3
+-- both_missing (n=7564, 5 findings): CheXzero 0.802 | clear_concept 0.905, minus CheXzero +0.103 (+0.082 to +0.127), wins/losses 4/1 | clear_direct 0.866, minus CheXzero +0.064 (+0.043 to +0.086), wins/losses 4/1
+   per finding sex_known (CheXzero / concept / direct): {'Aortic enlargement': [0.749, 0.723, 0.778], 'Atelectasis': [0.419, 0.703, 0.745], 'Calcification': [0.658, 0.672, 0.671], 'Cardiomegaly': [0.882, 0.784, 0.889], 'Consolidation': [0.935, 0.913, 0.937], 'ILD': [0.833, 0.873, 0.887], 'Infiltration': [0.905, 0.854, 0.871], 'Lung Opacity': [0.871, 0.834, 0.894], 'Nodule/Mass': [0.695, 0.767, 0.8], 'Pleural effusion': [0.938, 0.932, 0.971], 'Pleural thickening': [0.771, 0.738, 0.799], 'Pneumothorax': [0.888, 0.91, 0.975], 'Pulmonary fibrosis': [0.622, 0.766, 0.632]}
+   per finding sex_missing (CheXzero / concept / direct): {'Aortic enlargement': [0.855, 0.89, 0.866], 'Cardiomegaly': [0.948, 0.927, 0.919], 'Lung Opacity': [0.892, 0.946, 0.975], 'Nodule/Mass': [0.774, 0.912, 0.809], 'Pleural effusion': [0.833, 0.93, 0.911], 'Pleural thickening': [0.772, 0.863, 0.858], 'Pulmonary fibrosis': [0.627, 0.92, 0.799]}
+minutes: 0.8
+===== END =====
+subset exit 0

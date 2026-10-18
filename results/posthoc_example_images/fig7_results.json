@@ -1,0 +1,313 @@
+{
+ "run_info": {
+  "started_utc": "2026-10-14 04:25:07",
+  "seed": 2026,
+  "clear_git_commit": "57d2eae57ddabf8e56c8013ec675336d71b3d8e7",
+  "hf_revision": "142f169c8b006b0f28cf55c6a237c3003db5ed8f",
+  "python": "3.13.15",
+  "torch": "2.11.0+cu128",
+  "transformers": "5.16.1",
+  "gpus": [
+   "Tesla T4",
+   "Tesla T4"
+  ],
+  "selection": {
+   "Cardiomegaly": {
+    "image": "00022215_010.png",
+    "n_tp": 1007,
+    "n_pos": 1069,
+    "thr": 0.496964,
+    "score": 0.500447,
+    "labels": "Cardiomegaly|Edema",
+    "age": 53,
+    "sex": "F",
+    "view": "AP"
+   },
+   "Emphysema": {
+    "image": "00009349_001.png",
+    "n_tp": 949,
+    "n_pos": 1093,
+    "thr": 0.495967,
+    "score": 0.500476,
+    "labels": "Edema|Effusion|Emphysema|Infiltration|Mass",
+    "age": 70,
+    "sex": "M",
+    "view": "PA"
+   },
+   "Hernia": {
+    "image": "00000003_005.png",
+    "n_tp": 71,
+    "n_pos": 86,
+    "thr": 0.489787,
+    "score": 0.490458,
+    "labels": "Hernia",
+    "age": 78,
+    "sex": "F",
+    "view": "PA"
+   }
+  },
+  "prompts_pos": [
+   "cardiomegaly",
+   "emphysema",
+   "hernia"
+  ],
+  "prompts_neg": [
+   "no cardiomegaly",
+   "no emphysema",
+   "no hernia"
+  ],
+  "n_concepts": 368294,
+  "prompt_embedding_sha256": "7801c04d698753605f4da2b39f63af6f25495b8e0bc781fe62201fdcff2dac6a",
+  "score_check": {
+   "Cardiomegaly": [
+    0.5004472731350899,
+    0.500447
+   ],
+   "Emphysema": [
+    0.5004761068574075,
+    0.500476
+   ],
+   "Hernia": [
+    0.49045818673152286,
+    0.490458
+   ]
+  },
+  "vindr_ethnicity": {
+   "n_headers": 15000,
+   "ethnic_group_nonempty": 0,
+   "ethnic_group_values": {},
+   "keywords_like_race_or_ethnic": [],
+   "all_patient_keywords": [
+    "PatientAge",
+    "PatientSex",
+    "PatientSize",
+    "PatientWeight"
+   ]
+  },
+  "total_min": 2.8
+ },
+ "examples": {
+  "Cardiomegaly": {
+   "image": "00022215_010.png",
+   "labels": "Cardiomegaly|Edema",
+   "score": 0.5004472731350899,
+   "threshold": 0.496964,
+   "margin_check": [
+    0.0017890133252747278,
+    0.0017890678718686104
+   ],
+   "contribution_sum": 95.44223022460938,
+   "relevant_share_top10": 0.9,
+   "top10": [
+    {
+     "rank": 1,
+     "concept": "cardiomegaly and pulmonary vascular congestion worsened",
+     "contribution": 0.0711030513048172,
+     "relevant": true
+    },
+    {
+     "rank": 2,
+     "concept": "cardiomegaly and vascular engorgement",
+     "contribution": 0.07027765363454819,
+     "relevant": true
+    },
+    {
+     "rank": 3,
+     "concept": "cardiomegaly with pulmonary vascular congestion and interstitial edema",
+     "contribution": 0.07005912810564041,
+     "relevant": true
+    },
+    {
+     "rank": 4,
+     "concept": "cardiomegaly and pulmonary vascular congestion",
+     "contribution": 0.06982990354299545,
+     "relevant": true
+    },
+    {
+     "rank": 5,
+     "concept": "cardiomegaly with pulmonary vascular congestion",
+     "contribution": 0.0681738406419754,
+     "relevant": true
+    },
+    {
+     "rank": 6,
+     "concept": "enlargement of the heart",
+     "contribution": 0.06678388267755508,
+     "relevant": false
+    },
+    {
+     "rank": 7,
+     "concept": "cardiomegaly and venous engorgement",
+     "contribution": 0.0652746632695198,
+     "relevant": true
+    },
+    {
+     "rank": 8,
+     "concept": "pulmonary edema with cardiac enlargement",
+     "contribution": 0.06518474966287613,
+     "relevant": true
+    },
+    {
+     "rank": 9,
+     "concept": "enlargement of the cardiac silhouette with vascular congestion",
+     "contribution": 0.06517550349235535,
+     "relevant": true
+    },
+    {
+     "rank": 10,
+     "concept": "cardiomegaly with central pulmonary vascular congestion",
+     "contribution": 0.06482405215501785,
+     "relevant": true
+    }
+   ]
+  },
+  "Emphysema": {
+   "image": "00009349_001.png",
+   "labels": "Edema|Effusion|Emphysema|Infiltration|Mass",
+   "score": 0.5004761068574075,
+   "threshold": 0.495967,
+   "margin_check": [
+    0.0019042736668616895,
+    0.0019044182263314724
+   ],
+   "contribution_sum": 48.72819137573242,
+   "relevant_share_top10": 0.0,
+   "top10": [
+    {
+     "rank": 1,
+     "concept": "clear lungs without focal consolidation or diffuse abnormality",
+     "contribution": 0.060221362859010696,
+     "relevant": false
+    },
+    {
+     "rank": 2,
+     "concept": "clear lungs without focal consolidation or pleural effusion",
+     "contribution": 0.05916924774646759,
+     "relevant": false
+    },
+    {
+     "rank": 3,
+     "concept": "left lung demonstrates no focal consolidation",
+     "contribution": 0.058273132890462875,
+     "relevant": false
+    },
+    {
+     "rank": 4,
+     "concept": "visualized lungs are clear without focal consolidation, pleural effusion, pneumothorax, or pulmonary edema",
+     "contribution": 0.0572403185069561,
+     "relevant": false
+    },
+    {
+     "rank": 5,
+     "concept": "lungs are clear without effusion or consolidation",
+     "contribution": 0.05701602250337601,
+     "relevant": false
+    },
+    {
+     "rank": 6,
+     "concept": "lungs are clear without consolidation or large effusion",
+     "contribution": 0.05605956166982651,
+     "relevant": false
+    },
+    {
+     "rank": 7,
+     "concept": "lungs are clear without consolidation, pleural effusion or pneumothorax",
+     "contribution": 0.055762819945812225,
+     "relevant": false
+    },
+    {
+     "rank": 8,
+     "concept": "lungs are clear with no evidence of consolidation, effusion, or pneumothorax",
+     "contribution": 0.05571318045258522,
+     "relevant": false
+    },
+    {
+     "rank": 9,
+     "concept": "lungs are clear without consolidation or effusion",
+     "contribution": 0.05556190013885498,
+     "relevant": false
+    },
+    {
+     "rank": 10,
+     "concept": "left lung clear without consolidation or effusion",
+     "contribution": 0.05548996105790138,
+     "relevant": false
+    }
+   ]
+  },
+  "Hernia": {
+   "image": "00000003_005.png",
+   "labels": "Hernia",
+   "score": 0.49045818673152286,
+   "threshold": 0.489787,
+   "margin_check": [
+    -0.038171997679800625,
+    -0.03817193955183029
+   ],
+   "contribution_sum": -1209.95849609375,
+   "relevant_share_top10": 0.8,
+   "top10": [
+    {
+     "rank": 1,
+     "concept": "hernia",
+     "contribution": 0.04372941702604294,
+     "relevant": true
+    },
+    {
+     "rank": 2,
+     "concept": "huge midline gastrointestinal hernia",
+     "contribution": 0.04277033731341362,
+     "relevant": true
+    },
+    {
+     "rank": 3,
+     "concept": "increase in moderate cardiomegaly is not accompanied by edema",
+     "contribution": 0.04107973352074623,
+     "relevant": false
+    },
+    {
+     "rank": 4,
+     "concept": "large trans hiatal gastrointestinal hernia",
+     "contribution": 0.0404147244989872,
+     "relevant": true
+    },
+    {
+     "rank": 5,
+     "concept": "extremely large gastrointestinal, fluid containing hernia",
+     "contribution": 0.03947073593735695,
+     "relevant": true
+    },
+    {
+     "rank": 6,
+     "concept": "large combined hiatal/left diaphragmatic hernia",
+     "contribution": 0.03889797255396843,
+     "relevant": true
+    },
+    {
+     "rank": 7,
+     "concept": "severe hiatal hernia",
+     "contribution": 0.038324542343616486,
+     "relevant": true
+    },
+    {
+     "rank": 8,
+     "concept": "large hernia in the left hemithorax",
+     "contribution": 0.037926264107227325,
+     "relevant": true
+    },
+    {
+     "rank": 9,
+     "concept": "lungs are clear without focal opacity, vascular congestion, pleural effusions, or pneumothorax",
+     "contribution": 0.0373789519071579,
+     "relevant": false
+    },
+    {
+     "rank": 10,
+     "concept": "massive hernia with organoaxial gastric volvulus",
+     "contribution": 0.037329357117414474,
+     "relevant": true
+    }
+   ]
+  }
+ }
+}

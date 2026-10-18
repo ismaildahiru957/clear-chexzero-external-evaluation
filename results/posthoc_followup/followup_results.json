@@ -1,0 +1,526 @@
+{
+ "nih": {
+  "clear_concept_minus_chexzero_T1": [
+   -0.05987306495110012,
+   [
+    -0.06860452389763848,
+    -0.050623603672363904
+   ]
+  ],
+  "clear_direct_minus_chexzero_T1": [
+   0.005579806597942216,
+   [
+    -0.0017267702797615087,
+    0.013331459886548882
+   ]
+  ],
+  "concept_minus_direct_T1": [
+   -0.06545287154904234,
+   [
+    -0.07188529088850135,
+    -0.05949500016132976
+   ]
+  ],
+  "clear_concept_minus_chexzero_T2": [
+   -0.020138517452449767,
+   [
+    -0.029140315572218738,
+    -0.011216000966048207
+   ]
+  ],
+  "clear_direct_minus_chexzero_T2": [
+   -0.0006548596860838085,
+   [
+    -0.007975230077322785,
+    0.0064882401296353
+   ]
+  ],
+  "concept_minus_direct_T2": [
+   -0.019483657766365958,
+   [
+    -0.026284136602336337,
+    -0.011903053773741155
+   ]
+  ],
+  "clear_concept_minus_chexzero_T3": [
+   -0.05098104580424645,
+   [
+    -0.059429828843938895,
+    -0.04159967854266719
+   ]
+  ],
+  "clear_direct_minus_chexzero_T3": [
+   -0.03799416011061063,
+   [
+    -0.04556121103005869,
+    -0.030522127521174305
+   ]
+  ],
+  "concept_minus_direct_T3": [
+   -0.012986885693635819,
+   [
+    -0.01761894993421934,
+    -0.007998813081456115
+   ]
+  ],
+  "clear_concept_minus_chexzero_T4": [
+   -0.06442583058802254,
+   [
+    -0.07319202800274528,
+    -0.05567764574314603
+   ]
+  ],
+  "clear_direct_minus_chexzero_T4": [
+   0.03059282423499632,
+   [
+    0.02339610645796317,
+    0.037761628469086594
+   ]
+  ],
+  "concept_minus_direct_T4": [
+   -0.09501865482301886,
+   [
+    -0.10333770101620639,
+    -0.08702719211022841
+   ]
+  ],
+  "chexzero_T2_minus_T1": [
+   -0.006999761924394998,
+   [
+    -0.011554983143075204,
+    -0.00243836032122502
+   ]
+  ],
+  "chexzero_T3_minus_T1": [
+   -0.020428517432786508,
+   [
+    -0.024671560200267412,
+    -0.016161594401543425
+   ]
+  ],
+  "chexzero_T4_minus_T1": [
+   -0.008583839749140232,
+   [
+    -0.012437718563491861,
+    -0.00475877119550692
+   ]
+  ],
+  "clear_concept_T2_minus_T1": [
+   0.032734785574255354,
+   [
+    0.029757453975263477,
+    0.0356505666346082
+   ]
+  ],
+  "clear_concept_T3_minus_T1": [
+   -0.011536498285932839,
+   [
+    -0.01297414784479399,
+    -0.010180939850392066
+   ]
+  ],
+  "clear_concept_T4_minus_T1": [
+   -0.01313660538606265,
+   [
+    -0.015140305338215634,
+    -0.011248140513200172
+   ]
+  ],
+  "clear_direct_T2_minus_T1": [
+   -0.013234428208421023,
+   [
+    -0.018307640013264494,
+    -0.007493009941048812
+   ]
+  ],
+  "clear_direct_T3_minus_T1": [
+   -0.06400248414133936,
+   [
+    -0.06981695884314486,
+    -0.05847470441947999
+   ]
+  ],
+  "clear_direct_T4_minus_T1": [
+   0.01642917788791387,
+   [
+    0.011129420252411914,
+    0.02219667315874961
+   ]
+  ]
+ },
+ "vin": {
+  "concept_minus_direct": [
+   -0.00482057606908437,
+   [
+    -0.008956318340004654,
+    -0.0008912999132420408
+   ]
+  ],
+  "n": {
+   "sex_known": 7354,
+   "sex_missing": 7646,
+   "age_known": 3760,
+   "age_missing": 11240,
+   "age_18-40": 780,
+   "age_40-60": 1337,
+   "age_60+": 1530,
+   "sex_F": 3514,
+   "sex_M": 3840
+  },
+  "prevalence_pct": {
+   "sex_known": {
+    "Aortic enlargement": 28.3,
+    "Atelectasis": 0.8,
+    "Calcification": 2.2,
+    "Cardiomegaly": 22.1,
+    "Consolidation": 1.5,
+    "ILD": 1.9,
+    "Infiltration": 3.0,
+    "Lung Opacity": 6.9,
+    "Nodule/Mass": 4.9,
+    "Pleural effusion": 7.7,
+    "Pleural thickening": 10.1,
+    "Pneumothorax": 0.7,
+    "Pulmonary fibrosis": 12.2
+   },
+   "sex_missing": {
+    "Aortic enlargement": 3.5,
+    "Atelectasis": 0.0,
+    "Calcification": 0.2,
+    "Cardiomegaly": 2.5,
+    "Consolidation": 0.2,
+    "ILD": 0.1,
+    "Infiltration": 0.3,
+    "Lung Opacity": 0.5,
+    "Nodule/Mass": 0.5,
+    "Pleural effusion": 0.9,
+    "Pleural thickening": 1.8,
+    "Pneumothorax": 0.0,
+    "Pulmonary fibrosis": 1.6
+   },
+   "age_known": {
+    "Aortic enlargement": 37.5,
+    "Atelectasis": 0.9,
+    "Calcification": 2.4,
+    "Cardiomegaly": 28.5,
+    "Consolidation": 1.9,
+    "ILD": 2.3,
+    "Infiltration": 4.3,
+    "Lung Opacity": 9.0,
+    "Nodule/Mass": 6.7,
+    "Pleural effusion": 9.3,
+    "Pleural thickening": 14.2,
+    "Pneumothorax": 0.8,
+    "Pulmonary fibrosis": 16.5
+   },
+   "age_missing": {
+    "Aortic enlargement": 8.3,
+    "Atelectasis": 0.2,
+    "Calcification": 0.8,
+    "Cardiomegaly": 6.6,
+    "Consolidation": 0.4,
+    "ILD": 0.6,
+    "Infiltration": 0.8,
+    "Lung Opacity": 1.9,
+    "Nodule/Mass": 1.4,
+    "Pleural effusion": 2.5,
+    "Pleural thickening": 3.1,
+    "Pneumothorax": 0.2,
+    "Pulmonary fibrosis": 3.5
+   },
+   "age_18-40": {
+    "Aortic enlargement": 0.9,
+    "Atelectasis": 0.6,
+    "Calcification": 0.9,
+    "Cardiomegaly": 4.7,
+    "Consolidation": 1.5,
+    "ILD": 0.9,
+    "Infiltration": 4.7,
+    "Lung Opacity": 5.4,
+    "Nodule/Mass": 2.6,
+    "Pleural effusion": 5.6,
+    "Pleural thickening": 4.5,
+    "Pneumothorax": 0.6,
+    "Pulmonary fibrosis": 9.5
+   },
+   "age_40-60": {
+    "Aortic enlargement": 26.5,
+    "Atelectasis": 1.0,
+    "Calcification": 2.5,
+    "Cardiomegaly": 24.1,
+    "Consolidation": 1.4,
+    "ILD": 2.4,
+    "Infiltration": 5.2,
+    "Lung Opacity": 10.3,
+    "Nodule/Mass": 7.4,
+    "Pleural effusion": 11.1,
+    "Pleural thickening": 13.9,
+    "Pneumothorax": 1.1,
+    "Pulmonary fibrosis": 19.1
+   },
+   "age_60+": {
+    "Aortic enlargement": 68.6,
+    "Atelectasis": 1.0,
+    "Calcification": 3.3,
+    "Cardiomegaly": 46.3,
+    "Consolidation": 2.4,
+    "ILD": 2.9,
+    "Infiltration": 3.1,
+    "Lung Opacity": 9.7,
+    "Nodule/Mass": 8.5,
+    "Pleural effusion": 9.9,
+    "Pleural thickening": 20.4,
+    "Pneumothorax": 0.5,
+    "Pulmonary fibrosis": 18.9
+   },
+   "sex_F": {
+    "Aortic enlargement": 35.8,
+    "Atelectasis": 0.5,
+    "Calcification": 2.2,
+    "Cardiomegaly": 30.9,
+    "Consolidation": 0.8,
+    "ILD": 1.4,
+    "Infiltration": 2.0,
+    "Lung Opacity": 5.4,
+    "Nodule/Mass": 4.1,
+    "Pleural effusion": 5.9,
+    "Pleural thickening": 6.6,
+    "Pneumothorax": 0.5,
+    "Pulmonary fibrosis": 7.9
+   },
+   "sex_M": {
+    "Aortic enlargement": 21.4,
+    "Atelectasis": 1.1,
+    "Calcification": 2.2,
+    "Cardiomegaly": 14.0,
+    "Consolidation": 2.1,
+    "ILD": 2.4,
+    "Infiltration": 3.9,
+    "Lung Opacity": 8.3,
+    "Nodule/Mass": 5.7,
+    "Pleural effusion": 9.3,
+    "Pleural thickening": 13.4,
+    "Pneumothorax": 1.0,
+    "Pulmonary fibrosis": 16.0
+   }
+  },
+  "sex_known_minus_sex_missing_findings": [
+   "Aortic enlargement",
+   "Cardiomegaly",
+   "Lung Opacity",
+   "Nodule/Mass",
+   "Pleural effusion",
+   "Pleural thickening",
+   "Pulmonary fibrosis"
+  ],
+  "chexzero:sex_known_minus_sex_missing": [
+   -0.024541300488105988,
+   [
+    -0.04878235143065885,
+    -0.000607590786362533
+   ]
+  ],
+  "clear_concept:sex_known_minus_sex_missing": [
+   -0.12069653118791435,
+   [
+    -0.1353195323377506,
+    -0.10570540256462273
+   ]
+  ],
+  "clear_direct:sex_known_minus_sex_missing": [
+   -0.05324175834324718,
+   [
+    -0.07101754411117123,
+    -0.03541873067516504
+   ]
+  ],
+  "age_known_minus_age_missing_findings": [
+   "Aortic enlargement",
+   "Calcification",
+   "Cardiomegaly",
+   "Consolidation",
+   "ILD",
+   "Infiltration",
+   "Lung Opacity",
+   "Nodule/Mass",
+   "Pleural effusion",
+   "Pleural thickening",
+   "Pulmonary fibrosis"
+  ],
+  "chexzero:age_known_minus_age_missing": [
+   -0.08074688451298373,
+   [
+    -0.09465215830024701,
+    -0.06667973020953043
+   ]
+  ],
+  "clear_concept:age_known_minus_age_missing": [
+   -0.12229496113786908,
+   [
+    -0.13514751514616857,
+    -0.10992175063877996
+   ]
+  ],
+  "clear_direct:age_known_minus_age_missing": [
+   -0.08197197440215909,
+   [
+    -0.09453549083935342,
+    -0.06993918719096968
+   ]
+  ],
+  "per_finding_sex_F_minus_M": {
+   "chexzero": {
+    "Aortic enlargement": 0.055,
+    "Calcification": -0.017,
+    "Cardiomegaly": -0.003,
+    "ILD": 0.081,
+    "Infiltration": 0.041,
+    "Lung Opacity": 0.024,
+    "Nodule/Mass": -0.05,
+    "Pleural effusion": 0.022,
+    "Pleural thickening": 0.027,
+    "Pulmonary fibrosis": -0.008
+   },
+   "clear_concept": {
+    "Aortic enlargement": 0.019,
+    "Calcification": 0.029,
+    "Cardiomegaly": -0.009,
+    "ILD": 0.08,
+    "Infiltration": 0.034,
+    "Lung Opacity": 0.015,
+    "Nodule/Mass": -0.029,
+    "Pleural effusion": 0.03,
+    "Pleural thickening": 0.001,
+    "Pulmonary fibrosis": -0.045
+   },
+   "clear_direct": {
+    "Aortic enlargement": 0.038,
+    "Calcification": -0.039,
+    "Cardiomegaly": -0.006,
+    "ILD": 0.07,
+    "Infiltration": 0.027,
+    "Lung Opacity": 0.007,
+    "Nodule/Mass": 0.002,
+    "Pleural effusion": 0.019,
+    "Pleural thickening": -0.004,
+    "Pulmonary fibrosis": -0.0
+   }
+  },
+  "per_finding_age_18-40_minus_40-60": {
+   "chexzero": {
+    "Cardiomegaly": 0.052,
+    "Infiltration": 0.061,
+    "Lung Opacity": 0.081,
+    "Pleural effusion": 0.041,
+    "Pleural thickening": 0.096,
+    "Pulmonary fibrosis": 0.064
+   },
+   "clear_concept": {
+    "Cardiomegaly": 0.128,
+    "Infiltration": 0.096,
+    "Lung Opacity": 0.104,
+    "Pleural effusion": 0.033,
+    "Pleural thickening": 0.02,
+    "Pulmonary fibrosis": 0.035
+   },
+   "clear_direct": {
+    "Cardiomegaly": 0.059,
+    "Infiltration": 0.081,
+    "Lung Opacity": 0.016,
+    "Pleural effusion": 0.015,
+    "Pleural thickening": 0.028,
+    "Pulmonary fibrosis": 0.028
+   }
+  },
+  "age_gap_leave_one_finding_out": {
+   "chexzero": {
+    "Cardiomegaly": [
+     0.069,
+     [
+      0.029,
+      0.108
+     ]
+    ],
+    "Infiltration": [
+     0.067,
+     [
+      0.032,
+      0.104
+     ]
+    ],
+    "Lung Opacity": [
+     0.063,
+     [
+      0.028,
+      0.099
+     ]
+    ],
+    "Pleural effusion": [
+     0.071,
+     [
+      0.033,
+      0.109
+     ]
+    ],
+    "Pleural thickening": [
+     0.06,
+     [
+      0.028,
+      0.09
+     ]
+    ],
+    "Pulmonary fibrosis": [
+     0.066,
+     [
+      0.032,
+      0.098
+     ]
+    ]
+   },
+   "clear_concept": {
+    "Cardiomegaly": [
+     0.058,
+     [
+      0.013,
+      0.1
+     ]
+    ],
+    "Infiltration": [
+     0.064,
+     [
+      0.023,
+      0.106
+     ]
+    ],
+    "Lung Opacity": [
+     0.063,
+     [
+      0.022,
+      0.102
+     ]
+    ],
+    "Pleural effusion": [
+     0.077,
+     [
+      0.035,
+      0.118
+     ]
+    ],
+    "Pleural thickening": [
+     0.079,
+     [
+      0.047,
+      0.11
+     ]
+    ],
+    "Pulmonary fibrosis": [
+     0.076,
+     [
+      0.038,
+      0.117
+     ]
+    ]
+   }
+  }
+ }
+}

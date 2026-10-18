@@ -1,0 +1,131 @@
+Time
+#
+Log Message
+12.5s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+12.5s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+12.5s	3	0.00s - to python to disable frozen modules.
+12.5s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+13.3s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+13.3s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+13.3s	7	0.00s - to python to disable frozen modules.
+13.3s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+24.8s	9	  Installing build dependencies ... [?25l[?25hdone
+25.1s	10	  Getting requirements to build wheel ... [?25l[?25hdone
+25.3s	11	  Preparing metadata (pyproject.toml) ... [?25l[?25hdone
+25.8s	12	[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/44.8 kB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m44.8/44.8 kB[0m [31m1.3 MB/s[0m eta [36m0:00:00[0m
+26.1s	13	[?25h  Building wheel for clear-med (pyproject.toml) ... [?25l[?25hdone
+30.0s	14	[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.4 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [91m━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.4/3.4 MB[0m [31m13.1 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m3.4/3.4 MB[0m [31m52.7 MB/s[0m eta [36m0:00:01[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.4/3.4 MB[0m [31m36.8 MB/s[0m eta [36m0:00:00[0m
+30.1s	15	[?25h[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/2.0 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m2.0/2.0 MB[0m [31m282.9 MB/s[0m eta [36m0:00:01[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m2.0/2.0 MB[0m [31m41.3 MB/s[0m eta [36m0:00:00[0m
+48.0s	16	[?25h{
+48.0s	17	 "started_utc": "2026-10-11 11:40:05",
+48.0s	18	 "seed": 2026,
+48.0s	19	 "clear_git_commit": "57d2eae57ddabf8e56c8013ec675336d71b3d8e7",
+48.0s	20	 "python": "3.13.15",
+48.0s	21	 "torch": "2.11.0+cu128",
+48.0s	22	 "pydicom": "3.0.2",
+48.0s	23	 "gpus": [
+48.0s	24	  "Tesla T4",
+48.0s	25	  "Tesla T4"
+48.0s	26	 ]
+48.0s	27	}
+48.5s	28	competition: /kaggle/input/competitions/vinbigdata-chest-xray-abnormalities-detection | previous output: /kaggle/input/notebooks/ismaildahiru/vinbigdata-check/vin_out
+48.9s	29	images: 15000 | M (768, 4096) | prompts (13, 4096)
+57.8s	30	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+57.8s	31	
+57.8s	32	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+65.1s	33	Downloading: "https://github.com/facebookresearch/dinov2/zipball/main" to /root/.cache/torch/hub/main.zip
+66.1s	34	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+66.1s	35	  warnings.warn("xFormers is not available (SwiGLU)")
+66.1s	36	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+66.1s	37	  warnings.warn("xFormers is not available (Attention)")
+66.1s	38	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+66.1s	39	  warnings.warn("xFormers is not available (Block)")
+66.1s	40	
+66.1s	41	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+66.1s	42	  warnings.warn("xFormers is not available (SwiGLU)")
+66.1s	43	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+66.1s	44	  warnings.warn("xFormers is not available (Attention)")
+66.1s	45	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+66.1s	46	  warnings.warn("xFormers is not available (Block)")
+101.3s	47	pad: 32/256 images, 0.5 min
+129.1s	48	reproduction of saved padded scores, max abs difference: {'clear_concept': 0.0, 'clear_direct': 0.0}
+158.5s	49	squash: 32/15000 images, 0.5 min
+540.0s	50	squash: 1632/15000 images, 6.8 min
+966.9s	51	squash: 3232/15000 images, 14.0 min
+1363.7s	52	squash: 4832/15000 images, 20.6 min
+1759.5s	53	squash: 6432/15000 images, 27.2 min
+2135.2s	54	squash: 8032/15000 images, 33.4 min
+2527.4s	55	squash: 9632/15000 images, 40.0 min
+2905.4s	56	squash: 11232/15000 images, 46.3 min
+3306.8s	57	squash: 12832/15000 images, 53.0 min
+3690.4s	58	squash: 14432/15000 images, 59.4 min
+3827.7s	59	unreadable: 0
+3909.8s	60	===== VINDR SQUASH SUMMARY =====
+3909.8s	61	images 15000 | unreadable 0 | CLEAR commit 57d2eae
+3909.8s	62	CLEAR preprocessing: Compose(     Lambda()     Resize(size=(448, 448), interpolation=bicubic, max_size=None, antialias=True)     ToTensor()     Normalize(mean=(0.3979906274509804, 0.3979906274509804, 0.3979906274509804), std=(0.3272134901960784, 0.3272134901960784, 0.3272134901960784)) )
+3909.8s	63	reproduction of saved padded scores (max abs diff): {'clear_concept': 0.0, 'clear_direct': 0.0}
+3909.8s	64	-- all (n=15000, 13 findings): CheXzero 0.817
+3909.8s	65	     concept_pad     0.873 | minus CheXzero +0.057 (+0.050 to +0.064) | wins/losses 9/4
+3909.8s	66	     concept_squash  0.879 | minus CheXzero +0.063 (+0.056 to +0.070) | wins/losses 9/4
+3909.8s	67	     direct_pad      0.878 | minus CheXzero +0.062 (+0.055 to +0.068) | wins/losses 12/1
+3909.8s	68	     direct_squash   0.881 | minus CheXzero +0.064 (+0.058 to +0.071) | wins/losses 12/1
+3909.8s	69	     concept_squash minus concept_pad: +0.006 (+0.004 to +0.008)
+3909.8s	70	     direct_squash minus direct_pad: +0.003 (+0.001 to +0.004)
+3909.8s	71	-- sex_known (n=7354, 13 findings): CheXzero 0.782
+3909.8s	72	     concept_pad     0.805 | minus CheXzero +0.023 (+0.016 to +0.031) | wins/losses 6/7
+3909.8s	73	     concept_squash  0.813 | minus CheXzero +0.031 (+0.024 to +0.039) | wins/losses 7/6
+3909.8s	74	     direct_pad      0.835 | minus CheXzero +0.053 (+0.046 to +0.060) | wins/losses 12/1
+3909.8s	75	     direct_squash   0.839 | minus CheXzero +0.057 (+0.050 to +0.064) | wins/losses 12/1
+3909.8s	76	     concept_squash minus concept_pad: +0.008 (+0.006 to +0.010)
+3909.8s	77	     direct_squash minus direct_pad: +0.005 (+0.003 to +0.006)
+3909.8s	78	-- sex_missing (n=7646, 7 findings): CheXzero 0.814
+3909.8s	79	     concept_pad     0.913 | minus CheXzero +0.098 (+0.080 to +0.117) | wins/losses 6/1
+3909.8s	80	     concept_squash  0.913 | minus CheXzero +0.098 (+0.079 to +0.117) | wins/losses 6/1
+3909.8s	81	     direct_pad      0.877 | minus CheXzero +0.062 (+0.043 to +0.081) | wins/losses 6/1
+3909.8s	82	     direct_squash   0.897 | minus CheXzero +0.083 (+0.064 to +0.103) | wins/losses 6/1
+3909.8s	83	     concept_squash minus concept_pad: +0.000 (-0.006 to +0.006)
+3909.8s	84	     direct_squash minus direct_pad: +0.021 (+0.013 to +0.028)
+3909.8s	85	-- age_known (n=3760, 13 findings): CheXzero 0.760
+3909.8s	86	     concept_pad     0.768 | minus CheXzero +0.009 (-0.000 to +0.019) | wins/losses 5/8
+3909.8s	87	     concept_squash  0.775 | minus CheXzero +0.015 (+0.006 to +0.025) | wins/losses 5/8
+3909.8s	88	     direct_pad      0.812 | minus CheXzero +0.052 (+0.043 to +0.062) | wins/losses 10/3
+3909.8s	89	     direct_squash   0.817 | minus CheXzero +0.057 (+0.048 to +0.067) | wins/losses 10/3
+3909.8s	90	     concept_squash minus concept_pad: +0.006 (+0.004 to +0.009)
+3909.8s	91	     direct_squash minus direct_pad: +0.005 (+0.003 to +0.008)
+3909.8s	92	-- age_missing (n=11240, 11 findings): CheXzero 0.861
+3909.8s	93	     concept_pad     0.895 | minus CheXzero +0.034 (+0.025 to +0.043) | wins/losses 9/2
+3909.8s	94	     concept_squash  0.906 | minus CheXzero +0.044 (+0.036 to +0.053) | wins/losses 9/2
+3909.8s	95	     direct_pad      0.893 | minus CheXzero +0.032 (+0.024 to +0.041) | wins/losses 10/1
+3909.8s	96	     direct_squash   0.902 | minus CheXzero +0.041 (+0.033 to +0.050) | wins/losses 11/0
+3909.8s	97	     concept_squash minus concept_pad: +0.011 (+0.008 to +0.014)
+3909.8s	98	     direct_squash minus direct_pad: +0.009 (+0.007 to +0.012)
+3909.8s	99	-- per finding, all images (CheXzero / concept pad / concept squash / direct pad / direct squash):
+3909.8s	100	   Aortic enlargement   0.806 / 0.822 / 0.833 / 0.852 / 0.844
+3909.8s	101	   Atelectasis          0.497 / 0.810 / 0.809 / 0.818 / 0.804
+3909.8s	102	   Calcification        0.732 / 0.784 / 0.799 / 0.788 / 0.794
+3909.8s	103	   Cardiomegaly         0.910 / 0.869 / 0.874 / 0.917 / 0.908
+3909.8s	104	   Consolidation        0.957 / 0.952 / 0.954 / 0.965 / 0.965
+3909.8s	105	   ILD                  0.872 / 0.922 / 0.931 / 0.908 / 0.913
+3909.8s	106	   Infiltration         0.918 / 0.900 / 0.902 / 0.915 / 0.919
+3909.8s	107	   Lung Opacity         0.895 / 0.894 / 0.892 / 0.916 / 0.916
+3909.8s	108	   Nodule/Mass          0.739 / 0.842 / 0.851 / 0.812 / 0.837
+3909.8s	109	   Pleural effusion     0.935 / 0.947 / 0.951 / 0.971 / 0.976
+3909.8s	110	   Pleural thickening   0.814 / 0.815 / 0.827 / 0.848 / 0.851
+3909.8s	111	   Pneumothorax         0.883 / 0.948 / 0.951 / 0.985 / 0.987
+3909.8s	112	   Pulmonary fibrosis   0.659 / 0.848 / 0.855 / 0.721 / 0.735
+3909.8s	113	minutes: 64.9
+3909.8s	114	===== END =====
+3916.4s	115	/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+3916.4s	116	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+3916.9s	117	/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+3916.9s	118	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+3918.6s	119	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+3918.7s	120	[NbConvertApp] Writing 51074 bytes to __notebook__.ipynb
+3921.3s	121	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+3922.3s	122	[NbConvertApp] Writing 382874 bytes to __results__.html
