@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite them as below."
+title: "CLEAR and CheXzero: a preregistered external evaluation (code, run logs and per-image scores)"
+authors:
+  - family-names: Dahiru
+    given-names: Ismail
+    affiliation: "Department of Computer Science and Engineering, Mewar University"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/ismaildahiru957/clear-chexzero-external-evaluation"
+keywords:
+  - foundation models
+  - chest radiography
+  - zero-shot classification
+  - external validation
+  - preregistration

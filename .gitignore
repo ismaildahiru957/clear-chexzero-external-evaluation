@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+# label files rebuilt from the providers data; do not commit
+cohort_rebuilt*.csv
