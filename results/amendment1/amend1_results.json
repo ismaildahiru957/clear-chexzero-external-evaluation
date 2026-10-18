@@ -1,0 +1,1277 @@
+{
+ "run_info": {
+  "started_utc": "2026-10-03 09:56:13",
+  "seed": 2026,
+  "prompts_pos": [
+   "atelectasis",
+   "cardiomegaly",
+   "pleural effusion",
+   "infiltration",
+   "mass",
+   "nodule",
+   "pneumonia",
+   "pneumothorax",
+   "consolidation",
+   "edema",
+   "emphysema",
+   "fibrosis",
+   "pleural thickening",
+   "hernia"
+  ],
+  "prompts_neg": [
+   "no atelectasis",
+   "no cardiomegaly",
+   "no pleural effusion",
+   "no infiltration",
+   "no mass",
+   "no nodule",
+   "no pneumonia",
+   "no pneumothorax",
+   "no consolidation",
+   "no edema",
+   "no emphysema",
+   "no fibrosis",
+   "no pleural thickening",
+   "no hernia"
+  ],
+  "templates": {
+   "T1": [
+    "{f}",
+    "no {f}"
+   ],
+   "T2": [
+    "chest x-ray showing {f}",
+    "chest x-ray showing no {f}"
+   ],
+   "T3": [
+    "there is {f}",
+    "there is no {f}"
+   ],
+   "T4": [
+    "findings consistent with {f}",
+    "no evidence of {f}"
+   ]
+  },
+  "clear_git_commit": "57d2eae57ddabf8e56c8013ec675336d71b3d8e7",
+  "clear_hf_sha": "142f169c8b006b0f28cf55c6a237c3003db5ed8f",
+  "python": "3.13.15",
+  "torch": "2.11.0+cu128",
+  "transformers": "5.16.1",
+  "gpus": [
+   "Tesla T4",
+   "Tesla T4"
+  ],
+  "n_test_images": 25592,
+  "n_test_patients": 2797,
+  "n_heldout_images": 8441,
+  "n_heldout_patients": 2800,
+  "concept_clip_check_cos_mean_min": [
+   1.0,
+   0.9999998807907104
+  ],
+  "concept_clip_recomputed": false,
+  "chexzero_checkpoints": [
+   [
+    "best_128_0.0002_original_15000_0.859.pt",
+    353548709
+   ],
+   [
+    "best_128_0.0002_original_8000_0.857.pt",
+    353548709
+   ],
+   [
+    "best_128_5e-05_original_22000_0.855.pt",
+    353548709
+   ],
+   [
+    "best_64_0.0001_original_16000_0.861.pt",
+    353548709
+   ],
+   [
+    "best_64_0.0001_original_17000_0.863.pt",
+    353548709
+   ],
+   [
+    "best_64_0.0001_original_35000_0.864.pt",
+    353548709
+   ],
+   [
+    "best_64_0.0002_original_23000_0.854.pt",
+    353548709
+   ],
+   [
+    "best_64_5e-05_original_16000_0.858.pt",
+    353548709
+   ],
+   [
+    "best_64_5e-05_original_18000_0.862.pt",
+    353548709
+   ],
+   [
+    "best_64_5e-05_original_22000_0.864.pt",
+    353548709
+   ]
+  ],
+  "min_scoring": 61.3,
+  "relevant_concepts_per_finding": {
+   "Atelectasis": 29601,
+   "Cardiomegaly": 8962,
+   "Effusion": 28321,
+   "Infiltration": 2411,
+   "Mass": 3002,
+   "Nodule": 6826,
+   "Pneumonia": 8201,
+   "Pneumothorax": 9716,
+   "Consolidation": 14582,
+   "Edema": 12544,
+   "Emphysema": 2936,
+   "Fibrosis": 1132,
+   "Pleural_Thickening": 2014,
+   "Hernia": 1305
+  }
+ },
+ "A2": {
+  "chexzero|T1": {
+   "macro_all": [
+    0.6946335227277646,
+    [
+     0.6847495418472467,
+     0.7035198781376222
+    ]
+   ],
+   "gaps": {
+    "sex_F_minus_M": [
+     0.004587312810519384,
+     [
+      -0.014531275549797369,
+      0.02240569447331504
+     ]
+    ],
+    "age_0-18_minus_40-60": [
+     -0.012718224420526614,
+     [
+      -0.05408644693430635,
+      0.025959058942307416
+     ]
+    ],
+    "age_18-40_minus_40-60": [
+     0.01303643562945711,
+     [
+      -0.009931549005649711,
+      0.033631272140859286
+     ]
+    ],
+    "age_60+_minus_40-60": [
+     -0.0016465231039054506,
+     [
+      -0.02295798581770146,
+      0.017015573473808283
+     ]
+    ]
+   },
+   "per_finding": {
+    "Atelectasis": 0.709,
+    "Cardiomegaly": 0.835,
+    "Effusion": 0.789,
+    "Infiltration": 0.696,
+    "Mass": 0.624,
+    "Nodule": 0.602,
+    "Pneumonia": 0.685,
+    "Pneumothorax": 0.766,
+    "Consolidation": 0.699,
+    "Edema": 0.82,
+    "Emphysema": 0.563,
+    "Fibrosis": 0.564,
+    "Pleural_Thickening": 0.688,
+    "Hernia": 0.685
+   }
+  },
+  "chexzero|T2": {
+   "macro_all": [
+    0.6876337608033696,
+    [
+     0.6789454608618883,
+     0.6953360066695536
+    ]
+   ],
+   "gaps": {
+    "sex_F_minus_M": [
+     -0.0004905906508311242,
+     [
+      -0.017365709454839943,
+      0.01592846307127013
+     ]
+    ],
+    "age_0-18_minus_40-60": [
+     -0.017739252604762945,
+     [
+      -0.05897480402901527,
+      0.029674833509616166
+     ]
+    ],
+    "age_18-40_minus_40-60": [
+     0.01754052213387125,
+     [
+      -0.0033582166710129815,
+      0.03770718207080429
+     ]
+    ],
+    "age_60+_minus_40-60": [
+     0.0017826029138054977,
+     [
+      -0.021036360491179275,
+      0.02337250888501687
+     ]
+    ]
+   },
+   "per_finding": {
+    "Atelectasis": 0.687,
+    "Cardiomegaly": 0.863,
+    "Effusion": 0.8,
+    "Infiltration": 0.696,
+    "Mass": 0.652,
+    "Nodule": 0.455,
+    "Pneumonia": 0.688,
+    "Pneumothorax": 0.696,
+    "Consolidation": 0.689,
+    "Edema": 0.805,
+    "Emphysema": 0.533,
+    "Fibrosis": 0.576,
+    "Pleural_Thickening": 0.676,
+    "Hernia": 0.811
+   }
+  },
+  "chexzero|T3": {
+   "macro_all": [
+    0.6742050052949781,
+    [
+     0.6627334221773703,
+     0.6848471202652133
+    ]
+   ],
+   "gaps": {
+    "sex_F_minus_M": [
+     0.005275057139246586,
+     [
+      -0.01633974616894386,
+      0.025222611724116585
+     ]
+    ],
+    "age_0-18_minus_40-60": [
+     -0.011916902095586268,
+     [
+      -0.06577408976789155,
+      0.03893570714733354
+     ]
+    ],
+    "age_18-40_minus_40-60": [
+     0.020442262807251588,
+     [
+      -0.001714320905834884,
+      0.041165167390514436
+     ]
+    ],
+    "age_60+_minus_40-60": [
+     -0.003747484518451638,
+     [
+      -0.026505557219236003,
+      0.018738776369022474
+     ]
+    ]
+   },
+   "per_finding": {
+    "Atelectasis": 0.698,
+    "Cardiomegaly": 0.853,
+    "Effusion": 0.791,
+    "Infiltration": 0.694,
+    "Mass": 0.585,
+    "Nodule": 0.51,
+    "Pneumonia": 0.687,
+    "Pneumothorax": 0.746,
+    "Consolidation": 0.696,
+    "Edema": 0.814,
+    "Emphysema": 0.566,
+    "Fibrosis": 0.519,
+    "Pleural_Thickening": 0.68,
+    "Hernia": 0.601
+   }
+  },
+  "chexzero|T4": {
+   "macro_all": [
+    0.6860496829786243,
+    [
+     0.6749775931614733,
+     0.6962819088111614
+    ]
+   ],
+   "gaps": {
+    "sex_F_minus_M": [
+     0.008382511656774727,
+     [
+      -0.013000820570478518,
+      0.02727620161679679
+     ]
+    ],
+    "age_0-18_minus_40-60": [
+     -0.008820952146571082,
+     [
+      -0.055582678711867256,
+      0.03557108616939154
+     ]
+    ],
+    "age_18-40_minus_40-60": [
+     0.019301446816702317,
+     [
+      -0.0039495400747163855,
+      0.04263580817788385
+     ]
+    ],
+    "age_60+_minus_40-60": [
+     -0.0011344582979548878,
+     [
+      -0.023207507788223645,
+      0.019022357494823974
+     ]
+    ]
+   },
+   "per_finding": {
+    "Atelectasis": 0.693,
+    "Cardiomegaly": 0.851,
+    "Effusion": 0.789,
+    "Infiltration": 0.695,
+    "Mass": 0.616,
+    "Nodule": 0.623,
+    "Pneumonia": 0.687,
+    "Pneumothorax": 0.731,
+    "Consolidation": 0.701,
+    "Edema": 0.816,
+    "Emphysema": 0.567,
+    "Fibrosis": 0.523,
+    "Pleural_Thickening": 0.698,
+    "Hernia": 0.613
+   }
+  },
+  "clear_direct|T1": {
+   "macro_all": [
+    0.7002133293257068,
+    [
+     0.6896525210071026,
+     0.7086267406741896
+    ]
+   ],
+   "gaps": {
+    "sex_F_minus_M": [
+     -0.007400736594961765,
+     [
+      -0.02712023231190997,
+      0.011961207961345458
+     ]
+    ],
+    "age_0-18_minus_40-60": [
+     0.02170577070476487,
+     [
+      -0.01404491499994209,
+      0.05532765265440647
+     ]
+    ],
+    "age_18-40_minus_40-60": [
+     0.02327273762297266,
+     [
+      0.0033208125673737142,
+      0.04278718337279719
+     ]
+    ],
+    "age_60+_minus_40-60": [
+     -0.004182781778766076,
+     [
+      -0.02574586171956268,
+      0.01653009109233027
+     ]
+    ]
+   },
+   "per_finding": {
+    "Atelectasis": 0.651,
+    "Cardiomegaly": 0.821,
+    "Effusion": 0.826,
+    "Infiltration": 0.676,
+    "Mass": 0.761,
+    "Nodule": 0.493,
+    "Pneumonia": 0.732,
+    "Pneumothorax": 0.85,
+    "Consolidation": 0.732,
+    "Edema": 0.823,
+    "Emphysema": 0.579,
+    "Fibrosis": 0.523,
+    "Pleural_Thickening": 0.67,
+    "Hernia": 0.667
+   }
+  },
+  "clear_direct|T2": {
+   "macro_all": [
+    0.6869789011172858,
+    [
+     0.6775860276599773,
+     0.695399081313819
+    ]
+   ],
+   "gaps": {
+    "sex_F_minus_M": [
+     -0.0033362164037601394,
+     [
+      -0.022076059830941862,
+      0.014552989314836689
+     ]
+    ],
+    "age_0-18_minus_40-60": [
+     0.018832158774670815,
+     [
+      -0.0211757154523681,
+      0.053280303347640834
+     ]
+    ],
+    "age_18-40_minus_40-60": [
+     0.018441973025932756,
+     [
+      -0.003753317019040592,
+      0.041852325272366604
+     ]
+    ],
+    "age_60+_minus_40-60": [
+     -0.0006340165965103006,
+     [
+      -0.024542230461599857,
+      0.021332180068757776
+     ]
+    ]
+   },
+   "per_finding": {
+    "Atelectasis": 0.587,
+    "Cardiomegaly": 0.777,
+    "Effusion": 0.826,
+    "Infiltration": 0.619,
+    "Mass": 0.637,
+    "Nodule": 0.588,
+    "Pneumonia": 0.641,
+    "Pneumothorax": 0.78,
+    "Consolidation": 0.71,
+    "Edema": 0.801,
+    "Emphysema": 0.666,
+    "Fibrosis": 0.471,
+    "Pleural_Thickening": 0.676,
+    "Hernia": 0.839
+   }
+  },
+  "clear_direct|T3": {
+   "macro_all": [
+    0.6362108451843674,
+    [
+     0.6263030095387536,
+     0.6453495180667914
+    ]
+   ],
+   "gaps": {
+    "sex_F_minus_M": [
+     -0.002603783827310857,
+     [
+      -0.02187958596291925,
+      0.016250087604739165
+     ]
+    ],
+    "age_0-18_minus_40-60": [
+     0.01770156419847113,
+     [
+      -0.03002485124624001,
+      0.0612134006613173
+     ]
+    ],
+    "age_18-40_minus_40-60": [
+     0.020474247718785032,
+     [
+      -0.0003048211560743849,
+      0.04244444058698153
+     ]
+    ],
+    "age_60+_minus_40-60": [
+     -0.00796780298880484,
+     [
+      -0.031203737341719363,
+      0.015884494874130507
+     ]
+    ]
+   },
+   "per_finding": {
+    "Atelectasis": 0.521,
+    "Cardiomegaly": 0.777,
+    "Effusion": 0.827,
+    "Infiltration": 0.672,
+    "Mass": 0.561,
+    "Nodule": 0.531,
+    "Pneumonia": 0.701,
+    "Pneumothorax": 0.863,
+    "Consolidation": 0.727,
+    "Edema": 0.816,
+    "Emphysema": 0.549,
+    "Fibrosis": 0.363,
+    "Pleural_Thickening": 0.652,
+    "Hernia": 0.346
+   }
+  },
+  "clear_direct|T4": {
+   "macro_all": [
+    0.7166425072136207,
+    [
+     0.7084618729059159,
+     0.7246412567743507
+    ]
+   ],
+   "gaps": {
+    "sex_F_minus_M": [
+     -0.0031204888330922387,
+     [
+      -0.02123370435159223,
+      0.013076135833164164
+     ]
+    ],
+    "age_0-18_minus_40-60": [
+     -0.02630544005246771,
+     [
+      -0.07161207845322495,
+      0.018514123693251457
+     ]
+    ],
+    "age_18-40_minus_40-60": [
+     0.009823736551009099,
+     [
+      -0.010444015827088728,
+      0.029175539519961154
+     ]
+    ],
+    "age_60+_minus_40-60": [
+     0.004767459072465008,
+     [
+      -0.014190677843110445,
+      0.022433166134140824
+     ]
+    ]
+   },
+   "per_finding": {
+    "Atelectasis": 0.68,
+    "Cardiomegaly": 0.872,
+    "Effusion": 0.82,
+    "Infiltration": 0.617,
+    "Mass": 0.723,
+    "Nodule": 0.641,
+    "Pneumonia": 0.731,
+    "Pneumothorax": 0.792,
+    "Consolidation": 0.726,
+    "Edema": 0.814,
+    "Emphysema": 0.6,
+    "Fibrosis": 0.591,
+    "Pleural_Thickening": 0.668,
+    "Hernia": 0.758
+   }
+  },
+  "clear_concept|T1": {
+   "macro_all": [
+    0.6347604577766645,
+    [
+     0.6242431789622415,
+     0.6440479494988722
+    ]
+   ],
+   "gaps": {
+    "sex_F_minus_M": [
+     -0.008269924197653822,
+     [
+      -0.028941522096827665,
+      0.011010010142634303
+     ]
+    ],
+    "age_0-18_minus_40-60": [
+     0.006325098103672988,
+     [
+      -0.0416661859611895,
+      0.05731854886474872
+     ]
+    ],
+    "age_18-40_minus_40-60": [
+     0.022590180904399126,
+     [
+      -0.0011768204800469853,
+      0.04759101900858494
+     ]
+    ],
+    "age_60+_minus_40-60": [
+     -0.008414800048900828,
+     [
+      -0.032843618222452235,
+      0.016162292870409732
+     ]
+    ]
+   },
+   "per_finding": {
+    "Atelectasis": 0.678,
+    "Cardiomegaly": 0.614,
+    "Effusion": 0.785,
+    "Infiltration": 0.696,
+    "Mass": 0.598,
+    "Nodule": 0.588,
+    "Pneumonia": 0.683,
+    "Pneumothorax": 0.702,
+    "Consolidation": 0.716,
+    "Edema": 0.763,
+    "Emphysema": 0.495,
+    "Fibrosis": 0.57,
+    "Pleural_Thickening": 0.621,
+    "Hernia": 0.377
+   }
+  },
+  "clear_concept|T2": {
+   "macro_all": [
+    0.6674952433509198,
+    [
+     0.6572769965978497,
+     0.677059522521033
+    ]
+   ],
+   "gaps": {
+    "sex_F_minus_M": [
+     -0.010346170802287613,
+     [
+      -0.030338295410935252,
+      0.00940495106974554
+     ]
+    ],
+    "age_0-18_minus_40-60": [
+     -7.199620176356891e-05,
+     [
+      -0.05022172409571133,
+      0.051935133327383795
+     ]
+    ],
+    "age_18-40_minus_40-60": [
+     0.021258984380568502,
+     [
+      -0.0017045726504603276,
+      0.04496245691691666
+     ]
+    ],
+    "age_60+_minus_40-60": [
+     -0.006170699240431454,
+     [
+      -0.029901045903309758,
+      0.018127200519154188
+     ]
+    ]
+   },
+   "per_finding": {
+    "Atelectasis": 0.71,
+    "Cardiomegaly": 0.655,
+    "Effusion": 0.794,
+    "Infiltration": 0.692,
+    "Mass": 0.65,
+    "Nodule": 0.643,
+    "Pneumonia": 0.694,
+    "Pneumothorax": 0.739,
+    "Consolidation": 0.709,
+    "Edema": 0.751,
+    "Emphysema": 0.529,
+    "Fibrosis": 0.625,
+    "Pleural_Thickening": 0.647,
+    "Hernia": 0.507
+   }
+  },
+  "clear_concept|T3": {
+   "macro_all": [
+    0.6232239594907316,
+    [
+     0.612847070271167,
+     0.6327319382810378
+    ]
+   ],
+   "gaps": {
+    "sex_F_minus_M": [
+     -0.007856781598608364,
+     [
+      -0.028752263903673927,
+      0.010839670542548268
+     ]
+    ],
+    "age_0-18_minus_40-60": [
+     0.00428773841124741,
+     [
+      -0.043013249214119906,
+      0.057308683018939696
+     ]
+    ],
+    "age_18-40_minus_40-60": [
+     0.017938839519354932,
+     [
+      -0.007558546006655051,
+      0.04265565617157816
+     ]
+    ],
+    "age_60+_minus_40-60": [
+     -0.011315614594629042,
+     [
+      -0.03621385299338143,
+      0.013824003931542131
+     ]
+    ]
+   },
+   "per_finding": {
+    "Atelectasis": 0.687,
+    "Cardiomegaly": 0.598,
+    "Effusion": 0.773,
+    "Infiltration": 0.694,
+    "Mass": 0.577,
+    "Nodule": 0.562,
+    "Pneumonia": 0.677,
+    "Pneumothorax": 0.669,
+    "Consolidation": 0.7,
+    "Edema": 0.736,
+    "Emphysema": 0.493,
+    "Fibrosis": 0.592,
+    "Pleural_Thickening": 0.601,
+    "Hernia": 0.367
+   }
+  },
+  "clear_concept|T4": {
+   "macro_all": [
+    0.6216238523906018,
+    [
+     0.610910825054899,
+     0.6313671889176192
+    ]
+   ],
+   "gaps": {
+    "sex_F_minus_M": [
+     -0.010196017709059313,
+     [
+      -0.03092089130887325,
+      0.009845017457975336
+     ]
+    ],
+    "age_0-18_minus_40-60": [
+     -0.006443286053036901,
+     [
+      -0.056534896698945215,
+      0.046089902376775786
+     ]
+    ],
+    "age_18-40_minus_40-60": [
+     0.02008650268118406,
+     [
+      -0.003929138750502181,
+      0.04408880816414612
+     ]
+    ],
+    "age_60+_minus_40-60": [
+     -0.009131414829244622,
+     [
+      -0.03285000104035743,
+      0.014635326819913412
+     ]
+    ]
+   },
+   "per_finding": {
+    "Atelectasis": 0.669,
+    "Cardiomegaly": 0.607,
+    "Effusion": 0.76,
+    "Infiltration": 0.687,
+    "Mass": 0.559,
+    "Nodule": 0.609,
+    "Pneumonia": 0.698,
+    "Pneumothorax": 0.581,
+    "Consolidation": 0.703,
+    "Edema": 0.769,
+    "Emphysema": 0.484,
+    "Fibrosis": 0.573,
+    "Pleural_Thickening": 0.61,
+    "Hernia": 0.393
+   }
+  }
+ },
+ "A2_robust": {
+  "chexzero": {
+   "T1_verdicts": {
+    "sex_F_minus_M": "no gap",
+    "age_0-18_minus_40-60": "no gap",
+    "age_18-40_minus_40-60": "no gap",
+    "age_60+_minus_40-60": "no gap"
+   },
+   "differences": [],
+   "prompt_robust": true
+  },
+  "clear_concept": {
+   "T1_verdicts": {
+    "sex_F_minus_M": "no gap",
+    "age_0-18_minus_40-60": "no gap",
+    "age_18-40_minus_40-60": "no gap",
+    "age_60+_minus_40-60": "no gap"
+   },
+   "differences": [],
+   "prompt_robust": true
+  },
+  "clear_direct": {
+   "T1_verdicts": {
+    "sex_F_minus_M": "no gap",
+    "age_0-18_minus_40-60": "no gap",
+    "age_18-40_minus_40-60": "gap+",
+    "age_60+_minus_40-60": "no gap"
+   },
+   "differences": [
+    [
+     "T2",
+     "age_18-40_minus_40-60",
+     "no gap"
+    ],
+    [
+     "T3",
+     "age_18-40_minus_40-60",
+     "no gap"
+    ],
+    [
+     "T4",
+     "age_18-40_minus_40-60",
+     "no gap"
+    ]
+   ],
+   "prompt_robust": false
+  }
+ },
+ "A1_relevance_by_category": {
+  "Atelectasis": {
+   "TP": 0.7927916049957275,
+   "FN": 0.7177514433860779,
+   "FP": 0.716238260269165
+  },
+  "Cardiomegaly": {
+   "TP": 0.49255213141441345,
+   "FN": 0.41290321946144104,
+   "FP": 0.11387785524129868
+  },
+  "Effusion": {
+   "TP": 0.4794049561023712,
+   "FN": 0.30280372500419617,
+   "FP": 0.5188249349594116
+  },
+  "Infiltration": {
+   "TP": 0.14150495827198029,
+   "FN": 0.17333786189556122,
+   "FP": 0.12245061993598938
+  },
+  "Mass": {
+   "TP": 0.03195808827877045,
+   "FN": 0.011818181723356247,
+   "FP": 0.013457912020385265
+  },
+  "Nodule": {
+   "TP": 0.21992647647857666,
+   "FN": 0.6673004031181335,
+   "FP": 0.11530772596597672
+  },
+  "Pneumonia": {
+   "TP": 0.4403301775455475,
+   "FN": 0.36076924204826355,
+   "FP": 0.26276999711990356
+  },
+  "Pneumothorax": {
+   "TP": 0.127324178814888,
+   "FN": 0.32947370409965515,
+   "FP": 0.07288508862257004
+  },
+  "Consolidation": {
+   "TP": 0.2873325049877167,
+   "FN": 0.3358381390571594,
+   "FP": 0.32350343465805054
+  },
+  "Edema": {
+   "TP": 0.5581609606742859,
+   "FN": 0.6055555939674377,
+   "FP": 0.3010669946670532
+  },
+  "Emphysema": {
+   "TP": 0.049104318022727966,
+   "FN": 0.19652777910232544,
+   "FP": 0.05615045130252838
+  },
+  "Fibrosis": {
+   "TP": 0.4336000084877014,
+   "FN": 0.1133333295583725,
+   "FP": 0.3105523884296417
+  },
+  "Pleural_Thickening": {
+   "TP": 0.40998026728630066,
+   "FN": 0.5384615659713745,
+   "FP": 0.2287580966949463
+  },
+  "Hernia": {
+   "TP": 0.23239436745643616,
+   "FN": 0.006666666828095913,
+   "FP": 0.014315372332930565
+  }
+ },
+ "A1_explanation_fairness": {
+  "sex_F_minus_M": [
+   -0.011865566099228508,
+   [
+    -0.04570840149218495,
+    0.016349059949182454
+   ]
+  ],
+  "age_0-18_minus_40-60": [
+   -0.052365312150465027,
+   [
+    -0.11457122793113578,
+    0.012761920512857737
+   ]
+  ],
+  "age_18-40_minus_40-60": [
+   0.002401616364344661,
+   [
+    -0.03144277258764946,
+    0.03489005619848695
+   ]
+  ],
+  "age_60+_minus_40-60": [
+   -0.012064640100463098,
+   [
+    -0.0435530945751213,
+    0.021352114412293875
+   ]
+  ]
+ },
+ "A1_probe": {
+  "Atelectasis": {
+   "concept": "compressive atelectasis at the bases, more prominent on the left",
+   "heldout_auc": 0.823,
+   "test_auc": [
+    0.746,
+    [
+     0.7314862440961579,
+     0.7608578622016238
+    ]
+   ],
+   "clear_concept_auc": 0.678,
+   "clear_direct_auc": 0.651,
+   "chexzero_auc": 0.709
+  },
+  "Cardiomegaly": {
+   "concept": "heart size has minimally increased with moderate cardiomegaly",
+   "heldout_auc": 0.909,
+   "test_auc": [
+    0.886,
+    [
+     0.8674274806271971,
+     0.8996632039282138
+    ]
+   ],
+   "clear_concept_auc": 0.614,
+   "clear_direct_auc": 0.821,
+   "chexzero_auc": 0.835
+  },
+  "Effusion": {
+   "concept": "degree of pleural effusion appears quite similar",
+   "heldout_auc": 0.885,
+   "test_auc": [
+    0.818,
+    [
+     0.805992890760666,
+     0.8293228942531463
+    ]
+   ],
+   "clear_concept_auc": 0.785,
+   "clear_direct_auc": 0.826,
+   "chexzero_auc": 0.789
+  },
+  "Infiltration": {
+   "concept": "stable bilateral mid and lower lung pulmonary infiltrates and consolidations",
+   "heldout_auc": 0.646,
+   "test_auc": [
+    0.709,
+    [
+     0.6980365720418851,
+     0.7183585327929046
+    ]
+   ],
+   "clear_concept_auc": 0.696,
+   "clear_direct_auc": 0.676,
+   "chexzero_auc": 0.696
+  },
+  "Mass": {
+   "concept": "marked atelectasis around left hilar mass",
+   "heldout_auc": 0.822,
+   "test_auc": [
+    0.743,
+    [
+     0.7222459678512613,
+     0.7640268746240904
+    ]
+   ],
+   "clear_concept_auc": 0.598,
+   "clear_direct_auc": 0.761,
+   "chexzero_auc": 0.624
+  },
+  "Nodule": {
+   "concept": "disseminated nodules in the lung",
+   "heldout_auc": 0.734,
+   "test_auc": [
+    0.694,
+    [
+     0.673592210980294,
+     0.7143132781093539
+    ]
+   ],
+   "clear_concept_auc": 0.588,
+   "clear_direct_auc": 0.493,
+   "chexzero_auc": 0.602
+  },
+  "Pneumonia": {
+   "concept": "worsening pneumonia or drug reaction",
+   "heldout_auc": 0.784,
+   "test_auc": [
+    0.734,
+    [
+     0.7104498932663555,
+     0.7562008427468553
+    ]
+   ],
+   "clear_concept_auc": 0.683,
+   "clear_direct_auc": 0.732,
+   "chexzero_auc": 0.685
+  },
+  "Pneumothorax": {
+   "concept": "degree of subcutaneous emphysema limits evaluation for pneumothorax of the right lung",
+   "heldout_auc": 0.857,
+   "test_auc": [
+    0.87,
+    [
+     0.8560368275512316,
+     0.8813720255404224
+    ]
+   ],
+   "clear_concept_auc": 0.702,
+   "clear_direct_auc": 0.85,
+   "chexzero_auc": 0.766
+  },
+  "Consolidation": {
+   "concept": "progressive development of consolidation",
+   "heldout_auc": 0.807,
+   "test_auc": [
+    0.74,
+    [
+     0.7247734930021237,
+     0.7535429115083472
+    ]
+   ],
+   "clear_concept_auc": 0.716,
+   "clear_direct_auc": 0.732,
+   "chexzero_auc": 0.699
+  },
+  "Edema": {
+   "concept": "bilateral pulmonary edema with a more asymmetrical distribution",
+   "heldout_auc": 0.902,
+   "test_auc": [
+    0.848,
+    [
+     0.8295409184567162,
+     0.8635300621483001
+    ]
+   ],
+   "clear_concept_auc": 0.763,
+   "clear_direct_auc": 0.823,
+   "chexzero_auc": 0.82
+  },
+  "Emphysema": {
+   "concept": "increase in the amount of extensive subcutaneous emphysema in the bilateral chest walls, soft tissues of the neck, and in the pectoral muscles",
+   "heldout_auc": 0.898,
+   "test_auc": [
+    0.897,
+    [
+     0.8829313390291696,
+     0.9103802051523036
+    ]
+   ],
+   "clear_concept_auc": 0.495,
+   "clear_direct_auc": 0.579,
+   "chexzero_auc": 0.563
+  },
+  "Fibrosis": {
+   "concept": "areas of fibrotic scarring at the right lung apex are constant",
+   "heldout_auc": 0.798,
+   "test_auc": [
+    0.78,
+    [
+     0.7561017238223766,
+     0.8071844844859826
+    ]
+   ],
+   "clear_concept_auc": 0.57,
+   "clear_direct_auc": 0.523,
+   "chexzero_auc": 0.564
+  },
+  "Pleural_Thickening": {
+   "concept": "extensive pleural thickening is calcified and stable",
+   "heldout_auc": 0.788,
+   "test_auc": [
+    0.732,
+    [
+     0.7117923614772084,
+     0.7540596360876451
+    ]
+   ],
+   "clear_concept_auc": 0.621,
+   "clear_direct_auc": 0.67,
+   "chexzero_auc": 0.688
+  },
+  "Hernia": {
+   "concept": "mild atelectasis of the left lung adjacent to the hernia sac",
+   "heldout_auc": 0.972,
+   "test_auc": [
+    0.854,
+    [
+     0.7756708798844381,
+     0.9189436353031283
+    ]
+   ],
+   "clear_concept_auc": 0.377,
+   "clear_direct_auc": 0.667,
+   "chexzero_auc": 0.685
+  }
+ },
+ "A1_spread": {
+  "clear_image": {
+   "mean_pairwise_cos": 0.301,
+   "participation_ratio": 11.18
+  },
+  "clear_concept_space": {
+   "mean_pairwise_cos": 0.9825,
+   "participation_ratio": 2.95
+  },
+  "chexzero_ckpt1": {
+   "mean_pairwise_cos": 0.6965,
+   "participation_ratio": 10.29
+  }
+ },
+ "A1_qualitative": {
+  "Cardiomegaly_TP": [
+   "enlargement of the heart",
+   "some enlargement of the heart",
+   "cardiomegaly and vascular engorgement",
+   "cardiomegaly and pulmonary vascular congestion worsened",
+   "cardiomegaly has progressed",
+   "continued enlargement of the heart",
+   "cardiomegaly with pulmonary vascular congestion and interstitial edema",
+   "cardiomegaly and pulmonary vascular congestion",
+   "enlarged and obscured cardiac silhouette",
+   "enlarging cardiac silhouette",
+   "cardiomegaly has developed",
+   "cardiomegaly",
+   "chronic enlargement of the heart",
+   "severely enlarged heart",
+   "cardiomegaly and venous engorgement"
+  ],
+  "Cardiomegaly_FN": [
+   "enlargement of the heart",
+   "chronic enlargement of the heart",
+   "enlargement of the coronary artery stents",
+   "enlargement of the cardiac silhouette and prominence of the mediastinum",
+   "enlargement of the thyroid",
+   "enlargement of the heart size and aorta",
+   "some enlargement of the heart",
+   "enlargement of the thoracic aorta",
+   "enlargement of the pulmonary arteries is noted",
+   "enlargement of the cardiac silhouette with substantial prominence of the ascending aorta",
+   "enlargement of the pulmonary arteries is again noted",
+   "cardiac silhouette is hugely enlarged",
+   "enlargement of cardiac silhouette",
+   "enlarged heart and mediastinum",
+   "enlargement of the cardiac silhouette with left ventricular configuration"
+  ],
+  "Emphysema_TP": [
+   "visualized lungs are clear without focal consolidation, pleural effusion, pneumothorax, or pulmonary edema",
+   "lungs are clear without effusion or consolidation",
+   "lungs are clear without focal consolidation, pleural effusions, or signs of pulmonary edema",
+   "the lungs are clear without consolidation, effusion, or pneumothorax",
+   "lungs are clear with no evidence of consolidation, effusion, or pneumothorax",
+   "lungs are clear without focal consolidation, effusion, or pneumothorax",
+   "lungs are clear without focal consolidation, effusions, or pulmonary edema",
+   "clear lungs without focal consolidation, effusion, or pneumothorax",
+   "the lungs are clear without focal consolidation, effusion, or pneumothorax",
+   "the lungs are clear and without a focal consolidation, effusion, or pneumothorax",
+   "lungs are clear with no evidence of a consolidation, effusion, or pneumothorax",
+   "the lungs are clear without consolidation, effusion, or pulmonary edema",
+   "lungs are clear with no focal consolidation, effusion, or pneumothorax",
+   "lungs are clear of focal consolidation, large effusion, or pulmonary edema",
+   "the lungs are clear without focal consolidation, effusion or pneumothorax"
+  ],
+  "Emphysema_FN": [
+   "lungs are clear of focal consolidation, large effusion, or pulmonary edema",
+   "no large consolidation or overt signs of edema",
+   "lungs are clear of confluent consolidation, large effusion, or edema",
+   "no convincing signs of pneumonia or overt edema",
+   "lungs are clear of focal consolidation, large effusion, or overt pulmonary edema",
+   "lungs are clear of confluent consolidation, large effusion or overt pulmonary edema",
+   "lungs are clear without focal consolidation, pleural effusions, or signs of pulmonary edema",
+   "combination of emphysematous changes and scarring in bilateral lungs",
+   "no convincing signs of edema or hilar congestion",
+   "lungs are clear of confluent consolidation, effusion, or pulmonary vascular congestion",
+   "increase in moderate cardiomegaly is not accompanied by edema",
+   "apical paraseptal and centrilobular emphysema",
+   "lungs are clear of focal consolidation, pulmonary edema and pleural effusions",
+   "no definite signs of edema or congestion",
+   "copd/emphysema"
+  ],
+  "Hernia_TP": [
+   "clear lungs with no evidence of consolidation, effusion, or pneumothorax",
+   "lungs are clear with no evidence of consolidation, effusion, or pneumothorax",
+   "lungs are clear with no focal consolidation, effusion, or pneumothorax",
+   "the lungs are clear without consolidation, effusion, or pneumothorax",
+   "lungs are clear with no evidence of a consolidation, effusion, or pneumothorax",
+   "lungs are clear without focal consolidation, effusion, or pneumothorax",
+   "the lungs are clear and without a focal consolidation, effusion, or pneumothorax",
+   "the lungs are clear without focal consolidation, effusion, or pneumothorax",
+   "lungs are clear without effusion, consolidation or pneumothorax",
+   "the lungs are clear without focal consolidation, effusion or pneumothorax",
+   "lungs are clear without focal opacity, vascular congestion, pleural effusions, or pneumothorax",
+   "lungs are clear without focal consolidation, effusion or pneumothorax",
+   "lungs are clear without focal consolidation, effusion, pneumothorax",
+   "lungs clear with no focal consolidation, pleural effusion, or pneumothorax",
+   "lungs are otherwise clear without focal consolidation or supine evidence for pneumothorax"
+  ],
+  "Hernia_FN": [
+   "right lung is free of consolidations, pleural effusion or pneumothorax",
+   "no relevant change in extent of the right basal and left basal parenchymal opacities",
+   "no change in extent and severity of the signs indicative of moderate pulmonary edema",
+   "increase in moderate cardiomegaly is not accompanied by edema",
+   "right lung free of consolidations or large pleural effusions",
+   "lungs are clear of confluent consolidation, large effusion or overt pulmonary edema",
+   "no significant interval change in the extent of the moderate pulmonary edema",
+   "severe pulmonary edema is no worse",
+   "severity and extent of pre-existing known parenchymal opacities unchanged",
+   "right lung free of focal consolidations, large pleural effusions or pneumothorax",
+   "no relevant change in severity in extent of the pre-existing bilateral parenchymal opacities",
+   "no relevant change in extent of the moderate right and small left pleural effusion",
+   "no relevant change in alveolar opacities",
+   "no change in extent and severity of the right upper lobe and left basal as well as a right basal parenchymal opacities",
+   "no change in moderate-to-severe pulmonary edema"
+  ]
+ },
+ "thresholds": {
+  "Atelectasis": 0.5042238235473633,
+  "Cardiomegaly": 0.49696388840675354,
+  "Effusion": 0.49080249667167664,
+  "Infiltration": 0.4959653913974762,
+  "Mass": 0.49076515436172485,
+  "Nodule": 0.5006392002105713,
+  "Pneumonia": 0.4983600080013275,
+  "Pneumothorax": 0.4939779043197632,
+  "Consolidation": 0.49480825662612915,
+  "Edema": 0.49567291140556335,
+  "Emphysema": 0.49596700072288513,
+  "Fibrosis": 0.5020043253898621,
+  "Pleural_Thickening": 0.5067018270492554,
+  "Hernia": 0.48978671431541443
+ }
+}

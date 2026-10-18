@@ -1,0 +1,139 @@
+== Cohort ==
+    group  images  patients  AP_share
+      all   25592      2797     0.566
+    sex_F   10713      1240     0.545
+    sex_M   14879      1557     0.582
+ age_0-18    1153       147     0.700
+age_18-40    7719       967     0.574
+age_40-60   11151      1179     0.554
+  age_60+    5569       624     0.555
+
+== Overall AUROC on the full test split (95% CI) ==
+           finding               chexzero          clear_concept           clear_direct    clear_concept_instr
+       Atelectasis 0.709 (0.694 to 0.723) 0.678 (0.663 to 0.693) 0.651 (0.634 to 0.666) 0.702 (0.687 to 0.716)
+      Cardiomegaly 0.835 (0.811 to 0.855) 0.614 (0.578 to 0.649) 0.821 (0.795 to 0.844) 0.609 (0.574 to 0.643)
+          Effusion 0.789 (0.775 to 0.802) 0.785 (0.773 to 0.797) 0.826 (0.815 to 0.837) 0.783 (0.771 to 0.795)
+      Infiltration 0.696 (0.685 to 0.707) 0.696 (0.686 to 0.706) 0.676 (0.665 to 0.686) 0.707 (0.696 to 0.717)
+              Mass 0.624 (0.595 to 0.653) 0.598 (0.569 to 0.627) 0.761 (0.739 to 0.783) 0.580 (0.550 to 0.609)
+            Nodule 0.602 (0.576 to 0.626) 0.588 (0.563 to 0.614) 0.493 (0.469 to 0.519) 0.603 (0.579 to 0.627)
+         Pneumonia 0.685 (0.660 to 0.711) 0.683 (0.660 to 0.704) 0.732 (0.709 to 0.753) 0.705 (0.683 to 0.726)
+      Pneumothorax 0.766 (0.744 to 0.787) 0.702 (0.681 to 0.725) 0.850 (0.837 to 0.863) 0.671 (0.647 to 0.696)
+     Consolidation 0.699 (0.683 to 0.715) 0.716 (0.701 to 0.731) 0.732 (0.718 to 0.746) 0.717 (0.702 to 0.732)
+             Edema 0.820 (0.802 to 0.838) 0.763 (0.745 to 0.781) 0.823 (0.805 to 0.840) 0.780 (0.763 to 0.798)
+         Emphysema 0.563 (0.531 to 0.599) 0.495 (0.462 to 0.534) 0.579 (0.546 to 0.616) 0.484 (0.449 to 0.522)
+          Fibrosis 0.564 (0.519 to 0.609) 0.570 (0.521 to 0.615) 0.523 (0.470 to 0.574) 0.601 (0.556 to 0.642)
+Pleural_Thickening 0.688 (0.664 to 0.711) 0.621 (0.595 to 0.647) 0.670 (0.644 to 0.692) 0.590 (0.563 to 0.615)
+            Hernia 0.685 (0.591 to 0.777) 0.377 (0.296 to 0.455) 0.667 (0.572 to 0.749) 0.433 (0.350 to 0.515)
+        MACRO (14) 0.695 (0.685 to 0.704) 0.635 (0.624 to 0.644) 0.700 (0.690 to 0.709) 0.640 (0.630 to 0.650)
+
+== PRIMARY: subgroup macro-AUROC and gaps (patient bootstrap, 1,000 resamples) ==
+Sex comparison findings (14): ['Atelectasis', 'Cardiomegaly', 'Effusion', 'Infiltration', 'Mass', 'Nodule', 'Pneumonia', 'Pneumothorax', 'Consolidation', 'Edema', 'Emphysema', 'Fibrosis', 'Pleural_Thickening', 'Hernia']
+Age comparison findings (11): ['Atelectasis', 'Cardiomegaly', 'Effusion', 'Infiltration', 'Mass', 'Nodule', 'Pneumonia', 'Pneumothorax', 'Consolidation', 'Edema', 'Pleural_Thickening']
+
+-- chexzero | primary (all test images) --
+  sex_F      macro-AUROC 0.697 (0.681 to 0.710)
+  sex_M      macro-AUROC 0.692 (0.680 to 0.703)
+  age_0-18   macro-AUROC 0.703 (0.670 to 0.733)
+  age_18-40  macro-AUROC 0.728 (0.713 to 0.741)
+  age_40-60  macro-AUROC 0.715 (0.704 to 0.725)
+  age_60+    macro-AUROC 0.714 (0.699 to 0.727)
+  GAP sex_F_minus_M          +0.005  95.00% CI -0.015 to +0.022
+  GAP age_0-18_minus_40-60   -0.013  98.33% CI -0.054 to +0.026  (95% -0.047 to +0.021)
+  GAP age_18-40_minus_40-60  +0.013  98.33% CI -0.010 to +0.034  (95% -0.006 to +0.030)
+  GAP age_60+_minus_40-60    -0.002  98.33% CI -0.023 to +0.017  (95% -0.019 to +0.014)
+
+-- clear_concept | primary (all test images) --
+  sex_F      macro-AUROC 0.630 (0.616 to 0.644)
+  sex_M      macro-AUROC 0.638 (0.623 to 0.651)
+  age_0-18   macro-AUROC 0.678 (0.641 to 0.716)
+  age_18-40  macro-AUROC 0.694 (0.679 to 0.711)
+  age_40-60  macro-AUROC 0.672 (0.660 to 0.683)
+  age_60+    macro-AUROC 0.663 (0.646 to 0.679)
+  GAP sex_F_minus_M          -0.008  95.00% CI -0.029 to +0.011
+  GAP age_0-18_minus_40-60   +0.006  98.33% CI -0.042 to +0.057  (95% -0.033 to +0.045)
+  GAP age_18-40_minus_40-60  +0.023  98.33% CI -0.001 to +0.048  (95% +0.002 to +0.043)
+  GAP age_60+_minus_40-60    -0.008  98.33% CI -0.033 to +0.016  (95% -0.029 to +0.011)
+
+-- clear_direct | primary (all test images) --
+  sex_F      macro-AUROC 0.696 (0.680 to 0.711)
+  sex_M      macro-AUROC 0.703 (0.690 to 0.714)
+  age_0-18   macro-AUROC 0.745 (0.714 to 0.773)
+  age_18-40  macro-AUROC 0.747 (0.735 to 0.759)
+  age_40-60  macro-AUROC 0.723 (0.713 to 0.734)
+  age_60+    macro-AUROC 0.719 (0.705 to 0.733)
+  GAP sex_F_minus_M          -0.007  95.00% CI -0.027 to +0.012
+  GAP age_0-18_minus_40-60   +0.022  98.33% CI -0.014 to +0.055  (95% -0.009 to +0.051)
+  GAP age_18-40_minus_40-60  +0.023  98.33% CI +0.003 to +0.043  (95% +0.007 to +0.039)  <- interval excludes 0
+  GAP age_60+_minus_40-60    -0.004  98.33% CI -0.026 to +0.017  (95% -0.023 to +0.013)
+
+-- clear_concept_instr | primary (all test images) --
+  sex_F      macro-AUROC 0.632 (0.617 to 0.646)
+  sex_M      macro-AUROC 0.647 (0.632 to 0.660)
+  age_0-18   macro-AUROC 0.664 (0.625 to 0.706)
+  age_18-40  macro-AUROC 0.691 (0.676 to 0.708)
+  age_40-60  macro-AUROC 0.673 (0.661 to 0.686)
+  age_60+    macro-AUROC 0.665 (0.648 to 0.680)
+  GAP sex_F_minus_M          -0.015  95.00% CI -0.036 to +0.005
+  GAP age_0-18_minus_40-60   -0.010  98.33% CI -0.059 to +0.045  (95% -0.050 to +0.035)
+  GAP age_18-40_minus_40-60  +0.018  98.33% CI -0.007 to +0.043  (95% -0.003 to +0.038)
+  GAP age_60+_minus_40-60    -0.009  98.33% CI -0.033 to +0.015  (95% -0.030 to +0.012)
+
+== H3: CLEAR (concept, primary) gap minus CheXzero gap ==
+  sex_F_minus_M          -0.013  95.00% CI -0.029 to +0.006
+  age_0-18_minus_40-60   +0.019  98.33% CI -0.023 to +0.064
+  age_18-40_minus_40-60  +0.010  98.33% CI -0.007 to +0.026
+  age_60+_minus_40-60    -0.007  98.33% CI -0.025 to +0.012
+
+== S1: PA images only ==
+Sex findings (14); age findings (2: ['Effusion', 'Infiltration'], descriptive only)
+
+-- chexzero | S1 PA only --
+  sex_F      macro-AUROC 0.715 (0.698 to 0.732)
+  sex_M      macro-AUROC 0.720 (0.705 to 0.733)
+  age_0-18   macro-AUROC 0.748 (0.681 to 0.807)
+  age_18-40  macro-AUROC 0.752 (0.729 to 0.775)
+  age_40-60  macro-AUROC 0.730 (0.710 to 0.751)
+  age_60+    macro-AUROC 0.712 (0.687 to 0.735)
+  GAP sex_F_minus_M          -0.005  95.00% CI -0.026 to +0.017
+  GAP age_0-18_minus_40-60   +0.018  98.33% CI -0.069 to +0.093  (95% -0.049 to +0.080)
+  GAP age_18-40_minus_40-60  +0.022  98.33% CI -0.016 to +0.056  (95% -0.009 to +0.052)
+  GAP age_60+_minus_40-60    -0.018  98.33% CI -0.059 to +0.021  (95% -0.052 to +0.014)
+
+-- clear_concept | S1 PA only --
+  sex_F      macro-AUROC 0.669 (0.651 to 0.686)
+  sex_M      macro-AUROC 0.685 (0.670 to 0.700)
+  age_0-18   macro-AUROC 0.775 (0.703 to 0.829)
+  age_18-40  macro-AUROC 0.762 (0.742 to 0.782)
+  age_40-60  macro-AUROC 0.732 (0.714 to 0.752)
+  age_60+    macro-AUROC 0.713 (0.684 to 0.739)
+  GAP sex_F_minus_M          -0.016  95.00% CI -0.039 to +0.008
+  GAP age_0-18_minus_40-60   +0.043  98.33% CI -0.046 to +0.107  (95% -0.032 to +0.099)
+  GAP age_18-40_minus_40-60  +0.030  98.33% CI -0.003 to +0.061  (95% +0.003 to +0.057)
+  GAP age_60+_minus_40-60    -0.019  98.33% CI -0.061 to +0.019  (95% -0.052 to +0.013)
+
+== Exploratory: five original age bands (descriptive) ==
+Eligible findings across all five bands: []
+
+== Secondary: false-negative rate at the Youden threshold set on held-out training patients ==
+-- chexzero: mean FNR over eligible findings
+  sex_F      0.190 (0.170 to 0.216)
+  sex_M      0.200 (0.183 to 0.223)
+  age_0-18   0.205 (0.162 to 0.260)
+  age_18-40  0.208 (0.187 to 0.230)
+  age_40-60  0.197 (0.180 to 0.217)
+  age_60+    0.197 (0.176 to 0.226)
+  FNR gap F minus M -0.010 (95% CI -0.038 to +0.020)
+  FNR gap 0-18 minus 40-60 +0.008 (98.33% CI -0.049 to +0.073)
+  FNR gap 18-40 minus 40-60 +0.011 (98.33% CI -0.023 to +0.043)
+  FNR gap 60+ minus 40-60 -0.000 (98.33% CI -0.036 to +0.040)
+-- clear_concept: mean FNR over eligible findings
+  sex_F      0.122 (0.103 to 0.143)
+  sex_M      0.130 (0.114 to 0.151)
+  age_0-18   0.097 (0.058 to 0.151)
+  age_18-40  0.118 (0.099 to 0.140)
+  age_40-60  0.125 (0.109 to 0.143)
+  age_60+    0.122 (0.101 to 0.148)
+  FNR gap F minus M -0.008 (95% CI -0.038 to +0.020)
+  FNR gap 0-18 minus 40-60 -0.027 (98.33% CI -0.078 to +0.041)
+  FNR gap 18-40 minus 40-60 -0.006 (98.33% CI -0.037 to +0.027)
+  FNR gap 60+ minus 40-60 -0.002 (98.33% CI -0.036 to +0.033)

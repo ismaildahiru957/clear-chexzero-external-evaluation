@@ -1,0 +1,321 @@
+Time
+#
+Log Message
+11.6s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+11.6s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+11.6s	3	0.00s - to python to disable frozen modules.
+11.6s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+12.4s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+12.4s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+12.4s	7	0.00s - to python to disable frozen modules.
+12.4s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+20.1s	9	  Preparing metadata (setup.py) ... [?25l[?25hdone
+20.6s	10	[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/44.8 kB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m44.8/44.8 kB[0m [31m1.1 MB/s[0m eta [36m0:00:00[0m
+22.3s	11	[?25h  Building wheel for clip (setup.py) ... [?25l[?25hdone
+32.3s	12	  Installing build dependencies ... [?25l[?25hdone
+32.6s	13	  Getting requirements to build wheel ... [?25l[?25hdone
+32.8s	14	  Preparing metadata (pyproject.toml) ... [?25l[?25hdone
+33.5s	15	  Building wheel for clear-med (pyproject.toml) ... [?25l[?25hdone
+73.2s	16	{
+73.2s	17	 "started_utc": "2026-10-03 09:56:13",
+73.2s	18	 "seed": 2026,
+73.2s	19	 "prompts_pos": [
+73.2s	20	  "atelectasis",
+73.2s	21	  "cardiomegaly",
+73.2s	22	  "pleural effusion",
+73.2s	23	  "infiltration",
+73.2s	24	  "mass",
+73.2s	25	  "nodule",
+73.2s	26	  "pneumonia",
+73.2s	27	  "pneumothorax",
+73.2s	28	  "consolidation",
+73.2s	29	  "edema",
+73.2s	30	  "emphysema",
+73.2s	31	  "fibrosis",
+73.2s	32	  "pleural thickening",
+73.2s	33	  "hernia"
+73.2s	34	 ],
+73.2s	35	 "prompts_neg": [
+73.2s	36	  "no atelectasis",
+73.2s	37	  "no cardiomegaly",
+73.2s	38	  "no pleural effusion",
+73.2s	39	  "no infiltration",
+73.2s	40	  "no mass",
+73.2s	41	  "no nodule",
+73.2s	42	  "no pneumonia",
+73.2s	43	  "no pneumothorax",
+73.2s	44	  "no consolidation",
+73.2s	45	  "no edema",
+73.2s	46	  "no emphysema",
+73.2s	47	  "no fibrosis",
+73.2s	48	  "no pleural thickening",
+73.2s	49	  "no hernia"
+73.2s	50	 ],
+73.2s	51	 "templates": {
+73.2s	52	  "T1": [
+73.2s	53	   "{f}",
+73.2s	54	   "no {f}"
+73.2s	55	  ],
+73.2s	56	  "T2": [
+73.2s	57	   "chest x-ray showing {f}",
+73.2s	58	   "chest x-ray showing no {f}"
+73.2s	59	  ],
+73.2s	60	  "T3": [
+73.2s	61	   "there is {f}",
+73.2s	62	   "there is no {f}"
+73.2s	63	  ],
+73.2s	64	  "T4": [
+73.2s	65	   "findings consistent with {f}",
+73.2s	66	   "no evidence of {f}"
+73.2s	67	  ]
+73.2s	68	 },
+73.2s	69	 "clear_git_commit": "57d2eae57ddabf8e56c8013ec675336d71b3d8e7",
+73.2s	70	 "clear_hf_sha": "142f169c8b006b0f28cf55c6a237c3003db5ed8f",
+73.2s	71	 "python": "3.13.15",
+73.2s	72	 "torch": "2.11.0+cu128",
+73.2s	73	 "transformers": "5.16.1",
+73.2s	74	 "gpus": [
+73.2s	75	  "Tesla T4",
+73.2s	76	  "Tesla T4"
+73.2s	77	 ]
+73.2s	78	}
+75.4s	79	images: 112120
+76.7s	80	{'n_test_images': 25592, 'n_test_patients': 2797, 'n_heldout_images': 8441, 'n_heldout_patients': 2800}
+77.0s	81	sex: 14 | age: 11 ['Atelectasis', 'Cardiomegaly', 'Effusion', 'Infiltration', 'Mass', 'Nodule', 'Pneumonia', 'Pneumothorax', 'Consolidation', 'Edema', 'Pleural_Thickening']
+86.5s	82	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+86.5s	83	
+86.5s	84	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+134.6s	85	/usr/local/lib/python3.13/dist-packages/clear/concepts.py:298: RuntimeWarning: Unpickling /tmp/hf/hub/models--peterhan91--CLEAR/snapshots/142f169c8b006b0f28cf55c6a237c3003db5ed8f/concepts_embeddings_sfr_mistral.pickle; only trusted pickle files should be loaded.
+134.6s	86	  _load_array(
+134.6s	87	
+134.6s	88	/usr/local/lib/python3.13/dist-packages/clear/concepts.py:298: RuntimeWarning: Unpickling /tmp/hf/hub/models--peterhan91--CLEAR/snapshots/142f169c8b006b0f28cf55c6a237c3003db5ed8f/concepts_embeddings_sfr_mistral.pickle; only trusted pickle files should be loaded.
+134.6s	89	  _load_array(
+301.5s	90	SFR embeddings done
+301.5s	91	
+301.5s	92	ights:  82%|████████▏ | 237/290 [00:39<00:08,  6.08it/s]
+301.5s	93	Loading weights:  82%|████████▏ | 238/290 [00:39<00:11,  4.61it/s]
+301.5s	94	Loading weights:  82%|████████▏ | 239/290 [00:40<00:13,  3.76it/s]
+301.5s	95	Loading weights:  83%|████████▎ | 242/290 [00:40<00:08,  5.91it/s]
+301.5s	96	Loading weights:  84%|████████▍ | 243/290 [00:40<00:07,  6.13it/s]
+301.5s	97	Loading weights:  85%|████████▍ | 246/290 [00:41<00:07,  6.06it/s]
+301.5s	98	Loading weights:  85%|████████▌ | 247/290 [00:41<00:09,  4.60it/s]
+301.5s	99	Loading weights:  86%|████████▌ | 248/290 [00:42<00:11,  3.76it/s]
+301.5s	100	Loading weights:  87%|████████▋ | 251/290 [00:42<00:07,  5.26it/s]
+301.5s	101	Loading weights:  88%|████████▊ | 255/290 [00:42<00:05,  6.26it/s]
+301.5s	102	Loading weights:  88%|████████▊ | 256/290 [00:43<00:06,  4.91it/s]
+301.5s	103	Loading weights:  89%|████████▊ | 257/290 [00:43<00:08,  4.01it/s]
+301.5s	104	Loading weights:  90%|████████▉ | 260/290 [00:43<00:05,  5.98it/s]
+301.5s	105	Loading weights:  90%|█████████ | 261/290 [00:44<00:04,  6.17it/s]
+301.5s	106	Loading weights:  91%|█████████ | 264/290 [00:44<00:04,  6.11it/s]
+301.5s	107	Loading weights:  91%|█████████▏| 265/290 [00:45<00:05,  4.64it/s]
+301.5s	108	Loading weights:  92%|█████████▏| 266/290 [00:45<00:06,  3.80it/s]
+301.5s	109	Loading weights:  93%|█████████▎| 269/290 [00:45<00:03,  5.92it/s]
+301.5s	110	Loading weights:  93%|█████████▎| 270/290 [00:45<00:03,  6.06it/s]
+301.5s	111	Loading weights:  94%|█████████▍| 273/290 [00:46<00:02,  6.03it/s]
+301.5s	112	Loading weights:  94%|█████████▍| 274/290 [00:46<00:03,  4.60it/s]
+301.5s	113	Loading weights:  95%|█████████▍| 275/290 [00:47<00:03,  3.75it/s]
+301.5s	114	Loading weights:  96%|█████████▌| 278/290 [00:47<00:02,  5.89it/s]
+301.5s	115	Loading weights:  96%|█████████▌| 279/290 [00:47<00:01,  6.11it/s]
+301.5s	116	Loading weights:  97%|█████████▋| 282/290 [00:48<00:01,  6.05it/s]
+301.5s	117	Loading weights:  98%|█████████▊| 283/290 [00:48<00:01,  4.61it/s]
+301.5s	118	Loading weights:  98%|█████████▊| 284/290 [00:49<00:01,  3.75it/s]
+301.5s	119	Loading weights:  99%|█████████▉| 287/290 [00:49<00:00,  5.90it/s]
+301.5s	120	Loading weights:  99%|█████████▉| 288/290 [00:49<00:00,  6.14it/s]
+301.5s	121	Loading weights: 100%|██████████| 290/290 [00:49<00:00,  5.88it/s]
+301.5s	122	
+307.4s	123	Downloading: "https://github.com/facebookresearch/dinov2/zipball/main" to /root/.cache/torch/hub/main.zip
+308.1s	124	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+308.1s	125	  warnings.warn("xFormers is not available (SwiGLU)")
+308.1s	126	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+308.1s	127	  warnings.warn("xFormers is not available (Attention)")
+308.1s	128	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+308.1s	129	  warnings.warn("xFormers is not available (Block)")
+308.1s	130	
+308.1s	131	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+308.1s	132	  warnings.warn("xFormers is not available (SwiGLU)")
+308.1s	133	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+308.1s	134	  warnings.warn("xFormers is not available (Attention)")
+308.1s	135	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+308.1s	136	  warnings.warn("xFormers is not available (Block)")
+311.1s	137	Released concept CLIP embeddings vs text encoder, cosine mean/min: [1.0, 0.9999998807907104]
+322.1s	138	M: (768, 4096)
+323.1s	139	CheXzero checkpoints from: /kaggle/input/datasets/ismaildahiru/chexzero-weights/chexzero_weights
+323.1s	140	
+  0%|                                               | 0.00/338M [00:00<?, ?iB/s]
+323.2s	141	
+  0%|                                               | 0.00/338M [00:00<?, ?iB/s]
+  0%|                                       | 960k/338M [00:00<00:36, 9.75MiB/s]
+323.3s	142	
+  0%|                                       | 960k/338M [00:00<00:36, 9.75MiB/s]
+  5%|█▉                                     | 17.0M/338M [00:00<00:03, 102MiB/s]
+323.4s	143	
+  5%|█▉                                     | 17.0M/338M [00:00<00:03, 102MiB/s]
+  9%|███▌                                   | 31.2M/338M [00:00<00:02, 123MiB/s]
+323.5s	144	
+  9%|███▌                                   | 31.2M/338M [00:00<00:02, 123MiB/s]
+ 13%|█████▏                                 | 45.2M/338M [00:00<00:02, 132MiB/s]
+323.6s	145	
+ 13%|█████▏                                 | 45.2M/338M [00:00<00:02, 132MiB/s]
+ 17%|██████▋                                | 57.8M/338M [00:00<00:02, 127MiB/s]
+323.7s	146	
+ 17%|██████▋                                | 57.8M/338M [00:00<00:02, 127MiB/s]
+ 21%|████████▎                              | 71.8M/338M [00:00<00:02, 134MiB/s]
+323.8s	147	
+ 21%|████████▎                              | 71.8M/338M [00:00<00:02, 134MiB/s]
+ 25%|█████████▊                             | 84.6M/338M [00:00<00:02, 126MiB/s]
+323.9s	148	
+ 25%|█████████▊                             | 84.6M/338M [00:00<00:02, 126MiB/s]
+ 30%|███████████▌                           | 99.7M/338M [00:00<00:01, 136MiB/s]
+324.0s	149	
+ 30%|███████████▌                           | 99.7M/338M [00:00<00:01, 136MiB/s]
+ 34%|█████████████▍                          | 114M/338M [00:00<00:01, 138MiB/s]
+324.2s	150	
+ 34%|█████████████▍                          | 114M/338M [00:00<00:01, 138MiB/s]
+ 38%|███████████████                         | 127M/338M [00:01<00:01, 125MiB/s]
+324.3s	151	
+ 38%|███████████████                         | 127M/338M [00:01<00:01, 125MiB/s]
+ 41%|████████████████▌                       | 139M/338M [00:01<00:01, 127MiB/s]
+324.4s	152	
+ 41%|████████████████▌                       | 139M/338M [00:01<00:01, 127MiB/s]
+ 45%|██████████████████                      | 153M/338M [00:01<00:01, 130MiB/s]
+324.5s	153	
+ 45%|██████████████████                      | 153M/338M [00:01<00:01, 130MiB/s]
+ 49%|███████████████████▌                    | 165M/338M [00:01<00:01, 130MiB/s]
+324.6s	154	
+ 49%|███████████████████▌                    | 165M/338M [00:01<00:01, 130MiB/s]
+ 53%|█████████████████████▍                  | 180M/338M [00:01<00:01, 139MiB/s]
+324.7s	155	
+ 53%|█████████████████████▍                  | 180M/338M [00:01<00:01, 139MiB/s]
+ 58%|███████████████████████                 | 195M/338M [00:01<00:01, 143MiB/s]
+324.8s	156	
+ 58%|███████████████████████                 | 195M/338M [00:01<00:01, 143MiB/s]
+ 62%|████████████████████████▋               | 209M/338M [00:01<00:00, 142MiB/s]
+324.9s	157	
+ 62%|████████████████████████▋               | 209M/338M [00:01<00:00, 142MiB/s]
+ 66%|██████████████████████████▎             | 222M/338M [00:01<00:00, 138MiB/s]
+325.0s	158	
+ 66%|██████████████████████████▎             | 222M/338M [00:01<00:00, 138MiB/s]
+ 70%|███████████████████████████▉            | 236M/338M [00:01<00:00, 140MiB/s]
+325.1s	159	
+ 70%|███████████████████████████▉            | 236M/338M [00:01<00:00, 140MiB/s]
+ 74%|█████████████████████████████▋          | 251M/338M [00:01<00:00, 144MiB/s]
+325.2s	160	
+ 74%|█████████████████████████████▋          | 251M/338M [00:01<00:00, 144MiB/s]
+ 78%|███████████████████████████████▎        | 264M/338M [00:02<00:00, 139MiB/s]
+325.3s	161	
+ 78%|███████████████████████████████▎        | 264M/338M [00:02<00:00, 139MiB/s]
+ 83%|█████████████████████████████████▎      | 281M/338M [00:02<00:00, 148MiB/s]
+325.4s	162	
+ 83%|█████████████████████████████████▎      | 281M/338M [00:02<00:00, 148MiB/s]
+ 87%|██████████████████████████████████▉     | 295M/338M [00:02<00:00, 142MiB/s]
+325.5s	163	
+ 87%|██████████████████████████████████▉     | 295M/338M [00:02<00:00, 142MiB/s]
+ 92%|████████████████████████████████████▋   | 310M/338M [00:02<00:00, 147MiB/s]
+325.6s	164	
+ 92%|████████████████████████████████████▋   | 310M/338M [00:02<00:00, 147MiB/s]
+ 96%|██████████████████████████████████████▍ | 325M/338M [00:02<00:00, 149MiB/s]
+325.7s	165	
+ 96%|██████████████████████████████████████▍ | 325M/338M [00:02<00:00, 149MiB/s]
+100%|████████████████████████████████████████| 338M/338M [00:02<00:00, 136MiB/s]
+325.7s	166	
+100%|████████████████████████████████████████| 338M/338M [00:02<00:00, 136MiB/s]
+325.7s	167	
+325.7s	168	
+501.5s	169	CheXzero checkpoints loaded: 10 | GPU GB in use: [0.67, 6.06]
+513.2s	170	32/34033 images, 0.1 min
+839.2s	171	3232/34033 images, 5.6 min
+1183.9s	172	6432/34033 images, 11.3 min
+1527.1s	173	9632/34033 images, 17.0 min
+1874.7s	174	12832/34033 images, 22.8 min
+2225.8s	175	16032/34033 images, 28.7 min
+2571.6s	176	19232/34033 images, 34.5 min
+2915.0s	177	22432/34033 images, 40.2 min
+3260.7s	178	25632/34033 images, 45.9 min
+3605.6s	179	28832/34033 images, 51.7 min
+3960.3s	180	32032/34033 images, 57.6 min
+4217.7s	181	chexzero T1 macro 0.695
+4247.3s	182	chexzero T2 macro 0.688
+4276.8s	183	chexzero T3 macro 0.674
+4306.0s	184	chexzero T4 macro 0.686
+4335.2s	185	clear_direct T1 macro 0.7
+4364.6s	186	clear_direct T2 macro 0.687
+4393.6s	187	clear_direct T3 macro 0.636
+4424.0s	188	clear_direct T4 macro 0.717
+4456.2s	189	clear_concept T1 macro 0.635
+4488.6s	190	clear_concept T2 macro 0.667
+4520.3s	191	clear_concept T3 macro 0.623
+4553.0s	192	clear_concept T4 macro 0.622
+4568.3s	193	relevant concepts: {'Atelectasis': 29601, 'Cardiomegaly': 8962, 'Effusion': 28321, 'Infiltration': 2411, 'Mass': 3002, 'Nodule': 6826, 'Pneumonia': 8201, 'Pneumothorax': 9716, 'Consolidation': 14582, 'Edema': 12544, 'Emphysema': 2936, 'Fibrosis': 1132, 'Pleural_Thickening': 2014, 'Hernia': 1305}
+4626.0s	194	attribution pass 1.0 min
+4680.7s	195	===== AMENDMENT SUMMARY =====
+4680.7s	196	A2 prompt robustness: macro-AUROC (all 14) and gaps [estimate (interval)]
+4680.7s	197	  chexzero       T1 macro 0.695 (0.685-0.704) | sex_F-M: +0.005 (-0.015,+0.022) | age_0-18-40-60: -0.013 (-0.054,+0.026) | age_18-40-40-60: +0.013 (-0.010,+0.034) | age_60+-40-60: -0.002 (-0.023,+0.017)
+4680.7s	198	  chexzero       T2 macro 0.688 (0.679-0.695) | sex_F-M: -0.000 (-0.017,+0.016) | age_0-18-40-60: -0.018 (-0.059,+0.030) | age_18-40-40-60: +0.018 (-0.003,+0.038) | age_60+-40-60: +0.002 (-0.021,+0.023)
+4680.7s	199	  chexzero       T3 macro 0.674 (0.663-0.685) | sex_F-M: +0.005 (-0.016,+0.025) | age_0-18-40-60: -0.012 (-0.066,+0.039) | age_18-40-40-60: +0.020 (-0.002,+0.041) | age_60+-40-60: -0.004 (-0.027,+0.019)
+4680.7s	200	  chexzero       T4 macro 0.686 (0.675-0.696) | sex_F-M: +0.008 (-0.013,+0.027) | age_0-18-40-60: -0.009 (-0.056,+0.036) | age_18-40-40-60: +0.019 (-0.004,+0.043) | age_60+-40-60: -0.001 (-0.023,+0.019)
+4680.7s	201	  -> chexzero prompt-robust: True | differences: []
+4680.7s	202	  clear_concept  T1 macro 0.635 (0.624-0.644) | sex_F-M: -0.008 (-0.029,+0.011) | age_0-18-40-60: +0.006 (-0.042,+0.057) | age_18-40-40-60: +0.023 (-0.001,+0.048) | age_60+-40-60: -0.008 (-0.033,+0.016)
+4680.7s	203	  clear_concept  T2 macro 0.667 (0.657-0.677) | sex_F-M: -0.010 (-0.030,+0.009) | age_0-18-40-60: -0.000 (-0.050,+0.052) | age_18-40-40-60: +0.021 (-0.002,+0.045) | age_60+-40-60: -0.006 (-0.030,+0.018)
+4680.7s	204	  clear_concept  T3 macro 0.623 (0.613-0.633) | sex_F-M: -0.008 (-0.029,+0.011) | age_0-18-40-60: +0.004 (-0.043,+0.057) | age_18-40-40-60: +0.018 (-0.008,+0.043) | age_60+-40-60: -0.011 (-0.036,+0.014)
+4680.7s	205	  clear_concept  T4 macro 0.622 (0.611-0.631) | sex_F-M: -0.010 (-0.031,+0.010) | age_0-18-40-60: -0.006 (-0.057,+0.046) | age_18-40-40-60: +0.020 (-0.004,+0.044) | age_60+-40-60: -0.009 (-0.033,+0.015)
+4680.7s	206	  -> clear_concept prompt-robust: True | differences: []
+4680.7s	207	  clear_direct   T1 macro 0.700 (0.690-0.709) | sex_F-M: -0.007 (-0.027,+0.012) | age_0-18-40-60: +0.022 (-0.014,+0.055) | age_18-40-40-60: +0.023 (+0.003,+0.043) | age_60+-40-60: -0.004 (-0.026,+0.017)
+4680.7s	208	  clear_direct   T2 macro 0.687 (0.678-0.695) | sex_F-M: -0.003 (-0.022,+0.015) | age_0-18-40-60: +0.019 (-0.021,+0.053) | age_18-40-40-60: +0.018 (-0.004,+0.042) | age_60+-40-60: -0.001 (-0.025,+0.021)
+4680.7s	209	  clear_direct   T3 macro 0.636 (0.626-0.645) | sex_F-M: -0.003 (-0.022,+0.016) | age_0-18-40-60: +0.018 (-0.030,+0.061) | age_18-40-40-60: +0.020 (-0.000,+0.042) | age_60+-40-60: -0.008 (-0.031,+0.016)
+4680.7s	210	  clear_direct   T4 macro 0.717 (0.708-0.725) | sex_F-M: -0.003 (-0.021,+0.013) | age_0-18-40-60: -0.026 (-0.072,+0.019) | age_18-40-40-60: +0.010 (-0.010,+0.029) | age_60+-40-60: +0.005 (-0.014,+0.022)
+4680.7s	211	  -> clear_direct prompt-robust: False | differences: [('T2', 'age_18-40_minus_40-60', 'no gap'), ('T3', 'age_18-40_minus_40-60', 'no gap'), ('T4', 'age_18-40_minus_40-60', 'no gap')]
+4680.7s	212	A1.1 relevance of top-10 concepts (TP / FN / FP):
+4680.7s	213	  Atelectasis          0.79 / 0.72 / 0.72
+4680.7s	214	  Cardiomegaly         0.49 / 0.41 / 0.11
+4680.7s	215	  Effusion             0.48 / 0.30 / 0.52
+4680.7s	216	  Infiltration         0.14 / 0.17 / 0.12
+4680.7s	217	  Mass                 0.03 / 0.01 / 0.01
+4680.7s	218	  Nodule               0.22 / 0.67 / 0.12
+4680.7s	219	  Pneumonia            0.44 / 0.36 / 0.26
+4680.7s	220	  Pneumothorax         0.13 / 0.33 / 0.07
+4680.7s	221	  Consolidation        0.29 / 0.34 / 0.32
+4680.7s	222	  Edema                0.56 / 0.61 / 0.30
+4680.7s	223	  Emphysema            0.05 / 0.20 / 0.06
+4680.7s	224	  Fibrosis             0.43 / 0.11 / 0.31
+4680.7s	225	  Pleural_Thickening   0.41 / 0.54 / 0.23
+4680.7s	226	  Hernia               0.23 / 0.01 / 0.01
+4680.7s	227	A1.2 explanation fairness in true positives (relevance difference):
+4680.7s	228	  sex_F_minus_M          -0.012 (-0.046 to +0.016)
+4680.7s	229	  age_0-18_minus_40-60   -0.052 (-0.115 to +0.013)
+4680.7s	230	  age_18-40_minus_40-60  +0.002 (-0.031 to +0.035)
+4680.7s	231	  age_60+_minus_40-60    -0.012 (-0.044 to +0.021)
+4680.7s	232	A1.3 single-concept probe (concept: test AUROC vs concept route / direct / CheXzero):
+4680.7s	233	  Atelectasis          'compressive atelectasis at the bases, more pr': 0.746 (0.731-0.761) vs 0.678 / 0.651 / 0.709
+4680.7s	234	  Cardiomegaly         'heart size has minimally increased with moder': 0.886 (0.867-0.900) vs 0.614 / 0.821 / 0.835
+4680.7s	235	  Effusion             'degree of pleural effusion appears quite simi': 0.818 (0.806-0.829) vs 0.785 / 0.826 / 0.789
+4680.7s	236	  Infiltration         'stable bilateral mid and lower lung pulmonary': 0.709 (0.698-0.718) vs 0.696 / 0.676 / 0.696
+4680.7s	237	  Mass                 'marked atelectasis around left hilar mass': 0.743 (0.722-0.764) vs 0.598 / 0.761 / 0.624
+4680.7s	238	  Nodule               'disseminated nodules in the lung': 0.694 (0.674-0.714) vs 0.588 / 0.493 / 0.602
+4680.7s	239	  Pneumonia            'worsening pneumonia or drug reaction': 0.734 (0.710-0.756) vs 0.683 / 0.732 / 0.685
+4680.7s	240	  Pneumothorax         'degree of subcutaneous emphysema limits evalu': 0.870 (0.856-0.881) vs 0.702 / 0.850 / 0.766
+4680.7s	241	  Consolidation        'progressive development of consolidation': 0.740 (0.725-0.754) vs 0.716 / 0.732 / 0.699
+4680.7s	242	  Edema                'bilateral pulmonary edema with a more asymmet': 0.848 (0.830-0.864) vs 0.763 / 0.823 / 0.820
+4680.7s	243	  Emphysema            'increase in the amount of extensive subcutane': 0.897 (0.883-0.910) vs 0.495 / 0.579 / 0.563
+4680.7s	244	  Fibrosis             'areas of fibrotic scarring at the right lung ': 0.780 (0.756-0.807) vs 0.570 / 0.523 / 0.564
+4680.7s	245	  Pleural_Thickening   'extensive pleural thickening is calcified and': 0.732 (0.712-0.754) vs 0.621 / 0.670 / 0.688
+4680.7s	246	  Hernia               'mild atelectasis of the left lung adjacent to': 0.854 (0.776-0.919) vs 0.377 / 0.667 / 0.685
+4680.7s	247	A1.4 representation spread: {'clear_image': {'mean_pairwise_cos': 0.301, 'participation_ratio': 11.18}, 'clear_concept_space': {'mean_pairwise_cos': 0.9825, 'participation_ratio': 2.95}, 'chexzero_ckpt1': {'mean_pairwise_cos': 0.6965, 'participation_ratio': 10.29}}
+4680.7s	248	A1 qualitative top concepts:
+4680.7s	249	  Cardiomegaly_TP: ['enlargement of the heart', 'some enlargement of the heart', 'cardiomegaly and vascular engorgement', 'cardiomegaly and pulmonary vascular congestion worsened', 'cardiomegaly has progressed', 'continued enlargement of the heart', 'cardiomegaly with pulmonary vascular congestion and interstitial edema', 'cardiomegaly and pulmonary vascular congestion']
+4680.7s	250	  Cardiomegaly_FN: ['enlargement of the heart', 'chronic enlargement of the heart', 'enlargement of the coronary artery stents', 'enlargement of the cardiac silhouette and prominence of the mediastinum', 'enlargement of the thyroid', 'enlargement of the heart size and aorta', 'some enlargement of the heart', 'enlargement of the thoracic aorta']
+4680.7s	251	  Emphysema_TP: ['visualized lungs are clear without focal consolidation, pleural effusion, pneumothorax, or pulmonary edema', 'lungs are clear without effusion or consolidation', 'lungs are clear without focal consolidation, pleural effusions, or signs of pulmonary edema', 'the lungs are clear without consolidation, effusion, or pneumothorax', 'lungs are clear with no evidence of consolidation, effusion, or pneumothorax', 'lungs are clear without focal consolidation, effusion, or pneumothorax', 'lungs are clear without focal consolidation, effusions, or pulmonary edema', 'clear lungs without focal consolidation, effusion, or pneumothorax']
+4680.7s	252	  Emphysema_FN: ['lungs are clear of focal consolidation, large effusion, or pulmonary edema', 'no large consolidation or overt signs of edema', 'lungs are clear of confluent consolidation, large effusion, or edema', 'no convincing signs of pneumonia or overt edema', 'lungs are clear of focal consolidation, large effusion, or overt pulmonary edema', 'lungs are clear of confluent consolidation, large effusion or overt pulmonary edema', 'lungs are clear without focal consolidation, pleural effusions, or signs of pulmonary edema', 'combination of emphysematous changes and scarring in bilateral lungs']
+4680.7s	253	  Hernia_TP: ['clear lungs with no evidence of consolidation, effusion, or pneumothorax', 'lungs are clear with no evidence of consolidation, effusion, or pneumothorax', 'lungs are clear with no focal consolidation, effusion, or pneumothorax', 'the lungs are clear without consolidation, effusion, or pneumothorax', 'lungs are clear with no evidence of a consolidation, effusion, or pneumothorax', 'lungs are clear without focal consolidation, effusion, or pneumothorax', 'the lungs are clear and without a focal consolidation, effusion, or pneumothorax', 'the lungs are clear without focal consolidation, effusion, or pneumothorax']
+4680.7s	254	  Hernia_FN: ['right lung is free of consolidations, pleural effusion or pneumothorax', 'no relevant change in extent of the right basal and left basal parenchymal opacities', 'no change in extent and severity of the signs indicative of moderate pulmonary edema', 'increase in moderate cardiomegaly is not accompanied by edema', 'right lung free of consolidations or large pleural effusions', 'lungs are clear of confluent consolidation, large effusion or overt pulmonary edema', 'no significant interval change in the extent of the moderate pulmonary edema', 'severe pulmonary edema is no worse']
+4680.7s	255	relevant concepts per finding: {'Atelectasis': 29601, 'Cardiomegaly': 8962, 'Effusion': 28321, 'Infiltration': 2411, 'Mass': 3002, 'Nodule': 6826, 'Pneumonia': 8201, 'Pneumothorax': 9716, 'Consolidation': 14582, 'Edema': 12544, 'Emphysema': 2936, 'Fibrosis': 1132, 'Pleural_Thickening': 2014, 'Hernia': 1305}
+4680.7s	256	minutes: 77.8
+4680.7s	257	===== END =====
+4688.2s	258	/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+4688.2s	259	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+4688.5s	260	/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+4688.5s	261	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+4689.5s	262	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+4689.6s	263	[NbConvertApp] Writing 154467 bytes to __notebook__.ipynb
+4692.6s	264	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+4693.4s	265	[NbConvertApp] Writing 552555 bytes to __results__.html

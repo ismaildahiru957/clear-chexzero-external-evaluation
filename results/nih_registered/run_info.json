@@ -1,0 +1,133 @@
+{
+ "started_utc": "2026-10-01 15:25:10",
+ "seed": 2026,
+ "prompts_pos": [
+  "atelectasis",
+  "cardiomegaly",
+  "pleural effusion",
+  "infiltration",
+  "mass",
+  "nodule",
+  "pneumonia",
+  "pneumothorax",
+  "consolidation",
+  "edema",
+  "emphysema",
+  "fibrosis",
+  "pleural thickening",
+  "hernia"
+ ],
+ "prompts_neg": [
+  "no atelectasis",
+  "no cardiomegaly",
+  "no pleural effusion",
+  "no infiltration",
+  "no mass",
+  "no nodule",
+  "no pneumonia",
+  "no pneumothorax",
+  "no consolidation",
+  "no edema",
+  "no emphysema",
+  "no fibrosis",
+  "no pleural thickening",
+  "no hernia"
+ ],
+ "clear_git_commit": "57d2eae57ddabf8e56c8013ec675336d71b3d8e7",
+ "clear_hf_sha": "142f169c8b006b0f28cf55c6a237c3003db5ed8f",
+ "python": "3.12.13",
+ "torch": "2.10.0+cu128",
+ "transformers": "5.0.0",
+ "gpus": [
+  "Tesla T4",
+  "Tesla T4"
+ ],
+ "n_test_images": 25592,
+ "n_test_patients": 2797,
+ "n_heldout_images": 8441,
+ "n_heldout_patients": 2800,
+ "sfr_check_cos_plain_mean_min": [
+  0.899226188659668,
+  0.802057147026062
+ ],
+ "sfr_check_cos_instruct_mean_min": [
+  0.9999977350234985,
+  0.9999970197677612
+ ],
+ "n_concepts": 368294,
+ "llm_dim": 4096,
+ "sec_prompt_embedding": 165,
+ "concept_clip_check_cos_mean_min": [
+  1.0,
+  0.9999998807907104
+ ],
+ "concept_clip_recomputed": false,
+ "chexzero_checkpoints": [
+  [
+   "best_128_0.0002_original_15000_0.859.pt",
+   353548709
+  ],
+  [
+   "best_128_0.0002_original_8000_0.857.pt",
+   353548709
+  ],
+  [
+   "best_128_5e-05_original_22000_0.855.pt",
+   353548709
+  ],
+  [
+   "best_64_0.0001_original_16000_0.861.pt",
+   353548709
+  ],
+  [
+   "best_64_0.0001_original_17000_0.863.pt",
+   353548709
+  ],
+  [
+   "best_64_0.0001_original_35000_0.864.pt",
+   353548709
+  ],
+  [
+   "best_64_0.0002_original_23000_0.854.pt",
+   353548709
+  ],
+  [
+   "best_64_5e-05_original_16000_0.858.pt",
+   353548709
+  ],
+  [
+   "best_64_5e-05_original_18000_0.862.pt",
+   353548709
+  ],
+  [
+   "best_64_5e-05_original_22000_0.864.pt",
+   353548709
+  ]
+ ],
+ "projection_check_max_abs_diff": 5.960464477539063e-08,
+ "min_scoring": 61.2,
+ "chexzero_nan": 0,
+ "chexzero_range": [
+  0.4742925763130188,
+  0.5190882086753845
+ ],
+ "clear_direct_nan": 0,
+ "clear_direct_range": [
+  0.39523079991340637,
+  0.6369786262512207
+ ],
+ "clear_concept_nan": 0,
+ "clear_concept_range": [
+  0.46235358715057373,
+  0.5182026028633118
+ ],
+ "clear_concept_instr_nan": 0,
+ "clear_concept_instr_range": [
+  0.4608486294746399,
+  0.513962984085083
+ ],
+ "corr_chexzero_vs_clear_concept": 0.29527997354963625,
+ "corr_clear_direct_vs_concept": 0.3173122186663004,
+ "corr_clear_concept_plain_vs_instr": 0.3232620035342348,
+ "total_min": 68.0
+}
