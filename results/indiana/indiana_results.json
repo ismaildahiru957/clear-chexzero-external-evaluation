@@ -1,0 +1,1103 @@
+{
+ "run_info": {
+  "started_utc": "2026-10-02 16:37:14",
+  "seed": 2026,
+  "clear_git_commit": "57d2eae57ddabf8e56c8013ec675336d71b3d8e7",
+  "clear_hf_sha": "142f169c8b006b0f28cf55c6a237c3003db5ed8f",
+  "python": "3.12.13",
+  "torch": "2.10.0+cu128",
+  "transformers": "5.0.0",
+  "gpus": [
+   "Tesla T4",
+   "Tesla T4"
+  ],
+  "prompts_pos": [
+   "lung",
+   "opacity",
+   "cardiomegaly",
+   "pulmonary atelectasis",
+   "calcinosis",
+   "calcified granuloma",
+   "thoracic vertebrae",
+   "cicatrix",
+   "spine",
+   "markings",
+   "aorta",
+   "pleural effusion",
+   "diaphragm",
+   "atherosclerosis",
+   "airspace disease",
+   "catheters, indwelling",
+   "density",
+   "deformity",
+   "granulomatous disease",
+   "nodule",
+   "surgical instruments",
+   "scoliosis",
+   "aorta, thoracic",
+   "fractures, bone",
+   "costophrenic angle",
+   "osteophyte",
+   "pulmonary congestion",
+   "implanted medical device",
+   "spondylosis",
+   "emphysema",
+   "infiltrate",
+   "cardiac shadow",
+   "thickening",
+   "granuloma",
+   "pulmonary disease, chronic obstructive",
+   "hernia, hiatal",
+   "pulmonary edema",
+   "pneumonia",
+   "pulmonary emphysema",
+   "diaphragmatic eventration",
+   "arthritis",
+   "kyphosis",
+   "bone diseases, metabolic",
+   "consolidation",
+   "tube, inserted",
+   "foreign bodies",
+   "lucency",
+   "mediastinum",
+   "spinal fusion",
+   "pneumothorax",
+   "medical device"
+  ],
+  "prompts_neg": [
+   "no lung",
+   "no opacity",
+   "no cardiomegaly",
+   "no pulmonary atelectasis",
+   "no calcinosis",
+   "no calcified granuloma",
+   "no thoracic vertebrae",
+   "no cicatrix",
+   "no spine",
+   "no markings",
+   "no aorta",
+   "no pleural effusion",
+   "no diaphragm",
+   "no atherosclerosis",
+   "no airspace disease",
+   "no catheters, indwelling",
+   "no density",
+   "no deformity",
+   "no granulomatous disease",
+   "no nodule",
+   "no surgical instruments",
+   "no scoliosis",
+   "no aorta, thoracic",
+   "no fractures, bone",
+   "no costophrenic angle",
+   "no osteophyte",
+   "no pulmonary congestion",
+   "no implanted medical device",
+   "no spondylosis",
+   "no emphysema",
+   "no infiltrate",
+   "no cardiac shadow",
+   "no thickening",
+   "no granuloma",
+   "no pulmonary disease, chronic obstructive",
+   "no hernia, hiatal",
+   "no pulmonary edema",
+   "no pneumonia",
+   "no pulmonary emphysema",
+   "no diaphragmatic eventration",
+   "no arthritis",
+   "no kyphosis",
+   "no bone diseases, metabolic",
+   "no consolidation",
+   "no tube, inserted",
+   "no foreign bodies",
+   "no lucency",
+   "no mediastinum",
+   "no spinal fusion",
+   "no pneumothorax",
+   "no medical device"
+  ],
+  "n_images": 7466,
+  "n_reports": 3851,
+  "n_frontal": 3818,
+  "findings_positive_reports": {
+   "Lung": 539,
+   "Opacity": 432,
+   "Cardiomegaly": 345,
+   "Pulmonary Atelectasis": 315,
+   "Calcinosis": 292,
+   "Calcified Granuloma": 266,
+   "Thoracic Vertebrae": 256,
+   "Cicatrix": 184,
+   "Spine": 174,
+   "Markings": 159,
+   "Aorta": 156,
+   "Pleural Effusion": 149,
+   "Diaphragm": 139,
+   "Atherosclerosis": 125,
+   "Airspace Disease": 118,
+   "Catheters, Indwelling": 117,
+   "Density": 116,
+   "Deformity": 113,
+   "Granulomatous Disease": 107,
+   "Nodule": 106,
+   "Surgical Instruments": 99,
+   "Scoliosis": 95,
+   "Aorta, Thoracic": 89,
+   "Fractures, Bone": 83,
+   "Costophrenic Angle": 78,
+   "Osteophyte": 69,
+   "Pulmonary Congestion": 68,
+   "Implanted Medical Device": 65,
+   "Spondylosis": 63,
+   "Emphysema": 60,
+   "Infiltrate": 60,
+   "Cardiac Shadow": 54,
+   "Thickening": 52,
+   "Granuloma": 50,
+   "Pulmonary Disease, Chronic Obstructive": 48,
+   "Hernia, Hiatal": 44,
+   "Pulmonary Edema": 42,
+   "Pneumonia": 40,
+   "Pulmonary Emphysema": 36,
+   "Diaphragmatic Eventration": 34,
+   "Arthritis": 33,
+   "Kyphosis": 33,
+   "Bone Diseases, Metabolic": 31,
+   "Consolidation": 30,
+   "Tube, Inserted": 29,
+   "Foreign Bodies": 29,
+   "Lucency": 26,
+   "Mediastinum": 26,
+   "Spinal Fusion": 22,
+   "Pneumothorax": 22,
+   "Medical Device": 21
+  },
+  "sfr_check_cos_plain_mean_min": [
+   0.899226188659668,
+   0.802057147026062
+  ],
+  "sfr_check_cos_instruct_mean_min": [
+   0.9999977350234985,
+   0.9999970197677612
+  ],
+  "n_concepts": 368294,
+  "llm_dim": 4096,
+  "sec_prompt_embedding": 160,
+  "concept_clip_check_cos_mean_min": [
+   1.0,
+   0.9999998807907104
+  ],
+  "concept_clip_recomputed": false,
+  "chexzero_checkpoints": [
+   [
+    "best_128_0.0002_original_15000_0.859.pt",
+    353548709
+   ],
+   [
+    "best_128_0.0002_original_8000_0.857.pt",
+    353548709
+   ],
+   [
+    "best_128_5e-05_original_22000_0.855.pt",
+    353548709
+   ],
+   [
+    "best_64_0.0001_original_16000_0.861.pt",
+    353548709
+   ],
+   [
+    "best_64_0.0001_original_17000_0.863.pt",
+    353548709
+   ],
+   [
+    "best_64_0.0001_original_35000_0.864.pt",
+    353548709
+   ],
+   [
+    "best_64_0.0002_original_23000_0.854.pt",
+    353548709
+   ],
+   [
+    "best_64_5e-05_original_16000_0.858.pt",
+    353548709
+   ],
+   [
+    "best_64_5e-05_original_18000_0.862.pt",
+    353548709
+   ],
+   [
+    "best_64_5e-05_original_22000_0.864.pt",
+    353548709
+   ]
+  ],
+  "min_scoring": 21.2
+ },
+ "summary": {
+  "all_images": {
+   "chexzero": {
+    "macro": 0.7006338737322408,
+    "macro_ci95": [
+     0.6922430533285067,
+     0.7094958556640644
+    ]
+   },
+   "clear_concept": {
+    "macro": 0.6858099140241739,
+    "macro_ci95": [
+     0.6774579806441674,
+     0.6945395238554455
+    ],
+    "delta_vs_chexzero": -0.014823959708066936,
+    "delta_ci95": [
+     -0.023704022058186017,
+     -0.006570040869493761
+    ],
+    "wins_losses_vs_chexzero": [
+     22,
+     29
+    ]
+   },
+   "clear_concept_instr": {
+    "macro": 0.6844382342844317,
+    "macro_ci95": [
+     0.6764012017713652,
+     0.6936765834704306
+    ],
+    "delta_vs_chexzero": -0.016195639447809107,
+    "delta_ci95": [
+     -0.024909420336971713,
+     -0.007662365248580387
+    ],
+    "wins_losses_vs_chexzero": [
+     21,
+     30
+    ]
+   },
+   "clear_direct": {
+    "macro": 0.6881380827811765,
+    "macro_ci95": [
+     0.6794694370939445,
+     0.6972101768325908
+    ],
+    "delta_vs_chexzero": -0.012495790951064345,
+    "delta_ci95": [
+     -0.02035829360316372,
+     -0.004914195982923009
+    ],
+    "wins_losses_vs_chexzero": [
+     25,
+     26
+    ]
+   },
+   "clear_concept_squash": {
+    "macro": 0.6832545892693395,
+    "macro_ci95": [
+     0.6750338605667693,
+     0.6916955011768612
+    ],
+    "delta_vs_chexzero": -0.01737928446290138,
+    "delta_ci95": [
+     -0.026605628644401382,
+     -0.009515428347615389
+    ],
+    "wins_losses_vs_chexzero": [
+     21,
+     30
+    ]
+   },
+   "per_finding": {
+    "Lung": {
+     "chexzero": 0.662,
+     "clear_concept": 0.61,
+     "clear_concept_instr": 0.604,
+     "clear_direct": 0.593,
+     "clear_concept_squash": 0.609
+    },
+    "Opacity": {
+     "chexzero": 0.755,
+     "clear_concept": 0.717,
+     "clear_concept_instr": 0.721,
+     "clear_direct": 0.798,
+     "clear_concept_squash": 0.717
+    },
+    "Cardiomegaly": {
+     "chexzero": 0.912,
+     "clear_concept": 0.841,
+     "clear_concept_instr": 0.832,
+     "clear_direct": 0.92,
+     "clear_concept_squash": 0.834
+    },
+    "Pulmonary Atelectasis": {
+     "chexzero": 0.761,
+     "clear_concept": 0.776,
+     "clear_concept_instr": 0.778,
+     "clear_direct": 0.815,
+     "clear_concept_squash": 0.776
+    },
+    "Calcinosis": {
+     "chexzero": 0.573,
+     "clear_concept": 0.586,
+     "clear_concept_instr": 0.593,
+     "clear_direct": 0.557,
+     "clear_concept_squash": 0.585
+    },
+    "Calcified Granuloma": {
+     "chexzero": 0.453,
+     "clear_concept": 0.605,
+     "clear_concept_instr": 0.62,
+     "clear_direct": 0.536,
+     "clear_concept_squash": 0.609
+    },
+    "Thoracic Vertebrae": {
+     "chexzero": 0.601,
+     "clear_concept": 0.522,
+     "clear_concept_instr": 0.567,
+     "clear_direct": 0.461,
+     "clear_concept_squash": 0.529
+    },
+    "Cicatrix": {
+     "chexzero": 0.663,
+     "clear_concept": 0.729,
+     "clear_concept_instr": 0.715,
+     "clear_direct": 0.666,
+     "clear_concept_squash": 0.727
+    },
+    "Spine": {
+     "chexzero": 0.483,
+     "clear_concept": 0.548,
+     "clear_concept_instr": 0.575,
+     "clear_direct": 0.484,
+     "clear_concept_squash": 0.54
+    },
+    "Markings": {
+     "chexzero": 0.492,
+     "clear_concept": 0.661,
+     "clear_concept_instr": 0.637,
+     "clear_direct": 0.555,
+     "clear_concept_squash": 0.644
+    },
+    "Aorta": {
+     "chexzero": 0.801,
+     "clear_concept": 0.693,
+     "clear_concept_instr": 0.684,
+     "clear_direct": 0.728,
+     "clear_concept_squash": 0.686
+    },
+    "Pleural Effusion": {
+     "chexzero": 0.946,
+     "clear_concept": 0.935,
+     "clear_concept_instr": 0.938,
+     "clear_direct": 0.953,
+     "clear_concept_squash": 0.934
+    },
+    "Diaphragm": {
+     "chexzero": 0.637,
+     "clear_concept": 0.637,
+     "clear_concept_instr": 0.672,
+     "clear_direct": 0.678,
+     "clear_concept_squash": 0.631
+    },
+    "Atherosclerosis": {
+     "chexzero": 0.755,
+     "clear_concept": 0.661,
+     "clear_concept_instr": 0.676,
+     "clear_direct": 0.638,
+     "clear_concept_squash": 0.654
+    },
+    "Airspace Disease": {
+     "chexzero": 0.808,
+     "clear_concept": 0.845,
+     "clear_concept_instr": 0.811,
+     "clear_direct": 0.888,
+     "clear_concept_squash": 0.845
+    },
+    "Catheters, Indwelling": {
+     "chexzero": 0.801,
+     "clear_concept": 0.892,
+     "clear_concept_instr": 0.88,
+     "clear_direct": 0.613,
+     "clear_concept_squash": 0.894
+    },
+    "Density": {
+     "chexzero": 0.563,
+     "clear_concept": 0.585,
+     "clear_concept_instr": 0.591,
+     "clear_direct": 0.559,
+     "clear_concept_squash": 0.583
+    },
+    "Deformity": {
+     "chexzero": 0.623,
+     "clear_concept": 0.642,
+     "clear_concept_instr": 0.612,
+     "clear_direct": 0.63,
+     "clear_concept_squash": 0.632
+    },
+    "Granulomatous Disease": {
+     "chexzero": 0.539,
+     "clear_concept": 0.518,
+     "clear_concept_instr": 0.517,
+     "clear_direct": 0.471,
+     "clear_concept_squash": 0.523
+    },
+    "Nodule": {
+     "chexzero": 0.56,
+     "clear_concept": 0.586,
+     "clear_concept_instr": 0.601,
+     "clear_direct": 0.473,
+     "clear_concept_squash": 0.582
+    },
+    "Surgical Instruments": {
+     "chexzero": 0.558,
+     "clear_concept": 0.603,
+     "clear_concept_instr": 0.602,
+     "clear_direct": 0.523,
+     "clear_concept_squash": 0.6
+    },
+    "Scoliosis": {
+     "chexzero": 0.638,
+     "clear_concept": 0.506,
+     "clear_concept_instr": 0.5,
+     "clear_direct": 0.545,
+     "clear_concept_squash": 0.505
+    },
+    "Aorta, Thoracic": {
+     "chexzero": 0.789,
+     "clear_concept": 0.689,
+     "clear_concept_instr": 0.7,
+     "clear_direct": 0.719,
+     "clear_concept_squash": 0.683
+    },
+    "Fractures, Bone": {
+     "chexzero": 0.665,
+     "clear_concept": 0.609,
+     "clear_concept_instr": 0.604,
+     "clear_direct": 0.612,
+     "clear_concept_squash": 0.609
+    },
+    "Costophrenic Angle": {
+     "chexzero": 0.809,
+     "clear_concept": 0.763,
+     "clear_concept_instr": 0.676,
+     "clear_direct": 0.802,
+     "clear_concept_squash": 0.769
+    },
+    "Osteophyte": {
+     "chexzero": 0.6,
+     "clear_concept": 0.545,
+     "clear_concept_instr": 0.539,
+     "clear_direct": 0.544,
+     "clear_concept_squash": 0.539
+    },
+    "Pulmonary Congestion": {
+     "chexzero": 0.894,
+     "clear_concept": 0.871,
+     "clear_concept_instr": 0.866,
+     "clear_direct": 0.9,
+     "clear_concept_squash": 0.869
+    },
+    "Implanted Medical Device": {
+     "chexzero": 0.761,
+     "clear_concept": 0.686,
+     "clear_concept_instr": 0.734,
+     "clear_direct": 0.775,
+     "clear_concept_squash": 0.683
+    },
+    "Spondylosis": {
+     "chexzero": 0.49,
+     "clear_concept": 0.566,
+     "clear_concept_instr": 0.562,
+     "clear_direct": 0.505,
+     "clear_concept_squash": 0.545
+    },
+    "Emphysema": {
+     "chexzero": 0.885,
+     "clear_concept": 0.645,
+     "clear_concept_instr": 0.699,
+     "clear_direct": 0.801,
+     "clear_concept_squash": 0.675
+    },
+    "Infiltrate": {
+     "chexzero": 0.808,
+     "clear_concept": 0.797,
+     "clear_concept_instr": 0.83,
+     "clear_direct": 0.835,
+     "clear_concept_squash": 0.811
+    },
+    "Cardiac Shadow": {
+     "chexzero": 0.888,
+     "clear_concept": 0.874,
+     "clear_concept_instr": 0.84,
+     "clear_direct": 0.85,
+     "clear_concept_squash": 0.864
+    },
+    "Thickening": {
+     "chexzero": 0.542,
+     "clear_concept": 0.686,
+     "clear_concept_instr": 0.666,
+     "clear_direct": 0.692,
+     "clear_concept_squash": 0.68
+    },
+    "Granuloma": {
+     "chexzero": 0.439,
+     "clear_concept": 0.578,
+     "clear_concept_instr": 0.579,
+     "clear_direct": 0.518,
+     "clear_concept_squash": 0.578
+    },
+    "Pulmonary Disease, Chronic Obstructive": {
+     "chexzero": 0.801,
+     "clear_concept": 0.658,
+     "clear_concept_instr": 0.663,
+     "clear_direct": 0.687,
+     "clear_concept_squash": 0.685
+    },
+    "Hernia, Hiatal": {
+     "chexzero": 0.909,
+     "clear_concept": 0.823,
+     "clear_concept_instr": 0.795,
+     "clear_direct": 0.891,
+     "clear_concept_squash": 0.819
+    },
+    "Pulmonary Edema": {
+     "chexzero": 0.922,
+     "clear_concept": 0.887,
+     "clear_concept_instr": 0.892,
+     "clear_direct": 0.938,
+     "clear_concept_squash": 0.879
+    },
+    "Pneumonia": {
+     "chexzero": 0.843,
+     "clear_concept": 0.881,
+     "clear_concept_instr": 0.876,
+     "clear_direct": 0.911,
+     "clear_concept_squash": 0.883
+    },
+    "Pulmonary Emphysema": {
+     "chexzero": 0.89,
+     "clear_concept": 0.75,
+     "clear_concept_instr": 0.76,
+     "clear_direct": 0.886,
+     "clear_concept_squash": 0.769
+    },
+    "Diaphragmatic Eventration": {
+     "chexzero": 0.655,
+     "clear_concept": 0.662,
+     "clear_concept_instr": 0.643,
+     "clear_direct": 0.675,
+     "clear_concept_squash": 0.647
+    },
+    "Arthritis": {
+     "chexzero": 0.454,
+     "clear_concept": 0.652,
+     "clear_concept_instr": 0.666,
+     "clear_direct": 0.446,
+     "clear_concept_squash": 0.628
+    },
+    "Kyphosis": {
+     "chexzero": 0.779,
+     "clear_concept": 0.622,
+     "clear_concept_instr": 0.637,
+     "clear_direct": 0.618,
+     "clear_concept_squash": 0.605
+    },
+    "Bone Diseases, Metabolic": {
+     "chexzero": 0.725,
+     "clear_concept": 0.709,
+     "clear_concept_instr": 0.702,
+     "clear_direct": 0.821,
+     "clear_concept_squash": 0.709
+    },
+    "Consolidation": {
+     "chexzero": 0.91,
+     "clear_concept": 0.926,
+     "clear_concept_instr": 0.932,
+     "clear_direct": 0.922,
+     "clear_concept_squash": 0.929
+    },
+    "Tube, Inserted": {
+     "chexzero": 0.825,
+     "clear_concept": 0.883,
+     "clear_concept_instr": 0.881,
+     "clear_direct": 0.709,
+     "clear_concept_squash": 0.893
+    },
+    "Foreign Bodies": {
+     "chexzero": 0.475,
+     "clear_concept": 0.526,
+     "clear_concept_instr": 0.573,
+     "clear_direct": 0.516,
+     "clear_concept_squash": 0.509
+    },
+    "Lucency": {
+     "chexzero": 0.596,
+     "clear_concept": 0.464,
+     "clear_concept_instr": 0.369,
+     "clear_direct": 0.709,
+     "clear_concept_squash": 0.461
+    },
+    "Mediastinum": {
+     "chexzero": 0.728,
+     "clear_concept": 0.694,
+     "clear_concept_instr": 0.64,
+     "clear_direct": 0.676,
+     "clear_concept_squash": 0.679
+    },
+    "Spinal Fusion": {
+     "chexzero": 0.581,
+     "clear_concept": 0.543,
+     "clear_concept_instr": 0.536,
+     "clear_direct": 0.554,
+     "clear_concept_squash": 0.54
+    },
+    "Pneumothorax": {
+     "chexzero": 0.786,
+     "clear_concept": 0.736,
+     "clear_concept_instr": 0.733,
+     "clear_direct": 0.833,
+     "clear_concept_squash": 0.734
+    },
+    "Medical Device": {
+     "chexzero": 0.697,
+     "clear_concept": 0.552,
+     "clear_concept_instr": 0.59,
+     "clear_direct": 0.666,
+     "clear_concept_squash": 0.534
+    }
+   }
+  },
+  "frontal_only": {
+   "chexzero": {
+    "macro": 0.7145629389895104,
+    "macro_ci95": [
+     0.7050810522969961,
+     0.7244430087289224
+    ]
+   },
+   "clear_concept": {
+    "macro": 0.7001503648282636,
+    "macro_ci95": [
+     0.6910129838185395,
+     0.709849214129478
+    ],
+    "delta_vs_chexzero": -0.01441257416124675,
+    "delta_ci95": [
+     -0.024160124325248562,
+     -0.005009017536062508
+    ],
+    "wins_losses_vs_chexzero": [
+     21,
+     30
+    ]
+   },
+   "clear_concept_instr": {
+    "macro": 0.6994331660634614,
+    "macro_ci95": [
+     0.6904457732145117,
+     0.7095647094193613
+    ],
+    "delta_vs_chexzero": -0.015129772926049001,
+    "delta_ci95": [
+     -0.02456188355054182,
+     -0.005577791319460709
+    ],
+    "wins_losses_vs_chexzero": [
+     24,
+     27
+    ]
+   },
+   "clear_direct": {
+    "macro": 0.6918301245876699,
+    "macro_ci95": [
+     0.6818561994564777,
+     0.7013777600371358
+    ],
+    "delta_vs_chexzero": -0.022732814401840495,
+    "delta_ci95": [
+     -0.03173052934038972,
+     -0.013193650870182084
+    ],
+    "wins_losses_vs_chexzero": [
+     19,
+     32
+    ]
+   },
+   "clear_concept_squash": {
+    "macro": 0.7031341771449297,
+    "macro_ci95": [
+     0.6944129701337602,
+     0.7125750737186265
+    ],
+    "delta_vs_chexzero": -0.011428761844580748,
+    "delta_ci95": [
+     -0.021481372561252814,
+     -0.002177489469770169
+    ],
+    "wins_losses_vs_chexzero": [
+     24,
+     27
+    ]
+   },
+   "per_finding": {
+    "Lung": {
+     "chexzero": 0.692,
+     "clear_concept": 0.649,
+     "clear_concept_instr": 0.636,
+     "clear_direct": 0.594,
+     "clear_concept_squash": 0.648
+    },
+    "Opacity": {
+     "chexzero": 0.785,
+     "clear_concept": 0.78,
+     "clear_concept_instr": 0.779,
+     "clear_direct": 0.822,
+     "clear_concept_squash": 0.786
+    },
+    "Cardiomegaly": {
+     "chexzero": 0.94,
+     "clear_concept": 0.868,
+     "clear_concept_instr": 0.86,
+     "clear_direct": 0.938,
+     "clear_concept_squash": 0.869
+    },
+    "Pulmonary Atelectasis": {
+     "chexzero": 0.789,
+     "clear_concept": 0.83,
+     "clear_concept_instr": 0.823,
+     "clear_direct": 0.842,
+     "clear_concept_squash": 0.834
+    },
+    "Calcinosis": {
+     "chexzero": 0.588,
+     "clear_concept": 0.593,
+     "clear_concept_instr": 0.603,
+     "clear_direct": 0.55,
+     "clear_concept_squash": 0.597
+    },
+    "Calcified Granuloma": {
+     "chexzero": 0.447,
+     "clear_concept": 0.621,
+     "clear_concept_instr": 0.636,
+     "clear_direct": 0.539,
+     "clear_concept_squash": 0.631
+    },
+    "Thoracic Vertebrae": {
+     "chexzero": 0.603,
+     "clear_concept": 0.532,
+     "clear_concept_instr": 0.578,
+     "clear_direct": 0.475,
+     "clear_concept_squash": 0.546
+    },
+    "Cicatrix": {
+     "chexzero": 0.701,
+     "clear_concept": 0.762,
+     "clear_concept_instr": 0.737,
+     "clear_direct": 0.684,
+     "clear_concept_squash": 0.759
+    },
+    "Spine": {
+     "chexzero": 0.492,
+     "clear_concept": 0.539,
+     "clear_concept_instr": 0.565,
+     "clear_direct": 0.481,
+     "clear_concept_squash": 0.519
+    },
+    "Markings": {
+     "chexzero": 0.514,
+     "clear_concept": 0.68,
+     "clear_concept_instr": 0.653,
+     "clear_direct": 0.588,
+     "clear_concept_squash": 0.674
+    },
+    "Aorta": {
+     "chexzero": 0.828,
+     "clear_concept": 0.731,
+     "clear_concept_instr": 0.713,
+     "clear_direct": 0.745,
+     "clear_concept_squash": 0.732
+    },
+    "Pleural Effusion": {
+     "chexzero": 0.948,
+     "clear_concept": 0.943,
+     "clear_concept_instr": 0.944,
+     "clear_direct": 0.955,
+     "clear_concept_squash": 0.944
+    },
+    "Diaphragm": {
+     "chexzero": 0.674,
+     "clear_concept": 0.659,
+     "clear_concept_instr": 0.708,
+     "clear_direct": 0.666,
+     "clear_concept_squash": 0.668
+    },
+    "Atherosclerosis": {
+     "chexzero": 0.778,
+     "clear_concept": 0.679,
+     "clear_concept_instr": 0.698,
+     "clear_direct": 0.635,
+     "clear_concept_squash": 0.678
+    },
+    "Airspace Disease": {
+     "chexzero": 0.853,
+     "clear_concept": 0.884,
+     "clear_concept_instr": 0.869,
+     "clear_direct": 0.9,
+     "clear_concept_squash": 0.889
+    },
+    "Catheters, Indwelling": {
+     "chexzero": 0.814,
+     "clear_concept": 0.908,
+     "clear_concept_instr": 0.897,
+     "clear_direct": 0.624,
+     "clear_concept_squash": 0.908
+    },
+    "Density": {
+     "chexzero": 0.601,
+     "clear_concept": 0.615,
+     "clear_concept_instr": 0.624,
+     "clear_direct": 0.566,
+     "clear_concept_squash": 0.623
+    },
+    "Deformity": {
+     "chexzero": 0.613,
+     "clear_concept": 0.64,
+     "clear_concept_instr": 0.612,
+     "clear_direct": 0.619,
+     "clear_concept_squash": 0.64
+    },
+    "Granulomatous Disease": {
+     "chexzero": 0.54,
+     "clear_concept": 0.537,
+     "clear_concept_instr": 0.54,
+     "clear_direct": 0.472,
+     "clear_concept_squash": 0.545
+    },
+    "Nodule": {
+     "chexzero": 0.574,
+     "clear_concept": 0.627,
+     "clear_concept_instr": 0.646,
+     "clear_direct": 0.486,
+     "clear_concept_squash": 0.628
+    },
+    "Surgical Instruments": {
+     "chexzero": 0.532,
+     "clear_concept": 0.607,
+     "clear_concept_instr": 0.598,
+     "clear_direct": 0.502,
+     "clear_concept_squash": 0.609
+    },
+    "Scoliosis": {
+     "chexzero": 0.663,
+     "clear_concept": 0.497,
+     "clear_concept_instr": 0.497,
+     "clear_direct": 0.548,
+     "clear_concept_squash": 0.503
+    },
+    "Aorta, Thoracic": {
+     "chexzero": 0.809,
+     "clear_concept": 0.738,
+     "clear_concept_instr": 0.719,
+     "clear_direct": 0.714,
+     "clear_concept_squash": 0.729
+    },
+    "Fractures, Bone": {
+     "chexzero": 0.672,
+     "clear_concept": 0.617,
+     "clear_concept_instr": 0.611,
+     "clear_direct": 0.629,
+     "clear_concept_squash": 0.623
+    },
+    "Costophrenic Angle": {
+     "chexzero": 0.817,
+     "clear_concept": 0.78,
+     "clear_concept_instr": 0.701,
+     "clear_direct": 0.802,
+     "clear_concept_squash": 0.798
+    },
+    "Osteophyte": {
+     "chexzero": 0.596,
+     "clear_concept": 0.528,
+     "clear_concept_instr": 0.521,
+     "clear_direct": 0.566,
+     "clear_concept_squash": 0.54
+    },
+    "Pulmonary Congestion": {
+     "chexzero": 0.915,
+     "clear_concept": 0.892,
+     "clear_concept_instr": 0.888,
+     "clear_direct": 0.91,
+     "clear_concept_squash": 0.895
+    },
+    "Implanted Medical Device": {
+     "chexzero": 0.588,
+     "clear_concept": 0.57,
+     "clear_concept_instr": 0.594,
+     "clear_direct": 0.652,
+     "clear_concept_squash": 0.587
+    },
+    "Spondylosis": {
+     "chexzero": 0.53,
+     "clear_concept": 0.571,
+     "clear_concept_instr": 0.596,
+     "clear_direct": 0.501,
+     "clear_concept_squash": 0.557
+    },
+    "Emphysema": {
+     "chexzero": 0.889,
+     "clear_concept": 0.654,
+     "clear_concept_instr": 0.714,
+     "clear_direct": 0.846,
+     "clear_concept_squash": 0.686
+    },
+    "Infiltrate": {
+     "chexzero": 0.848,
+     "clear_concept": 0.861,
+     "clear_concept_instr": 0.872,
+     "clear_direct": 0.879,
+     "clear_concept_squash": 0.867
+    },
+    "Cardiac Shadow": {
+     "chexzero": 0.915,
+     "clear_concept": 0.907,
+     "clear_concept_instr": 0.872,
+     "clear_direct": 0.874,
+     "clear_concept_squash": 0.904
+    },
+    "Thickening": {
+     "chexzero": 0.542,
+     "clear_concept": 0.701,
+     "clear_concept_instr": 0.683,
+     "clear_direct": 0.707,
+     "clear_concept_squash": 0.697
+    },
+    "Granuloma": {
+     "chexzero": 0.48,
+     "clear_concept": 0.577,
+     "clear_concept_instr": 0.582,
+     "clear_direct": 0.502,
+     "clear_concept_squash": 0.597
+    },
+    "Pulmonary Disease, Chronic Obstructive": {
+     "chexzero": 0.802,
+     "clear_concept": 0.645,
+     "clear_concept_instr": 0.652,
+     "clear_direct": 0.673,
+     "clear_concept_squash": 0.689
+    },
+    "Hernia, Hiatal": {
+     "chexzero": 0.894,
+     "clear_concept": 0.838,
+     "clear_concept_instr": 0.834,
+     "clear_direct": 0.891,
+     "clear_concept_squash": 0.84
+    },
+    "Pulmonary Edema": {
+     "chexzero": 0.942,
+     "clear_concept": 0.907,
+     "clear_concept_instr": 0.91,
+     "clear_direct": 0.944,
+     "clear_concept_squash": 0.901
+    },
+    "Pneumonia": {
+     "chexzero": 0.863,
+     "clear_concept": 0.915,
+     "clear_concept_instr": 0.911,
+     "clear_direct": 0.935,
+     "clear_concept_squash": 0.912
+    },
+    "Pulmonary Emphysema": {
+     "chexzero": 0.889,
+     "clear_concept": 0.761,
+     "clear_concept_instr": 0.773,
+     "clear_direct": 0.897,
+     "clear_concept_squash": 0.781
+    },
+    "Diaphragmatic Eventration": {
+     "chexzero": 0.662,
+     "clear_concept": 0.661,
+     "clear_concept_instr": 0.669,
+     "clear_direct": 0.676,
+     "clear_concept_squash": 0.673
+    },
+    "Arthritis": {
+     "chexzero": 0.532,
+     "clear_concept": 0.661,
+     "clear_concept_instr": 0.684,
+     "clear_direct": 0.412,
+     "clear_concept_squash": 0.653
+    },
+    "Kyphosis": {
+     "chexzero": 0.817,
+     "clear_concept": 0.657,
+     "clear_concept_instr": 0.67,
+     "clear_direct": 0.619,
+     "clear_concept_squash": 0.639
+    },
+    "Bone Diseases, Metabolic": {
+     "chexzero": 0.771,
+     "clear_concept": 0.703,
+     "clear_concept_instr": 0.701,
+     "clear_direct": 0.826,
+     "clear_concept_squash": 0.714
+    },
+    "Consolidation": {
+     "chexzero": 0.941,
+     "clear_concept": 0.95,
+     "clear_concept_instr": 0.954,
+     "clear_direct": 0.939,
+     "clear_concept_squash": 0.95
+    },
+    "Tube, Inserted": {
+     "chexzero": 0.844,
+     "clear_concept": 0.912,
+     "clear_concept_instr": 0.911,
+     "clear_direct": 0.671,
+     "clear_concept_squash": 0.929
+    },
+    "Foreign Bodies": {
+     "chexzero": 0.423,
+     "clear_concept": 0.524,
+     "clear_concept_instr": 0.582,
+     "clear_direct": 0.487,
+     "clear_concept_squash": 0.492
+    },
+    "Lucency": {
+     "chexzero": 0.566,
+     "clear_concept": 0.453,
+     "clear_concept_instr": 0.333,
+     "clear_direct": 0.685,
+     "clear_concept_squash": 0.431
+    },
+    "Mediastinum": {
+     "chexzero": 0.761,
+     "clear_concept": 0.708,
+     "clear_concept_instr": 0.666,
+     "clear_direct": 0.678,
+     "clear_concept_squash": 0.697
+    },
+    "Spinal Fusion": {
+     "chexzero": 0.624,
+     "clear_concept": 0.532,
+     "clear_concept_instr": 0.522,
+     "clear_direct": 0.552,
+     "clear_concept_squash": 0.55
+    },
+    "Pneumothorax": {
+     "chexzero": 0.789,
+     "clear_concept": 0.756,
+     "clear_concept_instr": 0.755,
+     "clear_direct": 0.873,
+     "clear_concept_squash": 0.76
+    },
+    "Medical Device": {
+     "chexzero": 0.754,
+     "clear_concept": 0.546,
+     "clear_concept_instr": 0.575,
+     "clear_direct": 0.712,
+     "clear_concept_squash": 0.533
+    }
+   }
+  },
+  "verdict": "INCONSISTENT with the CLEAR paper (CLEAR behind CheXzero, interval excludes 0)"
+ }
+}

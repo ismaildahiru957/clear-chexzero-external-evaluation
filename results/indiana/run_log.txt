@@ -1,0 +1,294 @@
+Time
+#
+Log Message
+7.6s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.6s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.6s	3	0.00s - to python to disable frozen modules.
+7.6s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.2s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.2s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.2s	7	0.00s - to python to disable frozen modules.
+8.2s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+13.9s	9	  Preparing metadata (setup.py) ... [?25l[?25hdone
+14.3s	10	[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/44.8 kB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m44.8/44.8 kB[0m [31m1.6 MB/s[0m eta [36m0:00:00[0m
+15.7s	11	[?25h  Building wheel for clip (setup.py) ... [?25l[?25hdone
+25.2s	12	  Installing build dependencies ... [?25l[?25hdone
+25.5s	13	  Getting requirements to build wheel ... [?25l[?25hdone
+25.7s	14	  Preparing metadata (pyproject.toml) ... [?25l[?25hdone
+26.3s	15	  Building wheel for clear-med (pyproject.toml) ... [?25l[?25hdone
+53.1s	16	{
+53.1s	17	 "started_utc": "2026-10-02 16:37:14",
+53.1s	18	 "seed": 2026,
+53.1s	19	 "clear_git_commit": "57d2eae57ddabf8e56c8013ec675336d71b3d8e7",
+53.1s	20	 "clear_hf_sha": "142f169c8b006b0f28cf55c6a237c3003db5ed8f",
+53.1s	21	 "python": "3.12.13",
+53.1s	22	 "torch": "2.10.0+cu128",
+53.1s	23	 "transformers": "5.0.0",
+53.1s	24	 "gpus": [
+53.1s	25	  "Tesla T4",
+53.1s	26	  "Tesla T4"
+53.1s	27	 ]
+53.1s	28	}
+53.7s	29	report columns: ['uid', 'MeSH', 'Problems', 'image', 'indication', 'comparison', 'findings', 'impression']
+53.7s	30	projection columns: ['uid', 'filename', 'projection']
+112.9s	31	images listed: 7466 | found on disk: 7466
+112.9s	32	51 findings with at least 20 positive reports:
+112.9s	33	Lung                                      539
+112.9s	34	Opacity                                   432
+112.9s	35	Cardiomegaly                              345
+112.9s	36	Pulmonary Atelectasis                     315
+112.9s	37	Calcinosis                                292
+112.9s	38	Calcified Granuloma                       266
+112.9s	39	Thoracic Vertebrae                        256
+112.9s	40	Cicatrix                                  184
+112.9s	41	Spine                                     174
+112.9s	42	Markings                                  159
+112.9s	43	Aorta                                     156
+112.9s	44	Pleural Effusion                          149
+112.9s	45	Diaphragm                                 139
+112.9s	46	Atherosclerosis                           125
+112.9s	47	Airspace Disease                          118
+112.9s	48	Catheters, Indwelling                     117
+112.9s	49	Density                                   116
+112.9s	50	Deformity                                 113
+112.9s	51	Granulomatous Disease                     107
+112.9s	52	Nodule                                    106
+112.9s	53	Surgical Instruments                       99
+112.9s	54	Scoliosis                                  95
+112.9s	55	Aorta, Thoracic                            89
+112.9s	56	Fractures, Bone                            83
+112.9s	57	Costophrenic Angle                         78
+112.9s	58	Osteophyte                                 69
+112.9s	59	Pulmonary Congestion                       68
+112.9s	60	Implanted Medical Device                   65
+112.9s	61	Spondylosis                                63
+112.9s	62	Emphysema                                  60
+112.9s	63	Infiltrate                                 60
+112.9s	64	Cardiac Shadow                             54
+112.9s	65	Thickening                                 52
+112.9s	66	Granuloma                                  50
+112.9s	67	Pulmonary Disease, Chronic Obstructive     48
+112.9s	68	Hernia, Hiatal                             44
+112.9s	69	Pulmonary Edema                            42
+112.9s	70	Pneumonia                                  40
+112.9s	71	Pulmonary Emphysema                        36
+112.9s	72	Diaphragmatic Eventration                  34
+112.9s	73	Arthritis                                  33
+112.9s	74	Kyphosis                                   33
+112.9s	75	Bone Diseases, Metabolic                   31
+112.9s	76	Consolidation                              30
+112.9s	77	Tube, Inserted                             29
+112.9s	78	Foreign Bodies                             29
+112.9s	79	Lucency                                    26
+112.9s	80	Mediastinum                                26
+112.9s	81	Spinal Fusion                              22
+112.9s	82	Pneumothorax                               22
+112.9s	83	Medical Device                             21
+116.5s	84	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+116.5s	85	
+116.5s	86	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+156.5s	87	/usr/local/lib/python3.12/dist-packages/clear/concepts.py:298: RuntimeWarning: Unpickling /tmp/hf/hub/models--peterhan91--CLEAR/snapshots/142f169c8b006b0f28cf55c6a237c3003db5ed8f/concepts_embeddings_sfr_mistral.pickle; only trusted pickle files should be loaded.
+156.5s	88	  _load_array(
+156.5s	89	
+156.5s	90	/usr/local/lib/python3.12/dist-packages/clear/concepts.py:298: RuntimeWarning: Unpickling /tmp/hf/hub/models--peterhan91--CLEAR/snapshots/142f169c8b006b0f28cf55c6a237c3003db5ed8f/concepts_embeddings_sfr_mistral.pickle; only trusted pickle files should be loaded.
+156.5s	91	  _load_array(
+326.3s	92	SFR embeddings done
+326.3s	93	
+326.3s	94	Loading weights:  97%|█████████▋| 281/290 [00:50<00:01,  6.13it/s, Materializing param=layers.31.input_layernorm.weight]
+326.3s	95	Loading weights:  97%|█████████▋| 282/290 [00:50<00:01,  6.13it/s, Materializing param=layers.31.mlp.down_proj.weight]  
+326.3s	96	Loading weights:  97%|█████████▋| 282/290 [00:50<00:01,  6.13it/s, Materializing param=layers.31.mlp.down_proj.weight]
+326.3s	97	Loading weights:  98%|█████████▊| 283/290 [00:50<00:01,  6.06it/s, Materializing param=layers.31.mlp.down_proj.weight]
+326.3s	98	Loading weights:  98%|█████████▊| 283/290 [00:50<00:01,  6.06it/s, Materializing param=layers.31.mlp.gate_proj.weight]
+326.3s	99	Loading weights:  98%|█████████▊| 283/290 [00:50<00:01,  6.06it/s, Materializing param=layers.31.mlp.gate_proj.weight]
+326.3s	100	Loading weights:  98%|█████████▊| 284/290 [00:51<00:01,  4.61it/s, Materializing param=layers.31.mlp.gate_proj.weight]
+326.3s	101	Loading weights:  98%|█████████▊| 284/290 [00:51<00:01,  4.61it/s, Materializing param=layers.31.mlp.up_proj.weight]  
+326.3s	102	Loading weights:  98%|█████████▊| 284/290 [00:51<00:01,  4.61it/s, Materializing param=layers.31.mlp.up_proj.weight]
+326.3s	103	Loading weights:  98%|█████████▊| 285/290 [00:51<00:01,  3.72it/s, Materializing param=layers.31.mlp.up_proj.weight]
+326.3s	104	Loading weights:  98%|█████████▊| 285/290 [00:51<00:01,  3.72it/s, Materializing param=layers.31.post_attention_layernorm.weight]
+326.3s	105	Loading weights:  98%|█████████▊| 285/290 [00:51<00:01,  3.72it/s, Materializing param=layers.31.post_attention_layernorm.weight]
+326.3s	106	Loading weights:  99%|█████████▊| 286/290 [00:51<00:01,  3.72it/s, Materializing param=layers.31.self_attn.k_proj.weight]        
+326.3s	107	Loading weights:  99%|█████████▊| 286/290 [00:51<00:01,  3.72it/s, Materializing param=layers.31.self_attn.k_proj.weight]
+326.3s	108	Loading weights:  99%|█████████▉| 287/290 [00:51<00:00,  3.72it/s, Materializing param=layers.31.self_attn.o_proj.weight]
+326.3s	109	Loading weights:  99%|█████████▉| 287/290 [00:51<00:00,  3.72it/s, Materializing param=layers.31.self_attn.o_proj.weight]
+326.3s	110	Loading weights:  99%|█████████▉| 288/290 [00:51<00:00,  5.83it/s, Materializing param=layers.31.self_attn.o_proj.weight]
+326.3s	111	Loading weights:  99%|█████████▉| 288/290 [00:51<00:00,  5.83it/s, Materializing param=layers.31.self_attn.q_proj.weight]
+326.3s	112	Loading weights:  99%|█████████▉| 288/290 [00:51<00:00,  5.83it/s, Materializing param=layers.31.self_attn.q_proj.weight]
+326.3s	113	Loading weights: 100%|█████████▉| 289/290 [00:52<00:00,  6.07it/s, Materializing param=layers.31.self_attn.q_proj.weight]
+326.3s	114	Loading weights: 100%|█████████▉| 289/290 [00:52<00:00,  6.07it/s, Materializing param=layers.31.self_attn.v_proj.weight]
+326.3s	115	Loading weights: 100%|█████████▉| 289/290 [00:52<00:00,  6.07it/s, Materializing param=layers.31.self_attn.v_proj.weight]
+326.3s	116	Loading weights: 100%|██████████| 290/290 [00:52<00:00,  6.07it/s, Materializing param=norm.weight]                      
+326.3s	117	Loading weights: 100%|██████████| 290/290 [00:52<00:00,  6.07it/s, Materializing param=norm.weight]
+326.3s	118	Loading weights: 100%|██████████| 290/290 [00:52<00:00,  5.56it/s, Materializing param=norm.weight]
+326.3s	119	
+326.3s	120	Reproduction of released concept embeddings, cosine mean/min: plain [0.899226188659668, 0.802057147026062] | with instruction [0.9999977350234985, 0.9999970197677612]
+326.3s	121	GPU memory in use after step 4 (GB): [0.0, 0.0]
+344.0s	122	Downloading: "https://github.com/facebookresearch/dinov2/zipball/main" to /root/.cache/torch/hub/main.zip
+344.6s	123	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+344.6s	124	  warnings.warn("xFormers is not available (SwiGLU)")
+344.6s	125	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+344.6s	126	  warnings.warn("xFormers is not available (Attention)")
+344.6s	127	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+344.6s	128	  warnings.warn("xFormers is not available (Block)")
+344.6s	129	
+344.6s	130	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+344.6s	131	  warnings.warn("xFormers is not available (SwiGLU)")
+344.6s	132	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+344.6s	133	  warnings.warn("xFormers is not available (Attention)")
+344.6s	134	/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+344.6s	135	  warnings.warn("xFormers is not available (Block)")
+347.3s	136	Released concept CLIP embeddings vs text encoder, cosine mean/min: [1.0, 0.9999998807907104]
+358.5s	137	M: (768, 4096)
+359.4s	138	CheXzero checkpoints from: /kaggle/input/datasets/ismaildahiru/chexzero-weights/chexzero_weights
+359.5s	139	
+  0%|                                               | 0.00/338M [00:00<?, ?iB/s]
+359.6s	140	
+  0%|                                               | 0.00/338M [00:00<?, ?iB/s]
+  0%|                                       | 432k/338M [00:00<01:20, 4.40MiB/s]
+359.7s	141	
+  0%|                                       | 432k/338M [00:00<01:20, 4.40MiB/s]
+  2%|▉                                     | 8.23M/338M [00:00<00:06, 49.9MiB/s]
+359.8s	142	
+  2%|▉                                     | 8.23M/338M [00:00<00:06, 49.9MiB/s]
+  9%|███▍                                   | 29.4M/338M [00:00<00:02, 128MiB/s]
+359.9s	143	
+  9%|███▍                                   | 29.4M/338M [00:00<00:02, 128MiB/s]
+ 13%|████▉                                  | 43.0M/338M [00:00<00:02, 134MiB/s]
+360.0s	144	
+ 13%|████▉                                  | 43.0M/338M [00:00<00:02, 134MiB/s]
+ 17%|██████▍                                | 55.8M/338M [00:00<00:02, 131MiB/s]
+360.1s	145	
+ 17%|██████▍                                | 55.8M/338M [00:00<00:02, 131MiB/s]
+ 20%|███████▉                               | 68.2M/338M [00:00<00:02, 126MiB/s]
+360.2s	146	
+ 20%|███████▉                               | 68.2M/338M [00:00<00:02, 126MiB/s]
+ 25%|█████████▋                             | 84.3M/338M [00:00<00:01, 139MiB/s]
+360.3s	147	
+ 25%|█████████▋                             | 84.3M/338M [00:00<00:01, 139MiB/s]
+ 30%|████████████                            | 102M/338M [00:00<00:01, 154MiB/s]
+360.4s	148	
+ 30%|████████████                            | 102M/338M [00:00<00:01, 154MiB/s]
+ 35%|██████████████▏                         | 120M/338M [00:00<00:01, 163MiB/s]
+360.5s	149	
+ 35%|██████████████▏                         | 120M/338M [00:00<00:01, 163MiB/s]
+ 40%|████████████████                        | 135M/338M [00:01<00:01, 160MiB/s]
+360.6s	150	
+ 40%|████████████████                        | 135M/338M [00:01<00:01, 160MiB/s]
+ 46%|██████████████████▍                     | 156M/338M [00:01<00:01, 176MiB/s]
+360.7s	151	
+ 46%|██████████████████▍                     | 156M/338M [00:01<00:01, 176MiB/s]
+ 52%|████████████████████▊                   | 175M/338M [00:01<00:00, 185MiB/s]
+360.8s	152	
+ 52%|████████████████████▊                   | 175M/338M [00:01<00:00, 185MiB/s]
+ 57%|██████████████████████▊                 | 193M/338M [00:01<00:00, 160MiB/s]
+360.9s	153	
+ 57%|██████████████████████▊                 | 193M/338M [00:01<00:00, 160MiB/s]
+ 62%|████████████████████████▉               | 210M/338M [00:01<00:00, 166MiB/s]
+361.0s	154	
+ 62%|████████████████████████▉               | 210M/338M [00:01<00:00, 166MiB/s]
+ 67%|██████████████████████████▉             | 227M/338M [00:01<00:00, 169MiB/s]
+361.1s	155	
+ 67%|██████████████████████████▉             | 227M/338M [00:01<00:00, 169MiB/s]
+ 72%|████████████████████████████▊           | 244M/338M [00:01<00:00, 169MiB/s]
+361.2s	156	
+ 72%|████████████████████████████▊           | 244M/338M [00:01<00:00, 169MiB/s]
+ 78%|███████████████████████████████         | 262M/338M [00:01<00:00, 177MiB/s]
+361.3s	157	
+ 78%|███████████████████████████████         | 262M/338M [00:01<00:00, 177MiB/s]
+ 83%|█████████████████████████████████▏      | 281M/338M [00:01<00:00, 181MiB/s]
+361.4s	158	
+ 83%|█████████████████████████████████▏      | 281M/338M [00:01<00:00, 181MiB/s]
+ 89%|███████████████████████████████████▋    | 301M/338M [00:01<00:00, 191MiB/s]
+361.6s	159	
+ 89%|███████████████████████████████████▋    | 301M/338M [00:01<00:00, 191MiB/s]
+ 95%|█████████████████████████████████████▊  | 319M/338M [00:02<00:00, 185MiB/s]
+361.6s	160	
+ 95%|█████████████████████████████████████▊  | 319M/338M [00:02<00:00, 185MiB/s]
+100%|████████████████████████████████████████| 338M/338M [00:02<00:00, 162MiB/s]
+361.8s	161	
+100%|████████████████████████████████████████| 338M/338M [00:02<00:00, 162MiB/s]
+361.8s	162	
+361.8s	163	
+448.2s	164	CheXzero checkpoints loaded: 10 | GPU GB in use: [0.68, 6.07]
+466.8s	165	32/7466 images, 0.3 min
+736.8s	166	1632/7466 images, 4.8 min
+1006.1s	167	3232/7466 images, 9.3 min
+1275.3s	168	4832/7466 images, 13.8 min
+1544.3s	169	6432/7466 images, 18.3 min
+2178.8s	170	===== INDIANA SUMMARY =====
+2178.8s	171	images 7466 | reports 3851 | frontal 3818 | findings 51
+2178.8s	172	SFR check plain/instr: [0.899226188659668, 0.802057147026062] [0.9999977350234985, 0.9999970197677612]
+2178.8s	173	-- all_images
+2178.8s	174	  chexzero               macro 0.701 (0.692-0.709)
+2178.8s	175	  clear_concept          macro 0.686 (0.677-0.695) | minus CheXzero -0.015 (-0.024 to -0.007) | wins/losses [22, 29]
+2178.8s	176	  clear_concept_instr    macro 0.684 (0.676-0.694) | minus CheXzero -0.016 (-0.025 to -0.008) | wins/losses [21, 30]
+2178.8s	177	  clear_direct           macro 0.688 (0.679-0.697) | minus CheXzero -0.012 (-0.020 to -0.005) | wins/losses [25, 26]
+2178.8s	178	  clear_concept_squash   macro 0.683 (0.675-0.692) | minus CheXzero -0.017 (-0.027 to -0.010) | wins/losses [21, 30]
+2178.8s	179	-- frontal_only
+2178.8s	180	  chexzero               macro 0.715 (0.705-0.724)
+2178.8s	181	  clear_concept          macro 0.700 (0.691-0.710) | minus CheXzero -0.014 (-0.024 to -0.005) | wins/losses [21, 30]
+2178.8s	182	  clear_concept_instr    macro 0.699 (0.690-0.710) | minus CheXzero -0.015 (-0.025 to -0.006) | wins/losses [24, 27]
+2178.8s	183	  clear_direct           macro 0.692 (0.682-0.701) | minus CheXzero -0.023 (-0.032 to -0.013) | wins/losses [19, 32]
+2178.8s	184	  clear_concept_squash   macro 0.703 (0.694-0.713) | minus CheXzero -0.011 (-0.021 to -0.002) | wins/losses [24, 27]
+2178.8s	185	-- per finding (all images): chexzero / clear_concept / clear_direct
+2178.8s	186	  Lung                                     0.662 / 0.610 / 0.593
+2178.8s	187	  Opacity                                  0.755 / 0.717 / 0.798
+2178.8s	188	  Cardiomegaly                             0.912 / 0.841 / 0.920
+2178.8s	189	  Pulmonary Atelectasis                    0.761 / 0.776 / 0.815
+2178.8s	190	  Calcinosis                               0.573 / 0.586 / 0.557
+2178.8s	191	  Calcified Granuloma                      0.453 / 0.605 / 0.536
+2178.8s	192	  Thoracic Vertebrae                       0.601 / 0.522 / 0.461
+2178.8s	193	  Cicatrix                                 0.663 / 0.729 / 0.666
+2178.8s	194	  Spine                                    0.483 / 0.548 / 0.484
+2178.8s	195	  Markings                                 0.492 / 0.661 / 0.555
+2178.8s	196	  Aorta                                    0.801 / 0.693 / 0.728
+2178.8s	197	  Pleural Effusion                         0.946 / 0.935 / 0.953
+2178.8s	198	  Diaphragm                                0.637 / 0.637 / 0.678
+2178.8s	199	  Atherosclerosis                          0.755 / 0.661 / 0.638
+2178.8s	200	  Airspace Disease                         0.808 / 0.845 / 0.888
+2178.8s	201	  Catheters, Indwelling                    0.801 / 0.892 / 0.613
+2178.8s	202	  Density                                  0.563 / 0.585 / 0.559
+2178.8s	203	  Deformity                                0.623 / 0.642 / 0.630
+2178.8s	204	  Granulomatous Disease                    0.539 / 0.518 / 0.471
+2178.8s	205	  Nodule                                   0.560 / 0.586 / 0.473
+2178.8s	206	  Surgical Instruments                     0.558 / 0.603 / 0.523
+2178.8s	207	  Scoliosis                                0.638 / 0.506 / 0.545
+2178.8s	208	  Aorta, Thoracic                          0.789 / 0.689 / 0.719
+2178.8s	209	  Fractures, Bone                          0.665 / 0.609 / 0.612
+2178.8s	210	  Costophrenic Angle                       0.809 / 0.763 / 0.802
+2178.8s	211	  Osteophyte                               0.600 / 0.545 / 0.544
+2178.8s	212	  Pulmonary Congestion                     0.894 / 0.871 / 0.900
+2178.8s	213	  Implanted Medical Device                 0.761 / 0.686 / 0.775
+2178.8s	214	  Spondylosis                              0.490 / 0.566 / 0.505
+2178.8s	215	  Emphysema                                0.885 / 0.645 / 0.801
+2178.8s	216	  Infiltrate                               0.808 / 0.797 / 0.835
+2178.8s	217	  Cardiac Shadow                           0.888 / 0.874 / 0.850
+2178.8s	218	  Thickening                               0.542 / 0.686 / 0.692
+2178.8s	219	  Granuloma                                0.439 / 0.578 / 0.518
+2178.8s	220	  Pulmonary Disease, Chronic Obstructive   0.801 / 0.658 / 0.687
+2178.8s	221	  Hernia, Hiatal                           0.909 / 0.823 / 0.891
+2178.8s	222	  Pulmonary Edema                          0.922 / 0.887 / 0.938
+2178.8s	223	  Pneumonia                                0.843 / 0.881 / 0.911
+2178.8s	224	  Pulmonary Emphysema                      0.890 / 0.750 / 0.886
+2178.8s	225	  Diaphragmatic Eventration                0.655 / 0.662 / 0.675
+2178.8s	226	  Arthritis                                0.454 / 0.652 / 0.446
+2178.8s	227	  Kyphosis                                 0.779 / 0.622 / 0.618
+2178.8s	228	  Bone Diseases, Metabolic                 0.725 / 0.709 / 0.821
+2178.8s	229	  Consolidation                            0.910 / 0.926 / 0.922
+2178.8s	230	  Tube, Inserted                           0.825 / 0.883 / 0.709
+2178.8s	231	  Foreign Bodies                           0.475 / 0.526 / 0.516
+2178.8s	232	  Lucency                                  0.596 / 0.464 / 0.709
+2178.8s	233	  Mediastinum                              0.728 / 0.694 / 0.676
+2178.8s	234	  Spinal Fusion                            0.581 / 0.543 / 0.554
+2178.8s	235	  Pneumothorax                             0.786 / 0.736 / 0.833
+2178.8s	236	  Medical Device                           0.697 / 0.552 / 0.666
+2178.8s	237	VERDICT: INCONSISTENT with the CLEAR paper (CLEAR behind CheXzero, interval excludes 0)
+2178.8s	238	===== END =====
+2186.3s	239	/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+2186.3s	240	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+2186.6s	241	/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+2186.6s	242	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+2187.5s	243	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+2187.8s	244	[NbConvertApp] Writing 93397 bytes to __notebook__.ipynb
+2190.4s	245	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+2191.6s	246	[NbConvertApp] Writing 446372 bytes to __results__.html

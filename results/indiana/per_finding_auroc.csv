@@ -1,0 +1,52 @@
+,chexzero,clear_concept,clear_concept_instr,clear_direct,clear_concept_squash
+Lung,0.662,0.61,0.604,0.593,0.609
+Opacity,0.755,0.717,0.721,0.798,0.717
+Cardiomegaly,0.912,0.841,0.832,0.92,0.834
+Pulmonary Atelectasis,0.761,0.776,0.778,0.815,0.776
+Calcinosis,0.573,0.586,0.593,0.557,0.585
+Calcified Granuloma,0.453,0.605,0.62,0.536,0.609
+Thoracic Vertebrae,0.601,0.522,0.567,0.461,0.529
+Cicatrix,0.663,0.729,0.715,0.666,0.727
+Spine,0.483,0.548,0.575,0.484,0.54
+Markings,0.492,0.661,0.637,0.555,0.644
+Aorta,0.801,0.693,0.684,0.728,0.686
+Pleural Effusion,0.946,0.935,0.938,0.953,0.934
+Diaphragm,0.637,0.637,0.672,0.678,0.631
+Atherosclerosis,0.755,0.661,0.676,0.638,0.654
+Airspace Disease,0.808,0.845,0.811,0.888,0.845
+"Catheters, Indwelling",0.801,0.892,0.88,0.613,0.894
+Density,0.563,0.585,0.591,0.559,0.583
+Deformity,0.623,0.642,0.612,0.63,0.632
+Granulomatous Disease,0.539,0.518,0.517,0.471,0.523
+Nodule,0.56,0.586,0.601,0.473,0.582
+Surgical Instruments,0.558,0.603,0.602,0.523,0.6
+Scoliosis,0.638,0.506,0.5,0.545,0.505
+"Aorta, Thoracic",0.789,0.689,0.7,0.719,0.683
+"Fractures, Bone",0.665,0.609,0.604,0.612,0.609
+Costophrenic Angle,0.809,0.763,0.676,0.802,0.769
+Osteophyte,0.6,0.545,0.539,0.544,0.539
+Pulmonary Congestion,0.894,0.871,0.866,0.9,0.869
+Implanted Medical Device,0.761,0.686,0.734,0.775,0.683
+Spondylosis,0.49,0.566,0.562,0.505,0.545
+Emphysema,0.885,0.645,0.699,0.801,0.675
+Infiltrate,0.808,0.797,0.83,0.835,0.811
+Cardiac Shadow,0.888,0.874,0.84,0.85,0.864
+Thickening,0.542,0.686,0.666,0.692,0.68
+Granuloma,0.439,0.578,0.579,0.518,0.578
+"Pulmonary Disease, Chronic Obstructive",0.801,0.658,0.663,0.687,0.685
+"Hernia, Hiatal",0.909,0.823,0.795,0.891,0.819
+Pulmonary Edema,0.922,0.887,0.892,0.938,0.879
+Pneumonia,0.843,0.881,0.876,0.911,0.883
+Pulmonary Emphysema,0.89,0.75,0.76,0.886,0.769
+Diaphragmatic Eventration,0.655,0.662,0.643,0.675,0.647
+Arthritis,0.454,0.652,0.666,0.446,0.628
+Kyphosis,0.779,0.622,0.637,0.618,0.605
+"Bone Diseases, Metabolic",0.725,0.709,0.702,0.821,0.709
+Consolidation,0.91,0.926,0.932,0.922,0.929
+"Tube, Inserted",0.825,0.883,0.881,0.709,0.893
+Foreign Bodies,0.475,0.526,0.573,0.516,0.509
+Lucency,0.596,0.464,0.369,0.709,0.461
+Mediastinum,0.728,0.694,0.64,0.676,0.679
+Spinal Fusion,0.581,0.543,0.536,0.554,0.54
+Pneumothorax,0.786,0.736,0.733,0.833,0.734
+Medical Device,0.697,0.552,0.59,0.666,0.534
